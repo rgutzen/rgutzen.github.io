@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-subtitle: <a href="#paper">Paper</a> | <a href="#talks">Talks</a> | <a href="#poster">Poster</a>
+subtitle: <a href="#paper">Paper</a> | <a href="#talks">Talks</a> | <a href="#poster">Poster</a> | <a href="#software">Software</a>
 ---
 
 <a name="paper"></a>
@@ -22,14 +22,22 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**Evaluating neural network models within a formal validation framework**<br>
+(2019) INCF Neuroinformatics Conference, Warsaw<br>
+**[Slides](slides/19_INCF/slides.html)**
+
 **How much do you trust a model? - Rigor in neuroscientific modeling and simulation through validation**<br>
 (2019) Brain Twitter Conference<br>
 **[Thread](https://twitter.com/RealBrainTC/status/1106246154138853376) | [Abstract](https://brain.tc/program/)**
 
-
 <a name="poster"></a>
 
 ## Poster
+
+**A statistical test of eigenvector angles to evaluate the similarity of neural network simulations**<br>
+Robin Gutzen, Sonja Grün, Michael Denker<br>
+*(2019) INM-ICS Retreat, Jülich*<br>
+**[PDF](poster/2019_Gutzen_INM-ICS.pdf) | [Interactive Notebook](https://mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Feigenangle_score.ipynb)**
 
 **Reproducible neural network simulations: model validation on the level of network activity data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
@@ -47,8 +55,7 @@ Alper Yegenoglu, Robin Gutzen, Michael Denker, Sonja Grün<br>
 *(2018) Human Brain Project Summit, Glasgow*<br>
 **[PDF](poster/2018_Yegenoglu_HBP_summit.pdf)**
 
-**Validation of Simulated on Experimental Spiking
-Activity: The Human Brain Project Perspective**<br>
+**Validation of Simulated on Experimental Spiking Activity: The Human Brain Project Perspective**<br>
 Michael von Papen, Paulina Dąbrowska, Nicole Voges, Robin Gutzen, Michael Denker, Johanna Senk, Espen Hagen, David Dahmen, Lukas Deutz, Moritz Helias, Markus Diesmann, Sonja Grün<br>
 *(2018) INM-ICS Retreat, Jülich*<br>
 **[PDF](poster/2018_vonPapen_ICS-INM.pdf)**
@@ -62,3 +69,13 @@ Michael von Papen, Nicole Voges, Paulina Dąbrowska, Robin Gutzen, Michael Denke
 Robin Gutzen, Sonja Grün, Michael Denker<br>
 *(2017) Data Science Summer School, Paris*<br>
 **[PDF](poster/2017_Gutzen_INM-ICS.pdf) | [Abstract](http://2017.ds3-datascience-polytechnique.fr/posters/)**
+
+
+<a name="software"></a>
+
+## Software
+
+**NetworkUnit v0.1**<br>
+Robin Gutzen, Michael von Papen, Michael Denker<br>
+RRID:SCR_016543<br>
+**[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**

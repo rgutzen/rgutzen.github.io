@@ -1,0 +1,29 @@
+
+---
+title: 'Keywords and Beer <br>
+        <font size="6">INM6 Retreat 2019</font>'
+author:
+- Robin Gutzen
+institute:
+- "INM-6, Forschungszentrum Jülich"
+logos-left:
+- logo/logoElephant
+- logo/logoINT
+logos-right:
+- logo/Logo-RWTH-eps-converted-to
+- logo/Logo-INM6-eps-converted-to
+logospace: .25
+license: GPLv2+
+tags: [test, markup]
+date: '2019-05-28'
+
+# for the epub format
+creator:
+- role: author
+  text: Dennis Terhorst
+- role: editor
+  text: Dennis Terhorst
+publisher: INM-6
+rights: (c) 2019 Dennis Terhorst, CC-BY-NC
+cover-image: video-test.gif
+---

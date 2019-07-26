@@ -9,6 +9,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
+  text-align: justify;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
@@ -359,6 +360,7 @@ footer .theme-by {
 }
 .post-entry {
   width: 100%;
+  text-align: justify;
 }
 .post-image {
   float: right;
