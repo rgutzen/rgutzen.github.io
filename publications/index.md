@@ -24,7 +24,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 ## Talks
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
-**[Slides](slides/19_INCF/slides.html)**
+<!-- **[Slides](slides/19_INCF/slides.html)** -->
 
 **How much do you trust a model? - Rigor in neuroscientific modeling and simulation through validation**<br>
 (2019) Brain Twitter Conference<br>
@@ -77,5 +77,5 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 
 **NetworkUnit v0.1**<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
-RRID:SCR_016543<br>
+*RRID:SCR_016543*<br>
 **[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**
