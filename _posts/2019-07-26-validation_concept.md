@@ -5,7 +5,7 @@ subtitle: A review and exploration
 tags: [validation, essay]
 <!-- bigimg: -->
 image: /assets/schlesinger_circle.png
-share_img:
+share_img: /assets/schlesinger_circle.png
 comments: false
 social-share: true
 <!-- css: -->

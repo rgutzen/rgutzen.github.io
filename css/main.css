@@ -338,11 +338,13 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
+  text-align: left;
 }
 .post-preview .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
+  text-align: left;
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
@@ -360,7 +362,7 @@ footer .theme-by {
 }
 .post-entry {
   width: 100%;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .post-image {
   float: right;
