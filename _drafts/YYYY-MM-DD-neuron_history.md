@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using eigenvector angles to evaluate matrix similarity
-subtitle:
-tags: [validation, computational, essay, interactive]
+title: Baloons, frogs, and squids
+subtitle: How our view on neurons evolved
+tags: [essay]
 <!-- bigimg: -->
 image:
 share_img:

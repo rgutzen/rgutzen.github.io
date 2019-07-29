@@ -4,7 +4,7 @@ title: Practice of validation
 subtitle: 3 things to consider when validating
 tags: [validation, essay]
 <!-- bigimg: -->
-imgage:
+image:
 share_img:
 comments: false
 social-share: true

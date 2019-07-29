@@ -2,9 +2,9 @@
 layout: post
 title: Building minimal 3D printing support structure
 subtitle:
-tags: [tools]
+tags: [tools, hack]
 <!-- bigimg: -->
-imgage:
+image:
 share_img:
 comments: false
 social-share: true

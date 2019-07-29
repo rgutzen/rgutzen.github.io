@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using eigenvector angles to evaluate matrix similarity
+title: Through the Fourier transform
 subtitle:
-tags: [validation, computational, essay, interactive]
+tags: [computational, essay]
 <!-- bigimg: -->
 image:
 share_img:

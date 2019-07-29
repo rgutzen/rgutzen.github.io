@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Using eigenvector angles to evaluate matrix similarity
-subtitle:
-tags: [validation, computational, essay, interactive]
+title: Visualizing colors
+subtitle: What do they mean, and how to use them
+tags: [essay]
 <!-- bigimg: -->
 image:
 share_img:
