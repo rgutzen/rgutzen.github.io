@@ -19,8 +19,12 @@ googlefonts: ["Roboto", "Lobster"]
 <!-- ToDos:
 simulator - simulator engine
 proofread, blogyfy
-ref -> links -->
-
+ref -> links
+add references to other articles:
+    * Why model? by Joshua Epstein
+    * All models are wrong, some are useful (George Box?)
+    * 
+    -->
 ## Validating while Model-Building?
 Validation provides precise statements about differences of simulation results and
 observation and therefore builds the connection between the theory-driven, mathematical world of model building and the very practical evaluation of reality in form

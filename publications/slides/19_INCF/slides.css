@@ -10,12 +10,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-image: url("elements/fzj-border-3-3.svg"), url("elements/FZJ_Logo_ws.svg");
+  background-image: url("images/fzj-logo.png");
   padding-left: 5%;
   width: 95%;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, 15%;
-  background-position: left, top right;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 97% 97% ;
+  background-attachment: fixed;
   background-color: #fff; }
 
 .reveal {
@@ -94,7 +95,7 @@ body {
 .reveal h6 {
     text-align: left;
     font-weight: 300;
-    font-size: 0.8em; }
+    font-size: 0.75em; }
 
 .reveal h1 {
   text-shadow: none; }
@@ -318,9 +319,11 @@ body {
   transition: all .15s linear; }
 
 .reveal a:hover img {
-  background: rgba(0, 255, 255, 0.2);
-  border: 3px solid #005b82;
-  border-color: #2a76dd;
+  background: none;
+  /* rgba(0, 255, 255, 0.2); */
+  border: none;
+  /* 3px solid #005b82; */
+  /* border-color: #2a76dd; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************

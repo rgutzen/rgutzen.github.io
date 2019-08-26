@@ -16,7 +16,11 @@ googlefonts: ["Roboto", "Lobster"]
 <!-- gh-reop: -->
 <!-- gh-badge: -->
 ---
-
+<!-- ToDo: maybe add
+    * Popper on term 'validation'
+    * All models are wrong, some are useful (George Box?)
+    * Feyman's 'Value of Science'
+-->
 When working with model simulations and their evaluation, it is important to be clear about the used terminology and interpretation of the results. Otherwise, gaining insights from the model would be basically a game of chance. While learning something new via modeling is an alluring approach, one might first consider
 whether or not it is at all possible to gain new knowledge or truth from models. This question is matter of ongoing philosophical debate ([Oreskes et al., 1994](https://doi.org/10.1126/science.263.5147.641); [David, 2009](https://doi.org/10.1007/978-3-642-01109-2_9); [Irobi et al., 2004](http://www.es.mdh.se/pdf_publications/610.pdf)), but fortunately the gaining of new knowledge is not what validation is about. And while the epistemologists are working out the details, for the practical approach of modeling we should not be concerned with the truth content of a model but with its testable correctness. Because only the model's accuracy relative to the given system justifies its use as the basis for analytic argumentation and prediction making. Establishing the absolute validity of a model is inherently impossible, as a model is by design an abstraction and simplification of reality ([Balci, 1997](https://www.researchgate.net/profile/Robert_Sargent3/publication/3885887_Verification_Validation_and_Accreditation_of_Simulation_Models/links/56c91a2d08ae1106370793d2/Verification-Validation-and-Accreditation-of-Simulation-Models.pdf); [Sterman, 2000](https://www.sciencedirect.com/science/article/pii/S0022391312000479)). There are multiple aspects in evaluating a model, but a validation is a major part of it as it describes the process of assigning credibility to a model. Validation within its logic of inductive reasoning is not able to infer any certain statement. This problem was most famously addressed by the philosopher David Hume in 1748. Thus, the outcome of a validation should not be understood as a definite verdict about its validity but as an quantitative evaluation of usefulness. This usefulness may commonly be given in the form of probability values which are based on observed evidence and a priori assumptions and beliefs ([Carnap, 1968](https://www.sciencedirect.com/science/article/pii/S0049237X08710474)).
 

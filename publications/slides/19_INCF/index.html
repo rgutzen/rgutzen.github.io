@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Robin Gutzen">
+  <meta name="dcterms.date" content="2019-09-01">
+  <title>Network-level Validation - INCF 2019</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="slides.css" id="theme">
+  <link rel="stylesheet" href="fontawesome.min.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ########### Title Slide ###########  -->
+<section id="title-slide" class='title'>
+    <h1 style="margin-bottom: 1.5cm;">Evaluating neural network models within a formal validation framework</h1>
+
+    <h5 style="margin-bottom: 0.25cm;"><b>Robin Gutzen</b>, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün, Michael Denker</h5>
+
+    <h6 style="margin-bottom: 2cm;">Institute of Neuroscience and Medicine (INM-6), Research Center Jülich, Germany</h5>
+
+    <h6>01.09.2019 | INCF Neuroinformatics Conference, <i>Warsaw</i></h6>
+</section>
+
+<!-- ########### 1 ###########  -->
+<section data-transition="slide" >
+<div align="left">
+<h4 style="margin: 0 0 0.1em 0;">What can we learn from models?</h4>
+<ul>
+<li class="fragment fade-in" data-fragment-index="1">
+    Models are abstract descriptions of a system of interest, <br>
+    which able to generate testable predictions.</li>
+<li class="fragment fade-in" data-fragment-index="2">
+    Insight from models can only be derived via inductive inference. <i>[Hume 1748]</i> </li>
+<li class="fragment fade-in" data-fragment-index="3">
+    Modeling doesn't seek truth, but usefulness. </li>
+</ul>
+<h4 style="margin: 1em 0 0.1em 0;" class="fragment fade-in" data-fragment-index="4">
+    How can we learn from models?</h4>
+<ul>
+<li class="fragment fade-in" data-fragment-index="4">
+    The usefulness of a model is only determined by the accuracy of its predictions </li>
+<li class="fragment fade-in" data-fragment-index="5">
+    Validation quantifies the prediction accuracy by comparison to observations. </li>
+</ul>
+</div>
+</section>
+
+<!-- ########### 2 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.1em;">How can we learn from models?</h3>
+<p><i>Validation evaluates the consistency of the
+predictive simulation outcome with the system of interest,
+within the realm of its intended use.</i></p>
+<div style="position: relative;">
+    <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+    <img src='./images/validation_environment.png' style="width: auto; height:100%">
+    </div>
+    <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+        class="fragment fade-in-then-out" data-fragment-index="1">
+    <img src='./images/validation_environment_1.png' style="width: auto; height:100%">
+    </div>
+    <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+        class="fragment fade-in-then-out" data-fragment-index="2">
+    <img src='./images/validation_environment_2.png' style="width: auto; height:100%">
+    </div>
+    <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+        class="fragment fade-in-then-out" data-fragment-index="3">
+    <img src='./images/validation_environment_3.png' style="width: auto; height:100%">
+    </div>
+</div>
+<!-- <p>Validation enables the evaluation and comparison of models, and is thus indispensable for rigorous (simulation) science</p> -->
+
+</section>
+
+<!-- ########### 3 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 2em;">Why is this not a trivial problem?</h3>
+<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:80%; float:left;">
+<h4 style="margin: 0 0 0.1em 0;">Bottom-up & Top-down</h4>
+<ul>
+<li> Validation of small scale elements does not entail agreement on larger scales!</li>
+<li> Validation on large scales does not entail agreement on small scales!</li>
+<li> -> Single-cell and network-level validation are complementary.</li>
+</ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="2" style="width:20%; float:left;">
+    <img src='./images/level_problem.png' style="height:7em;margin: -1em 0 -2em 0;">
+</div>
+
+<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:72%; float:left;">
+<h4 style="margin: 1em 0 0.1em 0;">
+    Did the test, got a score, what now?</h4>
+<ul>
+<li> A validation score is a quantitative measure of agreement. </li>
+<li> No single score can reflect the entire range of features and statistics.</li>
+<li> The interpretation of the score depends on the model's intended use. </li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="5" style="float:right; width:28%;">
+    <img src='./images/score_problem.png' style="height:5em;padding-top:40px;">
+</div>
+<div align="left" class="fragment fade-in-then-out" data-fragment-index="4"
+style="margin-bottom:-9em;">
+    <img src='./images/score_problem.png' style="height:9em;">
+</div>
+<div align="left" class="fragment fade-in" data-fragment-index="5" style="width:80%; float:left;">
+<h4 style="margin: 1em 0 0.1em 0;">
+    'Validation' beyond validation</h4>
+<ul>
+<li>Comparing a model to another (already validated) model</li>
+<li>Comparing two versions of the same model</li>
+<li>Comparing two simulators</li>
+</ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="6" style="width:20%; float:left;">
+    <p style="padding:70px 0;"><i>Example later on</i><a href="#/simulator-comparison"> <img src='./images/external-link-alt-solid.svg' style="height:1em;"></a>
+</p>
+
+</div>
+
+
+</section>
+
+<!-- ########### 4 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.1em;">Developing a network-level validation tool
+    &nbsp &nbsp &nbsp &nbsp <i style="font-size:0.8em">NetworkUnit with SciUnit & Elephant</i></h3>
+<div style="position: relative;">
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="1">
+    <img src='./images/NetworkUnit_Flowchart_01.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="2">
+    <img src='./images/NetworkUnit_Flowchart_02.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="3">
+    <img src='./images/NetworkUnit_Flowchart_03.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="4">
+    <img src='./images/NetworkUnit_Flowchart_04.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="5">
+    <img src='./images/NetworkUnit_Flowchart_05.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="6">
+    <img src='./images/NetworkUnit_Flowchart_06.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="7">
+    <img src='./images/NetworkUnit_Flowchart_07.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="8">
+    <img src='./images/NetworkUnit_Flowchart_08.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="9">
+    <img src='./images/NetworkUnit_Flowchart_09.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="10">
+    <img src='./images/NetworkUnit_Flowchart_10.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="11">
+    <img src='./images/NetworkUnit_Flowchart_final.png'>
+</div>
+</div>
+</section>
+
+<!-- ########### 5 ###########  -->
+<link rel="stylesheet" type="text/css" href="code-prettify/prettify.css">
+<script type="text/javascript" src="code-prettify/prettify.js"></script>
+<body onload="PR.prettyPrint()">
+
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.1em;">Minimal code example &nbsp &nbsp &nbsp <span style="font-size:0.7em">showing the increase of chance correlations with firing rate</span></h3>
+<pre class="prettyprint lang-py">
+    import quantities as pq
+    from networkunit import models, tests, scores
+
+    ## Compare correlations of Poisson activity with different rates
+
+    # Define models
+    model_A = models.stochastic_activity('model A', rate=5*pq.Hz)
+    model_B = models.stochastic_activity('model B', rate=10*pq.Hz)
+    model_C = models.stochastic_activity('model C', rate=15*pq.Hz)
+
+    # Define test
+    class correlation_test(tests.TestM2M, tests.correlation_dist_test):
+        score_type = scores.effect_size  # <- define score statistic
+        params = {'binsize': 2*pq.ms}    # <- define parameter settings
+
+    test = correlation_test()
+
+    # Run validation test
+    score = test.judge([model_A, model_B, model_C])
+    score.score
+    >>>                 model A 	model B         model C
+    >>>    model A	0.000000	0.009258	0.015552
+    >>>    model B	0.009258	0.000000	0.024717
+    >>>    model C	0.015552	0.024717	0.000000
+
+</pre>
+</section>
+
+<!-- ########### 6.1 ###########  -->
+<section id="simulator-comparison" data-transition="slide">
+<h3 style="margin-bottom: 1em;">Application: validation workflow for simulator comparison</h3>
+<img src='images/polychronization_studies.png'>
+</section>
+
+<!-- ########### 6.2 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.4em;">Application: validation workflow for simulator comparison</h3>
+<h6 style="font-weight: 350; font-size: 0.85em;"> Validation tests aid the model (implementation) development process.</h6>
+<img src='images/iteration1_distcomp_bicolor.png'>
+</section>
+
+<!-- ########### 6.3 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.4em;">Application: validation workflow for simulator comparison</h3>
+<h6 style="font-weight: 350; font-size: 0.85em;"> There is generally no hierachy of failure for validation tests.</h6>
+<img src='images/dist_comparison_2cycle_bicolor.png'>
+</section>
+
+<!-- ########### 6.4 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.4em;">Application: validation workflow for simulator comparison</h3>
+<h6 style="font-weight: 350; font-size: 0.85em;"> Multiple tests form a quantified level of agreement.</h6>
+<img src='images/dist_comparison_3cycle_bicolor.png'>
+</section>
+
+<!-- ########### 6 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.1em;">Outlook</h3>
+* HBP Valiadtion Framework
+* Tests for wavedynamics
+* other specialized validation test packages (NeuronUnit, HippUnit, etc.)
+
+</section>
+
+<!-- ########### 7 ###########  -->
+<section data-transition="slide">
+
+<div style="float:left; font-size:1.2em; width:30%;">
+<p><u>Thanks to all collaborators</u><p>
+<ul style="list-style-type:none;">
+<li> Michael von Papen </li>
+<li> Guido Trensch </li>
+<li> Pietro Quaglio </li>
+<li> Sonja Grün </li>
+<li> Michael Denker </li>
+<li> Andrew Davison </li>
+<li> Shailesh Appukuttan</li>
+<li> Lungsi Sharma </li>
+<li> Richard Gherkin </li>
+<li> Sharon Crook </li>
+</ul>
+</div>
+
+<div style="text-align:right; float:right; font-size:1em; width:40%;">
+    <p style="float:center;"><u>Related posters</u></p>
+    <ul style="list-style-type:none;">
+    <li><b>P71</b> on simulator comparison</li>
+    <li><b>D11</b> on SciUnit</li>
+</div>
+
+<div style="float:right; width:67%; margin-top:-2em;">
+    <p style="float:center;"><u>Software links</u></p>
+<div style="float:left; width:35%; padding-left:3em;">
+<a href="https://github.com/INM-6/NetworkUnit">
+<img src='./images/github-handle.png' style='height:50px;'></a>
+<br>
+<a href="https://github.com/scidash/sciunit">
+<img src='./images/sciunit-logo.png' style='height:70px;'></a>
+<a href="https://github.com/NeuralEnsemble/elephant">
+<img src='./images/elephant-logo.png' style='height:70px;'></a>
+</div>
+<div style="float:left; width:40%; padding-left: 1em; padding-top: 1.5em;">
+<a href="https://mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Findex.ipynb">
+    <p>Tutorial Notebook
+    <img src="https://mybinder.org/badge.svg"></p></a>
+</div>
+</div>
+
+<div style="float:right; width:67%; font-size:1em;">
+<p><u>Further reading</u>
+<!-- <ul style="list-style-type:none;"> -->
+<ul style="margin-top:-0.8em">
+<li>
+    <a href="https://doi.org/10.3389/fninf.2018.00090">
+    Gutzen, R. et al. (2018). <i>Reproducible neural network simulations: statistical methods for model validation on the level of network activity data</i>. <span style="font-size:0.7em;">Front. Neuroinform. 12:90. doi: 10.3389/fninf.2018.00090</span></a></li>
+<li>
+    <a href="https://doi.org/10.3389/fninf.2018.00081">
+    Trensch, G. et al. (2018). <i>Rigorous neural network simulations: a model substantiation methodology for increasing the correctness of simulation results in the absence of experimental validation data</i>. <span style="font-size:0.7em;"> Front. Neuroinform. 12:81. doi: 10.3389/fninf.2018.00081</span></a>
+<!-- <a href="https://rgutzen.github.io/2019-07-26-validation_concept/">
+Concepts of Validation</a></li> -->
+</p>
+</div>
+
+<div style="float:left; width:100%; font-size:1em;">
+<div style="float:right;">
+<p>
+Slides @ <a href="https://rgutzen.github.io/publications/slides/19_INCF/">rgutzen.github.io/publications/slides/19_INCF/</a>
+</p>
+</div>
+<div style="float:left; padding-top:15px;">
+<a href="https://twitter.com/rgutzen">
+<img src='./images/twitter-handle.png' style='height:35px;'></a>
+</div>
+</div>
+
+</section>
+
+
+    </div>
+  </div>
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Display presentation control arrows
+    	controls: false,
+
+        center: true,
+        // height: "50%",
+        // width: "50%",
+        margin: 0.1,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
