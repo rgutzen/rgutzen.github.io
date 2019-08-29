@@ -17,7 +17,6 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="slides.css" id="theme">
-  <link rel="stylesheet" href="fontawesome.min.css">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
@@ -48,17 +47,17 @@
 <!-- ########### 1 ###########  -->
 <section data-transition="slide" >
 <div align="left">
-<h4 style="margin: 0 0 0.1em 0;">What can we learn from models?</h4>
+<h4 style="margin: 0 0 0.2em 0;">What can we learn from models?</h4>
 <ul>
 <li class="fragment fade-in" data-fragment-index="1">
     Models are abstract descriptions of a system of interest, <br>
     which able to generate testable predictions.</li>
 <li class="fragment fade-in" data-fragment-index="2">
-    Insight from models can only be derived via inductive inference. <i>[Hume 1748]</i> </li>
+    Insight from models can only be derived via inductive inference.</li>
 <li class="fragment fade-in" data-fragment-index="3">
     Modeling doesn't seek truth, but usefulness. </li>
 </ul>
-<h4 style="margin: 1em 0 0.1em 0;" class="fragment fade-in" data-fragment-index="4">
+<h4 style="margin: 1em 0 0.2em 0;" class="fragment fade-in" data-fragment-index="4">
     How can we learn from models?</h4>
 <ul>
 <li class="fragment fade-in" data-fragment-index="4">
@@ -73,7 +72,7 @@
 <section data-transition="slide">
 <h3 style="margin-bottom: 0.1em;">How can we learn from models?</h3>
 <p><i>Validation evaluates the consistency of the
-predictive simulation outcome with the system of interest,
+predictive simulation outcome with the system of interest, <br>
 within the realm of its intended use.</i></p>
 <div style="position: relative;">
     <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
@@ -99,20 +98,9 @@ within the realm of its intended use.</i></p>
 <!-- ########### 3 ###########  -->
 <section data-transition="slide">
 <h3 style="margin-bottom: 2em;">Why is this not a trivial problem?</h3>
-<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:80%; float:left;">
-<h4 style="margin: 0 0 0.1em 0;">Bottom-up & Top-down</h4>
-<ul>
-<li> Validation of small scale elements does not entail agreement on larger scales!</li>
-<li> Validation on large scales does not entail agreement on small scales!</li>
-<li> -> Single-cell and network-level validation are complementary.</li>
-</ul>
-</div>
-<div align="right" class="fragment fade-in" data-fragment-index="2" style="width:20%; float:left;">
-    <img src='./images/level_problem.png' style="height:7em;margin: -1em 0 -2em 0;">
-</div>
 
-<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:72%; float:left;">
-<h4 style="margin: 1em 0 0.1em 0;">
+<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:72%; float:left;">
+<h4 style="margin: 0 0 0.1em 0;">
     Did the test, got a score, what now?</h4>
 <ul>
 <li> A validation score is a quantitative measure of agreement. </li>
@@ -120,13 +108,26 @@ within the realm of its intended use.</i></p>
 <li> The interpretation of the score depends on the model's intended use. </li>
 </ul>
 </div>
-<div class="fragment fade-in" data-fragment-index="5" style="float:right; width:28%;">
-    <img src='./images/score_problem.png' style="height:5em;padding-top:40px;">
+<div class="fragment fade-in" data-fragment-index="3" style="float:right; width:28%;">
+    <img src='./images/score_problem.png' style="height:5em;padding-top:0px;">
 </div>
-<div align="left" class="fragment fade-in-then-out" data-fragment-index="4"
+<div align="left" class="fragment fade-in-then-out" data-fragment-index="2"
 style="margin-bottom:-9em;">
     <img src='./images/score_problem.png' style="height:9em;">
 </div>
+
+<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:80%; float:left;">
+<h4 style="margin: 1em 0 0.1em 0;">Bottom-up & Top-down</h4>
+<ul>
+<li> Validation of small scale elements does not entail agreement on larger scales!</li>
+<li> Validation on large scales does not entail agreement on small scales!</li>
+<li> -> Single-cell and network-level validation are complementary.</li>
+</ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="4" style="width:20%; float:left;">
+    <img src='./images/level_problem.png' style="height:7em;padding-top:10px;margin-bottom:-1em;">
+</div>
+
 <div align="left" class="fragment fade-in" data-fragment-index="5" style="width:80%; float:left;">
 <h4 style="margin: 1em 0 0.1em 0;">
     'Validation' beyond validation</h4>
@@ -137,7 +138,7 @@ style="margin-bottom:-9em;">
 </ul>
 </div>
 <div align="right" class="fragment fade-in" data-fragment-index="6" style="width:20%; float:left;">
-    <p style="padding:70px 0;"><i>Example later on</i><a href="#/simulator-comparison"> <img src='./images/external-link-alt-solid.svg' style="height:1em;"></a>
+    <p style="padding:70px 0;"><i>Example later on</i><a href="#/simulator-comparison"> <img src='./images/external-link-alt-solid.svg' style="height:0.9em;"></a>
 </p>
 
 </div>
@@ -156,42 +157,50 @@ style="margin-bottom:-9em;">
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="2">
-    <img src='./images/NetworkUnit_Flowchart_02.png'>
+    <img src='./images/NetworkUnit_Flowchart_01a.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="3">
-    <img src='./images/NetworkUnit_Flowchart_03.png'>
+    <img src='./images/NetworkUnit_Flowchart_01b.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="4">
-    <img src='./images/NetworkUnit_Flowchart_04.png'>
+    <img src='./images/NetworkUnit_Flowchart_02.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="5">
-    <img src='./images/NetworkUnit_Flowchart_05.png'>
+    <img src='./images/NetworkUnit_Flowchart_03.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="6">
-    <img src='./images/NetworkUnit_Flowchart_06.png'>
+    <img src='./images/NetworkUnit_Flowchart_04.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="7">
-    <img src='./images/NetworkUnit_Flowchart_07.png'>
+    <img src='./images/NetworkUnit_Flowchart_05.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="8">
-    <img src='./images/NetworkUnit_Flowchart_08.png'>
+    <img src='./images/NetworkUnit_Flowchart_06.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="9">
-    <img src='./images/NetworkUnit_Flowchart_09.png'>
+    <img src='./images/NetworkUnit_Flowchart_07.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="10">
-    <img src='./images/NetworkUnit_Flowchart_10.png'>
+    <img src='./images/NetworkUnit_Flowchart_08.png'>
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="11">
+    <img src='./images/NetworkUnit_Flowchart_09.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="12">
+    <img src='./images/NetworkUnit_Flowchart_09a.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in-then-semi-out" data-fragment-index="13">
     <img src='./images/NetworkUnit_Flowchart_final.png'>
 </div>
 </div>
@@ -203,7 +212,7 @@ style="margin-bottom:-9em;">
 <body onload="PR.prettyPrint()">
 
 <section data-transition="slide">
-<h3 style="margin-bottom: 0.1em;">Minimal code example &nbsp &nbsp &nbsp <span style="font-size:0.7em">showing the increase of chance correlations with firing rate</span></h3>
+<h3 style="margin-bottom: 0.1em;">Minimal code example &nbsp &nbsp &nbsp <span style="font-size:0.7em">showing the dependency of spike intervals on firing rate</span></h3>
 <pre class="prettyprint lang-py">
     import quantities as pq
     from networkunit import models, tests, scores
@@ -212,23 +221,23 @@ style="margin-bottom:-9em;">
 
     # Define models
     model_A = models.stochastic_activity('model A', rate=5*pq.Hz)
-    model_B = models.stochastic_activity('model B', rate=10*pq.Hz)
-    model_C = models.stochastic_activity('model C', rate=15*pq.Hz)
+    model_B = models.stochastic_activity('model B', rate=15*pq.Hz)
+    model_C = models.stochastic_activity('model C', rate=45*pq.Hz)
 
     # Define test
-    class correlation_test(tests.TestM2M, tests.correlation_dist_test):
-        score_type = scores.effect_size  # <- define score statistic
-        params = {'binsize': 2*pq.ms}    # <- define parameter settings
+    class spikeinterval_test(tests.TestM2M, tests.isi_variation_test):
+        score_type = scores.ks_distance        # <- define score statistic
+        params = {'variation_measure': 'isi'}  # <- define parameter settings
 
-    test = correlation_test()
+    test = spikeinterval_test()
 
     # Run validation test
     score = test.judge([model_A, model_B, model_C])
     score.score
     >>>                 model A 	model B         model C
-    >>>    model A	0.000000	0.009258	0.015552
-    >>>    model B	0.009258	0.000000	0.024717
-    >>>    model C	0.015552	0.024717	0.000000
+    >>>    model A	0.000000	0.376101	0.669596
+    >>>    model B	0.376101	0.000000	0.385336
+    >>>    model C	0.669596	0.385336	0.000000
 
 </pre>
 </section>
@@ -236,7 +245,19 @@ style="margin-bottom:-9em;">
 <!-- ########### 6.1 ###########  -->
 <section id="simulator-comparison" data-transition="slide">
 <h3 style="margin-bottom: 1em;">Application: validation workflow for simulator comparison</h3>
-<img src='images/polychronization_studies.png'>
+<div style="position: relative;">
+    <div style="position:absolute; margin-left: -20%; margin-right: -20%; left: 0; right: 0;">
+    <img src='images/polychronization_studies_01.png'>
+    </div>
+    <div style="position:absolute; margin-left: -20%; margin-right: -20%; left: 0; right: 0;"
+    class="fragment fade-in-then-out" data-fragment-index="1">
+    <img src='images/polychronization_studies_02.png'>
+    </div>
+    <div style="position:absolute; margin-left: -20%; margin-right: -20%; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="2">
+    <img src='images/polychronization_studies_03.png'>
+    </div>
+</div>
 </section>
 
 <!-- ########### 6.2 ###########  -->
@@ -262,11 +283,36 @@ style="margin-bottom:-9em;">
 
 <!-- ########### 6 ###########  -->
 <section data-transition="slide">
-<h3 style="margin-bottom: 0.1em;">Outlook</h3>
-* HBP Valiadtion Framework
-* Tests for wavedynamics
-* other specialized validation test packages (NeuronUnit, HippUnit, etc.)
+<h3>Outlook</h3>
+<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:70%; float:left;">
+    <ul style="padding-top:70px;">
+    <li> Network-level validation tests on the basis of wave dynamics </li>
+    </ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="1" style="width:30%; float:left;">
+    <video  height="160" controls autoplay loop muted>
+    <source data-src="./images/lfp_waves.mp4" type="video/mp4">
+    <source data-src="./images/lfp_waves.webm" type="video/webm">
+    <p>Your browser does not support the video tag. </p></video>
+</div>
 
+<div align="left" class="fragment fade-in" data-fragment-index="2" style="width:70%; float:left;">
+    <ul style="padding-top:20px;">
+        <li> There are further specialized neuroscientific validation test packages <br> (NeuronUnit, HippoUnit, MorphoUnit, etc.) </li>
+    </ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="2" style="width:30%; float:left;">
+    <img src='./images/NeuronUnit-logo.png' style="height:1.7em;padding-top:25px;">
+</div>
+
+<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:70%; float:left;">
+    <ul style="padding-top:50px;">
+        <li> Integration of tests and scores with the HBP Valiadtion Framework </li>
+    </ul>
+</div>
+<div align="right" class="fragment fade-in" data-fragment-index="3" style="width:30%; float:left;">
+    <img src='./images/hbp-logo.jpg' style="height:3.5em;padding-top:15px;">
+</div>
 </section>
 
 <!-- ########### 7 ###########  -->
@@ -323,18 +369,22 @@ style="margin-bottom:-9em;">
 <li>
     <a href="https://doi.org/10.3389/fninf.2018.00081">
     Trensch, G. et al. (2018). <i>Rigorous neural network simulations: a model substantiation methodology for increasing the correctness of simulation results in the absence of experimental validation data</i>. <span style="font-size:0.7em;"> Front. Neuroinform. 12:81. doi: 10.3389/fninf.2018.00081</span></a>
+<li>
+    <a href="https://doi.org/10.1145/2591062.2591129">
+    Cyrus, O., Aldrich, J., Gerkin, R.C. (2014). <i>Collaborative infrastructure for test-driven scientific model validation.</i> <span style="font-size:0.7em;"> Companion Proceedings of the 36th International Conference on Software Engineering. ACM, 2014. doi: 10.1145/2591062.2591129</span></a>
+
 <!-- <a href="https://rgutzen.github.io/2019-07-26-validation_concept/">
 Concepts of Validation</a></li> -->
 </p>
 </div>
 
-<div style="float:left; width:100%; font-size:1em;">
+<div style="float:left; width:100%; font-size:1em; margin-top: -1em;">
 <div style="float:right;">
 <p>
 Slides @ <a href="https://rgutzen.github.io/publications/slides/19_INCF/">rgutzen.github.io/publications/slides/19_INCF/</a>
 </p>
 </div>
-<div style="float:left; padding-top:15px;">
+<div style="float:left; padding-top:10px;">
 <a href="https://twitter.com/rgutzen">
 <img src='./images/twitter-handle.png' style='height:35px;'></a>
 </div>
