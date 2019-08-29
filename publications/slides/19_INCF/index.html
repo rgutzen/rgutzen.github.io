@@ -39,7 +39,7 @@
 
     <h5 style="margin-bottom: 0.25cm;"><b>Robin Gutzen</b>, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün, Michael Denker</h5>
 
-    <h6 style="margin-bottom: 2cm;">Institute of Neuroscience and Medicine (INM-6), Research Center Jülich, Germany</h5>
+    <h6 style="margin-bottom: 2cm;">Institute of Neuroscience and Medicine (INM-6) and Simulation Lab Neuroscience, <br>Research Center Jülich, Germany</h5>
 
     <h6>01.09.2019 | INCF Neuroinformatics Conference, <i>Warsaw</i></h6>
 </section>
@@ -50,8 +50,8 @@
 <h4 style="margin: 0 0 0.2em 0;">What can we learn from models?</h4>
 <ul>
 <li class="fragment fade-in" data-fragment-index="1">
-    Models are abstract descriptions of a system of interest, <br>
-    which able to generate testable predictions.</li>
+    Model: abstract description of a system of interest; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;able to generate testable predictions.</li>
 <li class="fragment fade-in" data-fragment-index="2">
     Insight from models can only be derived via inductive inference.</li>
 <li class="fragment fade-in" data-fragment-index="3">
@@ -73,10 +73,11 @@
 <h3 style="margin-bottom: 0.1em;">How can we learn from models?</h3>
 <p><i>Validation evaluates the consistency of the
 predictive simulation outcome with the system of interest, <br>
-within the realm of its intended use.</i></p>
+consistent with its intended application.</i></p>
 <div style="position: relative;">
     <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
     <img src='./images/validation_environment.png' style="width: auto; height:100%">
+    <p style="position:absolute;bottom:0px;right:0px;font-size:0.6em;"><i>adapted from Schlesinger (1979)</i></p>
     </div>
     <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
         class="fragment fade-in-then-out" data-fragment-index="1">
@@ -97,26 +98,40 @@ within the realm of its intended use.</i></p>
 
 <!-- ########### 3 ###########  -->
 <section data-transition="slide">
-<h3 style="margin-bottom: 2em;">Why is this not a trivial problem?</h3>
+<h3 style="margin-bottom: 2em;">Aspects of validation</h3>
 
-<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:72%; float:left;">
+<div align="left" class="fragment fade-in" data-fragment-index="1" style="width:75%; float:left;">
 <h4 style="margin: 0 0 0.1em 0;">
     Did the test, got a score, what now?</h4>
 <ul>
 <li> A validation score is a quantitative measure of agreement. </li>
-<li> No single score can reflect the entire range of features and statistics.</li>
+<li> No single score can validate the whole model.</li>
 <li> The interpretation of the score depends on the model's intended use. </li>
 </ul>
 </div>
-<div class="fragment fade-in" data-fragment-index="3" style="float:right; width:28%;">
-    <img src='./images/score_problem.png' style="height:5em;padding-top:0px;">
+<div class="fragment fade-in" data-fragment-index="6" style="float:right; width:25%;">
+    <img src='./images/rate_latency_interval_test.png' style="height:3.8em;padding-top:20px;">
 </div>
+<div style="position: relative;">
 <div align="left" class="fragment fade-in-then-out" data-fragment-index="2"
-style="margin-bottom:-9em;">
-    <img src='./images/score_problem.png' style="height:9em;">
+style="margin-top:6.5em;position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+    <img src='./images/rate_latency_interval_test_01.png' style="height:9em;">
+</div>
+<div align="left" class="fragment fade-in-then-out" data-fragment-index="3"
+style="margin-top:6.5em;position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+    <img src='./images/rate_latency_interval_test_02.png' style="height:9em;">
+</div>
+<div align="left" class="fragment fade-in-then-out" data-fragment-index="4"
+style="margin-top:6.5em;position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+    <img src='./images/rate_latency_interval_test_03.png' style="height:9em;">
+</div>
+<div align="left" class="fragment fade-in-then-out" data-fragment-index="5"
+style="margin-top:6.5em;position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+    <img src='./images/rate_latency_interval_test.png' style="height:9em;">
+</div>
 </div>
 
-<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:80%; float:left;">
+<div align="left" class="fragment fade-in" data-fragment-index="6" style="width:80%; float:left;">
 <h4 style="margin: 1em 0 0.1em 0;">Bottom-up & Top-down</h4>
 <ul>
 <li> Validation of small scale elements does not entail agreement on larger scales!</li>
@@ -124,11 +139,11 @@ style="margin-bottom:-9em;">
 <li> -> Single-cell and network-level validation are complementary.</li>
 </ul>
 </div>
-<div align="right" class="fragment fade-in" data-fragment-index="4" style="width:20%; float:left;">
+<div align="right" class="fragment fade-in" data-fragment-index="8" style="width:20%; float:left;">
     <img src='./images/level_problem.png' style="height:7em;padding-top:10px;margin-bottom:-1em;">
 </div>
 
-<div align="left" class="fragment fade-in" data-fragment-index="5" style="width:80%; float:left;">
+<div align="left" class="fragment fade-in" data-fragment-index="9" style="width:80%; float:left;">
 <h4 style="margin: 1em 0 0.1em 0;">
     'Validation' beyond validation</h4>
 <ul>
@@ -137,7 +152,7 @@ style="margin-bottom:-9em;">
 <li>Comparing two simulators</li>
 </ul>
 </div>
-<div align="right" class="fragment fade-in" data-fragment-index="6" style="width:20%; float:left;">
+<div align="right" class="fragment fade-in" data-fragment-index="10" style="width:20%; float:left;">
     <p style="padding:70px 0;"><i>Example later on</i><a href="#/simulator-comparison"> <img src='./images/external-link-alt-solid.svg' style="height:0.9em;"></a>
 </p>
 
@@ -201,7 +216,7 @@ style="margin-bottom:-9em;">
 </div>
 <div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
     class="fragment fade-in-then-semi-out" data-fragment-index="13">
-    <img src='./images/NetworkUnit_Flowchart_final.png'>
+    <img src='./images/NetworkUnit_Flowchart_10.png'>
 </div>
 </div>
 </section>
@@ -212,12 +227,12 @@ style="margin-bottom:-9em;">
 <body onload="PR.prettyPrint()">
 
 <section data-transition="slide">
-<h3 style="margin-bottom: 0.1em;">Minimal code example &nbsp &nbsp &nbsp <span style="font-size:0.7em">showing the dependency of spike intervals on firing rate</span></h3>
+<h3 style="margin-bottom: 0.1em;">Minimal code example &nbsp &nbsp &nbsp <span style="font-size:0.7em">dependency of spike intervals on firing rate</span></h3>
 <pre class="prettyprint lang-py">
     import quantities as pq
     from networkunit import models, tests, scores
 
-    ## Compare correlations of Poisson activity with different rates
+    ## Compare inter-spike-intervals of Poisson activity with different rates
 
     # Define models
     model_A = models.stochastic_activity('model A', rate=5*pq.Hz)
@@ -263,6 +278,12 @@ style="margin-bottom:-9em;">
 <!-- ########### 6.2 ###########  -->
 <section data-transition="slide">
 <h3 style="margin-bottom: 0.4em;">Application: validation workflow for simulator comparison</h3>
+<img style="height:22em;" src='images/C-Spinnaker_rasterplot.png'>
+</section>
+
+<!-- ########### 6.2 ###########  -->
+<section data-transition="slide">
+<h3 style="margin-bottom: 0.4em;">Application: validation workflow for simulator comparison</h3>
 <h6 style="font-weight: 350; font-size: 0.85em;"> Validation tests aid the model (implementation) development process.</h6>
 <img src='images/iteration1_distcomp_bicolor.png'>
 </section>
@@ -286,7 +307,7 @@ style="margin-bottom:-9em;">
 <h3>Outlook</h3>
 <div align="left" class="fragment fade-in" data-fragment-index="1" style="width:70%; float:left;">
     <ul style="padding-top:70px;">
-    <li> Network-level validation tests on the basis of wave dynamics </li>
+    <li> Network-level validation tests on the basis of spatial dynamics </li>
     </ul>
 </div>
 <div align="right" class="fragment fade-in" data-fragment-index="1" style="width:30%; float:left;">
@@ -298,27 +319,38 @@ style="margin-bottom:-9em;">
 
 <div align="left" class="fragment fade-in" data-fragment-index="2" style="width:70%; float:left;">
     <ul style="padding-top:20px;">
-        <li> There are further specialized neuroscientific validation test packages <br> (NeuronUnit, HippoUnit, MorphoUnit, etc.) </li>
+        <li> Harmonization with other specialized validation test packages <br> (NeuronUnit, HippoUnit, MorphoUnit, etc.) </li>
     </ul>
 </div>
 <div align="right" class="fragment fade-in" data-fragment-index="2" style="width:30%; float:left;">
-    <img src='./images/NeuronUnit-logo.png' style="height:1.7em;padding-top:25px;">
+    <img src='./images/NeuronUnit-logo.png' style="height:1.4em;padding-top:25px;">
 </div>
 
-<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:70%; float:left;">
+<div align="left" class="fragment fade-in" data-fragment-index="3" style="width:72%; float:left;">
     <ul style="padding-top:50px;">
-        <li> Integration of tests and scores with the HBP Valiadtion Framework </li>
+        <li> Integration of tests and scores with the HBP Valiadation Framework </li>
     </ul>
 </div>
-<div align="right" class="fragment fade-in" data-fragment-index="3" style="width:30%; float:left;">
-    <img src='./images/hbp-logo.jpg' style="height:3.5em;padding-top:15px;">
+<div align="right" class="fragment fade-in" data-fragment-index="3" style="width:28%; float:left;">
+    <img src='./images/hbp-logo.jpg' style="height:3.5em;padding-top:15px;padding-left:2em;">
 </div>
 </section>
 
 <!-- ########### 7 ###########  -->
 <section data-transition="slide">
+<h3>Take-aways</h3>
+    <ul style="padding-top:0px;font-size:1.1em;">
+    <li class="fragment fade-in" style="padding-top:2em;"> Validation is important.</li>
+    <li class="fragment fade-in" style="padding-top:2em;"> NetworkUnit and other tools exist to help.</li>
+    <li class="fragment fade-in" style="padding-top:2em;"> Run more than one test, <br>and validation against other models is an option.</li>
+    </ul>
 
-<div style="float:left; font-size:1.2em; width:30%;">
+</section>
+
+<!-- ########### 7 ###########  -->
+<section data-transition="slide">
+
+<div style="float:left; font-size:1.1em; width:30%;">
 <p><u>Thanks to all collaborators</u><p>
 <ul style="list-style-type:none;">
 <li> Michael von Papen </li>
@@ -334,7 +366,7 @@ style="margin-bottom:-9em;">
 </ul>
 </div>
 
-<div style="text-align:right; float:right; font-size:1em; width:40%;">
+<div style="text-align:right; float:right; font-size:1em; width:38%;">
     <p style="float:center;"><u>Related posters</u></p>
     <ul style="list-style-type:none;">
     <li><b>P71</b> on simulator comparison</li>
@@ -359,7 +391,7 @@ style="margin-bottom:-9em;">
 </div>
 </div>
 
-<div style="float:right; width:67%; font-size:1em;">
+<div style="float:right; width:67%; font-size:0.9em;">
 <p><u>Further reading</u>
 <!-- <ul style="list-style-type:none;"> -->
 <ul style="margin-top:-0.8em">
@@ -379,7 +411,7 @@ Concepts of Validation</a></li> -->
 </div>
 
 <div style="float:left; width:100%; font-size:1em; margin-top: -1em;">
-<div style="float:right;">
+<div style="float:right; margin-right:2em;">
 <p>
 Slides @ <a href="https://rgutzen.github.io/publications/slides/19_INCF/">rgutzen.github.io/publications/slides/19_INCF/</a>
 </p>
@@ -392,6 +424,12 @@ Slides @ <a href="https://rgutzen.github.io/publications/slides/19_INCF/">rgutze
 
 </section>
 
+
+<!-- ########### Backup 1 ###########  -->
+<section id="backup1" data-transition="slide">
+    <h3 style="margin-bottom: 0.4em;">Simulation Comparison: spatio-temporal patterns</h3>
+    <img src='images/spatio-temporal-patterns.png'>
+</section>
 
     </div>
   </div>

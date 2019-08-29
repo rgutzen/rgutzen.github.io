@@ -583,140 +583,75 @@ pre.editor-colors .fold-marker:after {
 }
 </style>
         </head>
-        <body class='markdown-preview' data-use-github-style><ul>
-<li>15min Talk</li>
-<li>5min Discussion</li>
-<li>20min Panel Discussion</li>
-<li>reveal.js slides</li>
-</ul>
-<h3 id="example">Example</h3>
-<ul>
-<li>Math. Model: Newton mechanics</li>
-<li>System oI: Appletree</li>
-<li>Simulation: pygame</li>
-<li>Verification: Checking code, using UnitTests</li>
-<li>Data: falling time for apples of different height</li>
-<li>Test: Throwing height test</li>
-<li>BaseTest: Throwing test (angle X)</li>
-<li>Capability: ProducesMovement</li>
-<li>Score: Effect Size</li>
-</ul>
-<h1 id="evaluating-neural-network-models-within-a-formal-validation-framework">Evaluating neural network models within a formal validation framework</h1>
+        <body class='markdown-preview' data-use-github-style><h1 id="evaluating-neural-network-models-within-a-formal-validation-framework">Evaluating neural network models within a formal validation framework</h1>
 <ul>
 <li>My talk will be about evaluating neural network models within a formal validation framework. This is work done by my colleges and me at the INM-6, at the research center Jülich.</li>
 <li>More specifically, I will talk about the concept and terminology of validation, how to employ these concepts in the form of a software tool, and show its practical application.</li>
 </ul>
-<h2 id="1-1min">1) (1min)</h2>
-<h3 id="what-can-we-learn-from-models">What can we learn from models?</h3>
-<ul>
-<li>A model is an abstract formal description of a system, able to generate predictions</li>
-<li>What can we learn from models about the system it aims to describe?</li>
-<li>With models we can only learn by inductive inference (Hume: Induction problem)</li>
-<li>Thus, with modeling we can't and don't seek truth, but usefulness<h3 id="how-can-we-learn-from-models">How can we learn from models?</h3>
-</li>
-<li>The quality of a model is only determined of the accuracy of its predictions</li>
-<li>Validation quantifies the prediction accuracy, and thus presents a measure of the quality i.e. the usefulness of a model</li>
-</ul>
-<p>::: notes</p>
+<h2 id="1-what-can-we-learn-from-models-1min">1) What can we learn from models? (1min)</h2>
 <ul>
 <li>Let's start with models. What are they? What can we learn from them?</li>
-<li>Models are abstract and simplified descriptions of some system of interest. This often is an entity based in reality like a specific brain area, but can also be more abstract like a perceptron. In any case the model should be able to formulate predictions for this system.</li>
+<li>Models are abstract and simplified descriptions of some system of interest. This often is an entity based in reality like a specific brain area, but can also be more abstract like a perceptron. In any case the model should be able to formulate predictions about this system.</li>
 <li>And if a model does this very accurately we might want to infer our knowledge of the model to the system of interest.</li>
 <li>This would be called inductive inferences. And although, this is a good practice in science it does not imply that we uncovered some truth about the system, it just means that we found a useful way to describe it.</li>
 <li>But how to find out which is a useful description or the most useful?</li>
-<li>The relevant attribute to evaluate usefulness is the model's prediction accuracy. How well it can describe (new) behavior of the system.</li>
-<li>The process of evaluating the prediction accuracy quantitatively is called validation.
-:::</li>
+<li>The relevant attribute to evaluate usefulness is the model's prediction accuracy ,meaning well it can describe (new) behavior of the system.</li>
+<li>The process of evaluating the prediction accuracy quantitatively is called validation.</li>
 </ul>
 <h2 id="2-how-can-we-learn-from-models-1min">2) How can we learn from models? (1min)</h2>
-<ul>
-<li>Validation evaluates the consistency of the predictive simulation outcome with the system of interest, within the realm of its intended use.</li>
-</ul>
-<p>::: notes</p>
 <ul>
 <li>Let's define validation in the broader modeling context.</li>
 <li>Here you see an adapted version of a schematic introduced in 1979 by the Society of modeling and simulation, and which has been used and advanced in various fields.</li>
 <li>You see the key components of the model environment. On the top there is the system of interest, which is a specific and bounded domain the modeler aims to describe. This could be, to pick a very simple example, a ripe apple tree.</li>
 <li>By analysis of this system and some theoretical considerations, a conceptual mathematical model of this system can be formulated. As for example Newton did.</li>
-<li>The mathematical model can have already some analytical implications which can be directly be confirmed with system of interest.</li>
-<li>However, the interesting part in the schematic is the explicit separation of the model in a mathematical one and an executable one.</li>
+<li>The interesting part in the schematic is the explicit separation of the model in a mathematical one and an executable one.</li>
 <li>The executable model is the part of the model which can run simulations and thus make predictions. This is typically done by an implementation in either software or hardware.</li>
 <li>For Newton's laws, the implementation would be represented in a standard physics engine. The correctness of this translation from mathematical formulas into some code has to be checked by a process called verification.</li>
 <li>And only if an executable model is a verified implementation, a subsequent validation step can actually make sense.</li>
 <li>The validation directly compares the model predictions in form of a simulation against observations of the system of interest.</li>
 <li>And when they match, the model proves to be useful.</li>
-<li>This way validation enables the evaluation and comparison of models, and is thus indispensable for rigorous and reproducible (simulation) science.
-:::</li>
+<li>This rather straight forward validation workflow enables the evaluation and comparison of models, and is thus indispensable for rigorous and reproducible simulation science.</li>
 </ul>
-<h2 id="3-why-is-this-not-a-trivial-problem-4min">3) Why is this not a trivial problem? (4min)</h2>
-<h3 id="did-the-test-got-a-score-what-now">Did the test, got a score, what now?</h3>
+<h2 id="3-aspects-of-validation-4min">3) Aspects of validation? (4min)</h2>
 <ul>
-<li>A validation score is a quantitative measure of agreement</li>
-<li>Any single score can never reflect the entire range of features, environments, and statistics</li>
-<li>The interpretation depends on the model's intended use<h3 id="bottom-up-vs-top-down">Bottom-up vs. Top-down</h3>
-</li>
-<li>Validation of small scale elements does not entail agreement on larger scales!</li>
-<li>Validation on large scales does not entail agreement on small scales!</li>
-<li>-&gt; Single-cell and network-level validation are complementary.<h3 id="validation-beyond-validation">'Validation' beyond validation</h3>
-<ul>
-<li>compare version of same model (for development, or quantifying influence of small changes)</li>
-<li>compare to already validated model</li>
-<li>compare simulators</li>
-</ul>
-</li>
-</ul>
-<p>::: notes</p>
-<ul>
-<li><p>Ok, in this framework, the workflow seems rather straight-forward: conceive and describe a (mathematical) model from observations and theory, implement it as an executable code, and compare the simulation outcomes to new observations.</p>
-</li>
-<li><p>However, along the line of this basic workflow there are exceptions and additional aspects to consider which might become more relevant, the more complex the modeling and validation scenario becomes.</p>
-</li>
-<li><p>The structure of the any corresponding software tool to help with the validation workflow therefore should also reflect these aspects and be versatile enough to be able to adapt to the challenges of specific workflows.</p>
-</li>
-<li><p>I will briefly mention 3 points which illustrate that validation is not a trivial problem.</p>
-</li>
-<li><p><em>1)</em> Did the test, got a score, what now?</p>
-<ul>
-<li>The outcome of a validation test is a score. This score quantifies how to update the credibility we ascribe to the model.</li>
-<li>What the score exactly is and means depends on the chosen statistic.</li>
-<li>However, a single test and a single statistic can never evaluate all the aspects of the model over the entire domain of interest. This has to be kept in mind when interpreting the result.</li>
+<li>However, along the line of this basic workflow there are exceptions and additional aspects to consider which might become more relevant, the more complex the modeling and validation scenario becomes.</li>
+<li>The structure of the any corresponding software tool to help with the validation workflow therefore should also reflect these aspects and should be versatile enough to be able to adapt to the challenges of specific workflows.</li>
+<li>I will briefly mention 3 points which illustrate that validation is not a trivial problem.</li>
+<li><em>1)</em> Did the test, got a score, what now?<ul>
+<li>First, assume we performed a validation test and got a result, what now?</li>
+<li>The outcome of a validation test is called a score. This score quantifies how much credibility we can ascribe to the model.</li>
+<li>However, a single test and a single statistic can never evaluate all the aspects of the model over the entire domain of interest.</li>
 <li>Thus generally, one should apply many different tests, evaluating different features, and using different statistical measures.</li>
-<li>This also means, that a validation score is generally not a pass-or-fail assessment. This interpretation step highly depends on the intended use of the model (and also uncertainties of data and model). In the ideal case the modeler should formulate a priori an 'acceptable agreement', a range in which the score should lie to consider the test being passed.</li>
-<li>To give an example. When simulating a simple non-stationary Poisson process to describe some experimental dataset, a test considering the spike-train distances would probably pass when the focus and the modeler's intention was on rate coding. However, when the modeler was instead interested in latency coding, the same test and the same score would be interpreted as the model not being accurate enough. And even if the exact spike times were not of interest, another test could reveal a discrepancy invisible to the first test.</li>
+<li>This also means, that a validation score is generally not a pass-or-fail assessment. This interpretation step from the quantitative score to a pass-or-fail statement highly depends on the intended use of the model. In the ideal case the modeler should formulate a priori an 'acceptable agreement', a range in which the score should lie to consider the test being passed.</li>
+<li>To give an example. When testing a spiking model against a dataset. A test focusing on the instantaneous rate might show a good agreement. However, if the modeler was actually interested in the exact spike times, the corresponding test might be considered failed. And even if the exact spike times were not of interest, an additional test might reveal a discrepancy of the model that is invisible to the rate test, for example a spiking regularity test.</li>
 <li>[analogy in software: easy combination of test and score classes to build a range of tests]</li>
 </ul>
 </li>
-<li><p><em>2)</em> Approaches: Bottom-up vs. Top-down</p>
-<ul>
+<li><em>2)</em> Approaches: Bottom-up &amp; Top-down<ul>
 <li>In many engineering scenarios, the typical approach is to validate the elementary structures and then iteratively build up to the validation of the larger system. However, this is generally not possible in neuroscience. This has several reasons.</li>
 <li>On the model side, the relations between scales of ion-channels, neurons, networks, and behavior are very complex and often unknown.</li>
 <li>On the experimental side, corresponding multi-scale data is typically not available.</li>
-<li>And additionally, the parameter regime of validation tests of e.g. single-cell does not necessarily reflect the relevant parameter space within the network dynamic.</li>
-<li>Thus, having a well validated single-cell model does not directly translate to accurate dynamics on the network level. And the other way around, inferring single-cell validation from network-level validation also does not work, as has been shown for example by Potjans &amp; Diesmann, who demonstrated that large scale network dynamics can be accurately modeled by networks of simple LIF neurons, which are clearly not an accurate model.</li>
+<li>And additionally, the parameter regime of validation tests of e.g. single-cell does not necessarily reflect the relevant parameter space they populate within the network dynamic.</li>
+<li>Thus, having a well validated single-cell model does not directly translate to accurate dynamics on the network level. And the other way around, inferring single-cell validation from network-level validation also does not work, as has been shown for example by Potjans &amp; Diesmann, who demonstrated that large scale network dynamics can be accurately modeled by networks of simple LIF neurons, which is not a very biological detailed model.</li>
 <li>[analogy in software: ??]</li>
 </ul>
 </li>
-<li><p><em>3)</em> 'Validation' beyond validation</p>
-<ul>
+<li><em>3)</em> 'Validation' beyond validation<ul>
 <li>Besides a sound conceptual framework, there are several considerations to face in practice when working with real data.</li>
 <li>Often you would like to validate a model, but lack an appropriate dataset to validate against, or have too little data to come to a strong conclusion. In these cases it is very helpful to instead validated against the simulation outcome of a more trusted model.</li>
-<li>Such comparisons, although being practically identical to common validation testing, are not actual validation tests as they don't evaluate the predictiveness with regards of the system of interest. But however, they can gather evidence that a model is reasonable, and identify and quantify limitations and deviation from other models.</li>
-<li>What can also be helpful, is to compare a model not to another model but to another version of the same model. This can be used to evaluate incremental changes in the model development or to quantify the influence of small tweaks in the model to the network activity, like changing the ODE solver, or the underlying neuron model.</li>
+<li>Such comparisons, although being practically identical to common validation testing, are not actual validation tests as they don't evaluate the predictiveness with regards to the system of interest. But however, they can gather evidence that a model is reasonable, and identify and quantify limitations and deviation from other models.</li>
+<li>What can also be helpful, is to compare a model not to another model but to another version of the same model. This can be used to evaluate incremental changes in the model development or to quantify the influence of small tweaks in the model to the network activity, like changing the solver for the ordinary differential equations, or the underlying neuron model.</li>
 <li>One of such changes could also be the choice of the simulator engine which is used to run the model. As long as the simulators and the implementation is correct, the results should be identical, right? And if not, at least one simulator is less useful. So, this comparison could practically 'validate' simulators.</li>
 <li>I will come back to this scenario and show a study of such a simulator comparison.</li>
 <li>[analogy in software: M2M Test class]</li>
 </ul>
 </li>
-<li><p>So how should a software tool look like which is able to facilitate such various validation workflows, and also help to ensure their replicability?
-:::</p>
-</li>
+<li>So how could a software tool look like which is able to facilitate such various validation workflows, and also help to ensure their replicability?</li>
 </ul>
 <h2 id="4-developing-a-network-level-validation-tool-4min">4) Developing a network-level validation tool (4min)</h2>
-<p>::: notes</p>
 <ul>
-<li>The first step when building a software tool is to check whether there exists already something like it. And indeed there is. The python package SciUnit provides a general framework for validating scientific models. So the tool we build for network-level validation, NetworkUnit, directly builds on that.</li>
+<li>The first step when building a software tool is to check whether there exists already something like it. And indeed there is. The python package SciUnit provides a general framework for validating scientific models. So the tool we build for network-level validation, NetworkUnit, directly builds on top of that.</li>
 <li>Furthermore it uses the basic electrophysiology analysis methods provided by open source project Elephant.</li>
-<li>So to be clear, the underlying structure is largely provided by the SciUnit package.</li>
 <li>The basic ingredients are the implemented model, and the experimental data.</li>
 <li>The model is represented in a class object, which is able to run a simulation. If Newton would have been into coding, this is where he would have written his formulas to test his theory.</li>
 <li>In the most general case, the data may come in any form, as long as the associated test knows how to deal with it.</li>
@@ -724,92 +659,88 @@ pre.editor-colors .fold-marker:after {
 <li>The test is as well a class object, which can compute the corresponding velocity values from the model simulation, and compare the two to generate the validation score object.</li>
 <li>Beside the quantitative validation outcome, the score object also has all the metadata from the model, the test, and the data. This enables not only the interpretation of the result but also its reproducibility.</li>
 <li>Besides aiding reproducibility, another design principle here is modularity. So the type of score is not hardcoded into the test, but attached via a ScoreType object (This could be for example an effect size, or a student's t test, or something else).</li>
-<li>Just as well as any parameter settings of the test.</li>
-<li>Consequently, there is an abstract test class implementation which is agnostic about the score type and the parameter settings, and therefore reusable for other test variation without the need to rewrite any code pieces.</li>
+<li>Similarly, any parameter settings are set manually for the test.</li>
+<li>Consequently, there exists an abstract test class implementation which is agnostic about the score type and the parameter settings, and therefore reusable for other test variation without the need to rewrite any code pieces.</li>
 <li>In the example of the apple this would be the falling velocity test. However, some scientist might also want to test the apple's velocity when thrown horizontally. Such a test has obviously some similarities and uses some of the same calculations as the falling test. Therefore, in order to code no calculation twice, there is then a another parent test class which implements the more general case of apple movement with arbitrary initial conditions.</li>
-<li>To give another example for this modularity from network neuroscience. One typical base test would calculate correlations from neural activity, a derived child test could either directly compare the distribution the correlation coefficients, or could generate a corresponding weighted graph. This graph test would then be parent to various tests of graph centrality measures.</li>
-<li>Finally, this framework also ensures that a test against a particular model actually makes sense, and the model is able to describe the property that was measured in the dataset. This is realized by a capability class.</li>
-<li>Here, the capability the test makes use of is the movement of the apple, thus Newton's model simulation should have the capability to produce a movement to be evaluated.</li>
-<li>This modular structure is indeed versatile enough to also incorporate the validation practice of comparing two models. This requires only one additional inheritance of a dedicated test class. This way, validation tests with experimental data and comparison tests with models can be formally equivalent.</li>
-<li>So, in our apple example, Newton's model can be directly compared to a relativistic model of motion, and evaluate the domain in which Newton's model has a sufficient accuracy, without needing to measure very fast apples.
-:::</li>
+<li>To give another example for this modularity from network neuroscience. One typical base test would calculate correlations from neural activity, a derived child test could either directly compare the distribution the correlation coefficients, or could generate a corresponding weighted graph. This graph test class would then be parent to various tests of graph centrality measures.</li>
+<li>Finally, this framework also ensures that a test against a particular model actually works, and the model is able to describe the property that was measured in the dataset. This is realized by a capability class.</li>
+<li>Here, the capability the test makes use of would be the movement of the apple, thus Newton's model simulation should have the capability to produce a movement to be evaluated.</li>
+<li>This modular structure is indeed also versatile enough to also incorporate the validation practice of comparing two models. This requires only one additional inheritance of a dedicated test class. This way, validation tests with experimental data and comparison tests between two models can be formally equivalent.</li>
+<li>So, in our apple example, Newton's model could be directly compared to a relativistic model of motion, and evaluate the domain in which Newton's model has a sufficient accuracy, without needing to measure very fast apples.</li>
 </ul>
 <h2 id="5-minimal-code-example-1min">5) Minimal code example (1min)</h2>
-<p>:::notes</p>
 <ul>
 <li>How does this actually look like in code?</li>
 <li>Here I show a simple example for comparing the inter-spike-interval distributions in three versions of a Poisson-process network model with different average firing rates.</li>
 <li>Such basic models and tests are provided by NetworkUnit, but can be expanded on by the user.</li>
-<li>The models are initialized.</li>
+<li>In these three line the three models are initialized with rates 5, 15, and 45 Hz.</li>
 <li>The test class is specified as child class of a more general test, and the model-to-model class.</li>
 <li>As a score statistic we choose an Kolmogorov-Smirnov Distance, and set the parameters as far as necessary.</li>
 <li>The validation is then performed by calling the judge function of the test, which returns the score (or here scores).</li>
-<li>And as the score here illustrate you see that larger the firing rate difference, the larger the ISI difference, and the score for the change from 5 to 15Hz is about the same as the change from 15 to 45Hz.
-:::</li>
+<li>And as you would expect the score here illustrates that the larger firing rate difference, also shows the larger the ISI difference.</li>
+<li>But the tripeling of the firing rate from 5 to 15Hz shows about the same as the change in the inter-spike intervals as the tripeling from 15 to 45Hz.</li>
 </ul>
 <h2 id="61-application-simulator-comparison-4min">6.1) Application: Simulator comparison (4min)</h2>
-<p>:::notes</p>
 <ul>
 <li>Ok, let's move to a less trivial example, and apply the validation workflow with NetworkUnit to compare simulators.</li>
 <li>This is in the context of a reproducibility study of the 'Polychronization' model, published in 2006 by Izhikevich.</li>
-<li>This model is interesting for at least two reasons. First, it produces a rich network dynamics, e.g. spatio-temporal organized and repeating spiking activity. Second, the actual implementation of the simulation was published alongside the paper, which only made it possible to start reproducing the study.</li>
-<li>A first paper by Pauli and Weidel, focuses on an exact reproduction of the original simulation, written in custom C code, with the simulator engine NEST. Following this example they discuss the model specifications which are necessary to enable such an exact reproduction.</li>
+<li>This model is interesting for at least two reasons. First, it produces rich network dynamics, e.g. spatio-temporal organized and repeating spiking patterns. Second, the actual implementation of the simulation was published alongside the paper, which only made it possible to start reproducing the study.</li>
+<li>A first paper by Pauli and Weidel, focuses on an exact reproduction of the original simulation, which was written in custom C code, with the simulator engine NEST. Following this example they discuss model specifications which are necessary to enable such an exact reproduction.</li>
 <li>In parallel we employ a reproduction of the model on the neuromorphic hardware system SpiNNaker.</li>
-<li>Since, underlying computation of the neuromorphic hardware are substantially different from a conventional computer, there is no way to achieve a bitwise reproduction as between software simulators. Therefore, the evaluation of the simulation on SpiNNaker requires validation techniques.</li>
-<li>This work is split into two papers. One focusing on the implementation details relevant for reproducibility, and corresponding verification techniques. And the other focuses on the evaluation of the simulation out in comparison to the original results.</li>
-<li>I will briefly show, what we learned from this comparison.
-:::</li>
+<li>Since, the underlying computation of the neuromorphic hardware is substantially different from a conventional computer, there is no way to achieve a bitwise reproduction as would be between software simulators. Therefore, the evaluation of the simulation on SpiNNaker requires validation techniques.</li>
+<li>This work is split into two papers. One focusing on the implementation details relevant for reproducibility, and corresponding verification techniques. And the other focuses on the evaluation of the simulation in comparison to the original results.</li>
+<li>I will briefly show, what we learned from this comparison.</li>
 </ul>
 <h2 id="62-application-simulator-comparison">6.2) Application: Simulator comparison</h2>
-<p>:::notes</p>
 <ul>
-<li>We employed validation tests while working on the model implementation, and used the results not to calibrate but to guide the development process.</li>
-<li>Here you see the illustration of three tests, comparing the distributions of three different features of the network activity, firing rates, spiking regularity, and correlations.</li>
-<li>The difference between the distributions (blue for the original C simulation, and green for the SpiNNaker simulation), is quantified by an effect size.</li>
-<li>Each row is one iteration on the SpiNNaker implementation. In the second and third row, we improved on the underlying ODE solver, and used the validation test results as feedback if the model improvements had the expected effects.</li>
-<li>However, just tweaking the ODE solver doesn't lead to a satisfactory agreement here. So, further investigation of the model dynamics lead to use a finer time resolution and a better threshold detection.
-:::</li>
+<li>We started of by naively porting the model to the hardware using its default settings, and then improving on the underlying ODE solver.</li>
+<li>Here you see the spiking activity of the first three iterations of the SpiNNaker model implementation in shades of green, and the original C simulation in blue.</li>
+<li>By eye, you could already see that the activity resembles the orginal more and more with each iteration.</li>
+<li>However, latest for the third iteration it becomes hard to judge whether by visual inspection whether this is already a good reproduction of the model.</li>
+<li>Therefore, we employed validation tests already while working on the model implementation, and used the results not to calibrate but to guide the development process.</li>
 </ul>
 <h2 id="63-application-simulator-comparison">6.3) Application: Simulator comparison</h2>
-<p>:::notes</p>
 <ul>
-<li>Although, the finer integration steps achieved a good agreement for the firing rates and the correlation coefficients, the match for the regularity LV regularity measure became worse.</li>
-<li>This is particularly interesting, since one might assume that a good agreement of measures of more statistical complexity, like the correlation coefficient which takes into account the interplay between pairs of neurons, would entail the agreement of single neuron measures.</li>
-<li>However, this example nicely shows that there is no such hierarchy of failure.
-:::</li>
+<li>Here you see the illustration of three tests, comparing the distributions of three different features of the network activity, firing rates, spiking regularity measured by the local coefficient of variation, and correlations.</li>
+<li>The difference between the distributions (blue for the original C simulation, and green for the SpiNNaker simulation), is quantified by an effect size.</li>
+<li>Each row is one iteration on the SpiNNaker implementation. In the second and third row, we improved on the underlying ODE solver, and used the validation test results as feedback if the model improvements had the expected effects.</li>
+<li>So with these test you can assess, that just tweaking the ODE solver doesn't lead to a satisfactory agreement for the firing rate and the correlation coefficients. Only the LV regularity measure shows a good match.</li>
+<li>So, further investigation of the model dynamics lead to use a finer time resolution and a better threshold detection.</li>
 </ul>
 <h2 id="64-application-simulator-comparison">6.4) Application: Simulator comparison</h2>
-<p>:::notes</p>
+<ul>
+<li>Introducing finer integration steps, switches the picture. Now, there is a fairly good agreement for the firing rates and the correlation coefficients, while the match for the LV measure became worse.</li>
+<li>This is particularly interesting, since one might assume that a good agreement of measures of more statistical complexity, like the correlation coefficient which takes into account the interplay between pairs of neurons, would entail the agreement of single neuron measures, like the LV.</li>
+<li>However, this example nicely shows that there is no such hierarchy of failure.</li>
+</ul>
+<h2 id="65-application-simulator-comparison">6.5) Application: Simulator comparison</h2>
 <ul>
 <li>But thanks to this revealed discrepancy in the LV measures we became aware of a shortcomming in the implementation of the threshold crossing detection.</li>
 <li>This fixed, in the final iteration of the comparison we also compared additional measures to get a more complete evaluation of the quality of the SpiNNaker simulation, the Inter-Spike-Intervals, the Rate Correlations, and the eigenvalue distribution for the rate correlation matrix.</li>
-<li>From this comparison it is evident that although SpiNNaker can qualitatively reproduce the simulation results, a exact reproduction was not possible and there are still small discrepancies in the simulations, which are here most evident in the slightly higher firing rates and correlations in the SpiNNaker correlation.</li>
+<li>From this comparison it is evident that although SpiNNaker can qualitatively reproduce the simulation results, a exact reproduction was not possible and there are still small discrepancies in the simulations, which are here most evident in the slightly higher firing rates and correlations in the SpiNNaker simulation.</li>
+<li>As a short note: even though the discrepancies are small, they can have a potentially large influence on the spatio-temporal patterns (or 'polychonous groups') of the model.</li>
 <li>The big advantage of having quantitative validation scores like this. That they can be used as reference, when the model is run on the next version of SpiNNaker, or another model is being reproduced.</li>
-<li>I hope this application example illustrated the upsides of using validation techniques for quantitative model evaluation, even beyond the standard scenario.
-:::</li>
+<li>This application example illustrates the upsides of using validation techniques for quantitative model evaluation, even beyond the standard scenario.</li>
 </ul>
 <h2 id="6-outlook-1min">6) Outlook (1min)</h2>
-<ul>
-<li>Network-level validation tests on the basis of wave dynamics</li>
-<li>There are further specialized validation test packages (NeuronUnit, HippoUnit, MorphoUnit, etc.)</li>
-<li>Integration of tests and scores with the HBP Valiadtion Framework</li>
-</ul>
-<p>::: notes</p>
 <ul>
 <li>Ok, taking a step back now I'd like to put this work in some more context.</li>
 <li>So far, the tests of NetworkUnit mainly focus on single and pairwise measures of neuron activity to characterize the network dynamics. To provide another angle to describe the network activity we are currently working methods to characterize network activity in terms of wave dynamics, such as you see here in a LFP recording of an implanted electrode array.</li>
 <li>Also I'd like to mention that besides NetworkUnit there are similar specialized validation packages in development. Most prominently NeuronUnit for single-cell validation, but also HippoUnit for Hippocampus models, MorphoUnit to test Morphologies, and others.</li>
-<li>To make validation more collaborative, the individual validation workflows are to be integratable with the in development Validation Framework of the Human Brain Project, which basically provides a searchable database of models, tests, and scores.
-:::</li>
+<li>To make validation more collaborative, the individual validation workflows are to be integratable with the in-development Validation Framework of the Human Brain Project, which basically provides a searchable database of models, tests, and scores.</li>
 </ul>
-<h2 id="end-1min">End (1min)</h2>
-<p>:::notes</p>
+<h2 id="6-take-aways-1min">6) Take-aways (1min)</h2>
 <ul>
-<li>Finally, I thank you for your attention and all the wonderful collaborators who contributed to this work.</li>
-<li>And if you would get deeper into this topic I would like to refer you to my poster on the simulator comparison study. And there is also a poster on the SciUnit Software.</li>
-<li>I also encourage you to check out the software tools directly. There is a lot of documentation and tutorials to help you get started.</li>
-<li>Thank you again!
-:::</li>
+<li>Finally, to wrap this up, I'll give you the three main point you should take away from this talk.</li>
+<li>1) Validation is important! Simulation without quantification is just guesswork. And validation makes modeling and simulations science quantifiable and also more reproducible.</li>
+<li>2) NetworkUnit and other tools exists to help. Use them.</li>
+<li>3) When you run validation tests, please run more than just one. And even if you don't have an appropriate data set, validate against another model.</li>
+</ul>
+<h2 id="end">End</h2>
+<ul>
+<li>Thank you for your attention and I thank all the wonderful collaborators who contributed to this work.</li>
+<li>If you want to dig deeper into this topic, I would like to refer you to my poster on the simulator comparison study. And there is also a demo on the SciUnit Software. Both, this evening.</li>
+<li>Thank you again!</li>
 </ul>
 <h2 id="discussion-notes">Discussion notes</h2>
 <ul>
