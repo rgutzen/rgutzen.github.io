@@ -2,9 +2,9 @@
 layout: post
 title: comparing models and experimental datasets with NetworkUnit
 subtitle:
-tags: [validation, computational, essay]
+tags: [validation, computational]
 <!-- bigimg: -->
-imgage:
+image:
 share_img:
 comments: false
 social-share: true

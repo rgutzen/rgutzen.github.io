@@ -23,9 +23,24 @@ googlefonts: ["Roboto", "Lobster"]
 Today, neuroscience finds itself in a situation where the picture of a neuron's structure is fairly detailed and its working mechanisms are relatively well understood. <br>
 This very vaguely formulated introduction sentence already hints at the limitations of our current knowledge. Many of the intricate small-scale mechanisms are still to be understood, and there are still heavy disputes on aspects of their function. One example of an open disagreements would be the rate-coding vs. temporal-coding debate. So although there exists a whole range of very sophisticated neuron models which can accurately simulate many neuronal functions, there is still plenty of ground to cover on the quest towards a complete understanding of nerve cells. Therefore, I think it is beneficial to also have a look back, at how we arrived at our current knowledge and if there are any lessons to be learned for the future progress. So let's do exactly that and recall some of the influential historic developments which shaped the general view of neurons.
 
-When tracing back neuroscientific developments, we can go far far back into the past. In fact, archaeological findings show that humans practiced neurosurgery as early as 7000 B.C. *LINK*. The first prominent theory of the brain involving the idea of neurons, however, was only formulated come centuries later. The Greek physician Galen (129 - 210) put forward his theory of hydraulic mechanisms in the body, where signals were represented as varying pressure within the hollow neurons. This pressure could in turn produce movement by inflating and deflating muscles just as balloons. This so-called *balloonist* theory was immensely popular for a long time, and was still the prevalent neuronal theory until the late 17th century. Also Rene Descartes was an outspoken balloonist, and *...*
+<!-- Balloons
+Dispute?
+Take away? -->
+When tracing back neuroscientific developments, we can go far far back into the past. In fact, archaeological findings show that humans practiced neurosurgery as early as 7000 B.C. *LINK*. The first prominent theory of the brain involving the idea of neurons, however, was only formulated some centuries later. The Greek physician Galen (129 - 210) put forward his theory of a hydraulic mechanisms in the body, where signals were represented as varying pressure within the assumed hollow neurons. This pressure could in turn produce movement by inflating and deflating muscles just as balloons. This so-called *balloonist* theory was immensely popular for a long time, and was still the prevalent neuronal theory until the late 17th century. Also Rene Descartes was an outspoken balloonist, and *...*
 As silly as such a theory might sound in hindsight, considering the limited technological possibilities and lack of some fundamental biological insights, it is within it self an absolutely plausible idea. Actually, it is very much doable to build some simple moving machine based on such hydraulic mechanisms. *Link to Metropolis?*
 
+Nearly 1500 years later, it was still the dominant theory of how the nervous system operates. Therefore, it may be understandable that it took many years and a range of contradictory experimental findings to finally refute this neural model which was the general understanding for such a long time. *find more sources* While the evidence against this theory accumulated, the belief in balloon-neurons grew weaker. This, however, left a void in the scientific community of the late 17th century, as there was no opposing theory to take its place. So people were reluctant to let their balloons go.
+However, the key to a new neural theory was already waiting around the corner. In the beginning of the 18th century the discovery and study of electrical phenomena was gaining traction. The most famous of which, although it never happened *citation needed*, was Benjamin Franklin flying a kite with an attached key in a thunderstorm to prove the electric nature of lightning. But it was not until a bright Italian professor took an interest in the emerging topic "medical electricity" and its practice of rubbing frog skin to generate static electricity.
+
+<!-- Frogs
+Animal (Galvani+Students) vs. Metal (Volta) electricity
+Take away: Be open to new evidence -->
+Luigi Galvani, was not predestined for academia. In fact, only a series of fortunate events led him down a path of pioneering a whole new field of science. He was not born into an aristocratic family, but his parents valued education very much and were in the rare financial position of being able to send at least one of their sons to university *check siblings of Luigi*. Luigi, however, had his own plans, and instead wanted to join the church a pursue a religious career. Mr. and Mrs. Galvani, as the responsible parents they were, eventually managed to convince their son to let religion be and inscribe in the university of *???*. So, he graduated in medicine and philosophy, and got a job as lecturer, which paved the way to his later professorship. It might have also helped that he married the daughter of one of his professors, whose position he later overtook.
+According to the legend, we was skinning a frog when an electrical charge from his scalpel jumped over to the frogs exposed leg muscle, causing the leg to kick as if it were alive.
+This surprising observation sparked Galvani's curiosity and led him to postulate his theory of the nervous system which wasn't based on the propagation of pressure but of electric charge.
+*Details of early theory, advantages over balloons?* *When did the word for 'ion' was invented?*
+With his revolutionary discovery Galvani became synonymous with the phenomena of electrical transmission in neurons. Indeed, was it also initially termed 'Galvanism' until later replaced by the tongue-twister 'electrophysiology'. *Later only galvanic cell??*
+And what could have been an explanatory story of curiosity, discovery, insight, and frogs, was only *weakend* by a futile disagreement about the underlying nature of these electric phenomena.
 
 ########################################
 
@@ -49,7 +64,20 @@ This theory war refuted in the late 17th century by various experiments until fi
     * chain of multiple dead and/or alive frogs
     * the effect is based on the increase of electric potential due to injury
     * Valli followed the interpretation of Galvani. Contrary to Galvani he refused to adapt Volta's correct interpretation despite the evidence.
-    * 1803 Giovanni Aldini showed that electricity can be obtained from an ox head. Followed by eel, pigeons, and rabbit batteries
+    * 1803 Giovanni Aldini (Galvani's nephew) showed that electricity can be obtained from an ox head. Followed by eel, pigeons, and rabbit batteries
+
+* Alessandro Volta (1745-1827)
+    * 8 siblings, 5 of which became priests
+    * parents wanted him to study law
+    * on his own he started reading and studying electricity
+    * 1775 invented Electrophor (generate and transport electricity by influence)
+    * invented Volta-pistol (methan based lighter)
+    * 1783 invented Elektroskop to measure voltage, which was also named after him (1861)
+    * 1792 he heard of frog experiment, but with different interpretation. He thought that the frog muscle is just the detector of electric charge collected by contact of different metalls, and not a condensator himself as Galvani thought.
+    * The dispute motivated his later detailed studies of contact electricty which finally led to his invention of the  Voltaic pile, the first battery, in 1800.
+    * profited greatly from his inventions, with numerous awards, honorary position, and fame in the scientific community, even when Napoleon conquered Italy. He even gave him the title of count.
+
+    * In contrast to their followers, Galvani and Volta disagreed respectfully. It was Volta how coined the term 'Galvanism'
 
 ## Reticular theory vs. neuron doctrine
 * Camillo Golgi (1843-1926): developed staining method to contrast soma, axon, and dendrites against the background so they are clearly visible under a microscope (1873)
