@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Robin Gutzen">
+  <meta name="dcterms.date" content="2019-09-26">
+  <title>Slow wave analysis workflow - SP3 2019</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="slides.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ########### Title Slide ###########  -->
+<section id="title-slide" class='title'>
+    <h1 style="margin-bottom: 1.5cm;">Building a workflow for the analysis of slow wave activity across heterogeneous measurement</h1>
+
+    <h5 style="margin-bottom: 0.25cm;"><b>Robin Gutzen</b>, Michael Denker, <br> Guila de Bonis, Elena Pastorelli, Cristiano Capone, Pier Stanislao Paolucci</h5>
+
+    <h6 style="margin-bottom: 2cm;">Institute of Neuroscience and Medicine (INM-6), Research Center Jülich, Germany<br>
+    APE lab, Istituto Nazionale di Fisica Nucleare Rome, Italy</h6>
+
+    <h6>26.09.2019 | SP3-based meeting, <i>Liège</i></h6>
+</section>
+
+<!-- ########### 1 ###########  -->
+<section data-transition="slide" >
+<h2>Slow cortical waves</h2>
+<ul>
+<li> Frequency range: 0.5 - 4 Hz </li>
+<li> Occurs during anesthesia and sleep </li>
+<li> Linked to memory consolidation</li>
+<li> Observable in various species and with various measurements </li>
+</ul><br>
+<div style="width:33%;float:left;">
+<img src='./images/SW_CaIman.png' style="height:8em;"></a>
+</div>
+<div style="width:33%;float:left;">
+<img src='./images/SW_model.png' style="height:8em;"></a>
+</div>
+<div style="width:33%;float:left;">
+<img src='./images/SW_ecog.png' style="height:8em;"></a>
+</div>
+</section>
+
+<!-- ########### 2 ###########  -->
+<section data-transition="slide">
+<h2>The Collaboration of Use Case <i>SGA2-SP3-UC002</i> <br> aka WaveScalEphant</h2>
+<div style="width:50%; float:left;">
+<a href="https://apegate.roma1.infn.it/">
+<img src='./images/APE-logo.png' style="height:3.8em;"></a><br>
+<ul>
+<li class="fragment fade-in" data-fragment-index="1"><b>Data</b><br>
+    Anesthetized mice<br>
+    Calcium Imaging (Ketamin) *<br>
+    ECoG (Isoflurane) **</li>
+<li class="fragment fade-in" data-fragment-index="2"><b>Analysis</b><br>
+    Pipeline for optical and elect. signals<br>
+    as Python and MatLab scripts</li>
+<li class="fragment fade-in" data-fragment-index="3"><b>Model</b><br>
+    WaveScalES spiking model<br>
+    24x24 modules á 1250 neurons<br>
+    implemented in DPSNN and NEST</li>
+</ul>
+<p class="fragment fade-in" data-fragment-index="1" style="font-size:60%;">* F.S. Pavone Lab, LENS, Florende, Italy <br>
+** M.V. Sancez-Vives Lab, IDIBABS, Barcelona, Spain</p>
+
+
+</div>
+<div style="width:50%; float:right;">
+<a href="https://www.fz-juelich.de/inm/inm-6/EN/Forschung/Gruen/artikel.html">
+<img src='./images/fzj-logo.png' style="height:4em;"></a><br>
+<ul>
+<li class="fragment fade-in" data-fragment-index="4"><b>Methods</b><br>
+    Signal processing<br>
+    Statistical testing<br>
+    Validation</li>
+<li class="fragment fade-in" data-fragment-index="5"><b>Implementation</b><br>
+    For data structures & metadata<br>
+    For analysis tools</li>
+<li class="fragment fade-in" data-fragment-index="6"><b>Workflows</b><br>
+    For integrating data analyses<br>
+    and model calibration/validation</li>
+</ul>
+</div>
+</section>
+
+<!-- ########### 3 ###########  -->
+<section data-transition="slide">
+<h2>Why reimplement? What is the added value?</h2>
+<p style="color:#2364a5; font-weight:400; font-size:80%;"><i>We want to get from custom code to general, reusable, curated code and make it available!</i></p>
+<div class="fragment fade-in" data-fragment-index="1" style="width:50%; float:left;">
+    <h4>Workflow aspects</h4>
+<ul>
+    <li>Standard representation of data</li>
+    <li>Metadata enrichment</li>
+    <li>Standard algorithms and implementations</li>
+    <li>Modular, adaptable analysis steps</li>
+    <li>Provenance and explicit parameters settings</li>
+    <li>Generalization of analysis steps</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="width:50%; float:right;">
+    <h4>Added value</h4>
+<ul>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">F</span>indable on neuroinformatics platform</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">A</span>ccessibility of data, results, and workflow</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">I</span>nteroperable linking of data, metadata, and results</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">R</span>eusablity of analysis elements</li>
+    <li>Briding of scales!</li>
+</ul>
+</div>
+</section>
+
+<!-- ########### 4 ###########  -->
+<section data-transition="slide">
+<h2>Open-source tools &nbsp <span style="font-size:80%;">(Python)</span></h2>
+<div class="fragment fade-in" data-fragment-index="1" style="display:flex;justify-content:flex-end;align-items:center;width:100%;margin-bottom:0.5em;">
+<div style="width:30%; float:left;">
+<a href="https://neo.readthedocs.io">
+<img src='./images/neo-logo.png' style="height:2em;"></a>
+</div>
+<div style="width:70%; float:right;">
+<p>
+Data structure to represent electrophysiology data and metadata.<br> Supports a range of file formats. Used by various software.</p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="display:flex;justify-content:flex-end;align-items:center;width:100%;margin-bottom:0.5em;">
+<div style="width:30%; float:left;">
+<a href="https://elephant.readthedocs.io/">
+    <img src='./images/elephant-logo.png' style="height:3.7em;"></a>
+</div>
+<div style="width:70%; float:right;">
+<p>Toolbox for generic time series and analog signal analysis.<br>
+</p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="display:flex;justify-content:flex-end;align-items:center;width:100%;margin-bottom:0.5em;">
+<div style="width:30%; float:left; display:flex;justify-content:center;align-items:center;">
+<a href="https://snakemake.readthedocs.io/en/stable/">
+    <img src='./images/snakemake-logo.png' style="height:2.5em;"></a>
+snakemake
+</div>
+<div style="width:70%; float:right;">
+<p>Workflow description tool for reproducible and scalable analyses.</p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="display:flex;justify-content:flex-end;align-items:center;width:100%;margin-bottom:0.5em;">
+<div style="width:30%; float:left;">
+<a href="https://github.com/INM-6/NetworkUnit">
+    <img src='./images/github-handle.png' style="height:2em;"></a>
+</div>
+<div style="width:70%; float:right;">
+<p>Modular framework for validating models on the level of the network activity.</p>
+</div>
+</div>
+</section>
+
+<!-- ########### 5 ###########  -->
+<section data-transition="slide">
+<h2>Reminder: simulator comparison</h2>
+<p style="text-align:center; margin-top:1.5em; margin-bottom:2em;">The choice of the simulator influences a model's network activity.</p>
+<div style="width:50%; float:left; margin-bottom:2em;">
+    <img style="height:12em;" src='./images/substantiation.png'>
+</div>
+<div style="width:50%; float:right; margin-bottom:2em;">
+    <img style="height:12em;" src='./images/nest_dpsnn.png'>
+</div>
+<div style="width:100%; margin-top:5em;">
+<p style="text-align:center;">Not only models need to be validated, also simulators!</p>
+</div>
+</section>
+
+<!-- ########### 6 ###########  -->
+<section data-transition="slide">
+<h2>The workflow</h2>
+<div style="position: relative; margin-left: -20%; margin-right:-20%; left: 0; right: 0;">
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="1">
+    <img src='./images/workflow_01.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="2">
+    <img src='./images/workflow_02.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="3">
+    <img src='./images/workflow_03.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="4">
+    <img src='./images/workflow_04.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="5">
+    <img src='./images/workflow_05.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="6">
+    <img src='./images/workflow_06.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="7">
+    <img src='./images/workflow_07.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="8">
+    <img src='./images/workflow_08.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="9">
+    <img src='./images/workflow_09.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="10">
+    <img src='./images/workflow_10.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="11">
+    <img src='./images/workflow_11.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="12">
+    <img src='./images/workflow_12.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="13">
+    <img src='./images/workflow_13.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="14">
+    <img src='./images/workflow_14.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="15">
+    <img src='./images/workflow_15.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="16">
+    <img src='./images/workflow_16.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="17">
+    <img src='./images/workflow_17.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="18">
+    <img src='./images/workflow_18.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="19">
+    <img src='./images/workflow_19.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="20">
+    <img src='./images/workflow_20.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="21">
+    <img src='./images/workflow_21.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="22">
+    <img src='./images/workflow_22.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="23">
+    <img src='./images/workflow_23.png'>
+</div>
+<div style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+    class="fragment fade-in" data-fragment-index="24">
+    <img src='./images/workflow_24.png'>
+</div>
+
+</section>
+
+<!-- ########### 7 ###########  -->
+<section data-transition="slide">
+<h2>Analysis steps in the optical branch</h2>
+<img src='./images/img_dag_param.png'>
+</section>
+
+<!-- ########### 8 ###########  -->
+<section data-transition="slide">
+<h2>Analysis steps in the optical branch</h2>
+<div style="width:110%;margin-left:-10%;margin-right:-10%;">
+<div style="width:33%;float:left;">
+    <h4> Raw images </h4>
+    <video style="margin-top:-1em;" height="265" controls autoplay loop muted>
+        <source data-src="./images/images.mp4" type="video/mp4">
+        <source data-src="./images/images.webm" type="video/webm">
+    <p>Your browser does not support the video tag. </p></video>
+</div>
+<div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="1">
+    <h4> ROI & Background </h4>
+    <img style="margin-top:-0.7em;" style="height:235px;" src='./images/contour.png'>
+    </div>
+<div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="2">
+    <h4> Preprocessed images </h4>
+    <video style="margin-top:-1em;" height="265" controls autoplay loop muted>
+    <source data-src="./images/preprocessed_images.mp4" type="video/mp4">
+    <source data-src="./images/preprocessed_images.webm" type="video/webm">
+    <p>Your browser does not support the video tag. </p></video>
+</div>
+</div>
+
+<div style="width:110%;margin-left:-10%;margin-right:-10%;">
+<div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="3">
+    <h4> Detect up-transitions </h4>
+    <img style="margin-top:-0.7em;" style="height:265px;" src='./images/signal_pixel_25_25.png'>
+</div>
+<div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="4">
+    <h4> Select wavefronts </h4>
+    <video style="margin-top:-1em;" height="265" controls autoplay loop muted>
+    <source data-src="./images/wavefront.mp4" type="video/mp4">
+    <source data-src="./images/wavefront.webm" type="video/webm">
+    <p>Your browser does not support the video tag. </p></video>
+    </div>
+<div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="5">
+    <h4> Wave velocities </h4>
+    <img style="margin-top:0em;" style="height:265px;" src='./images/velocities.png'>
+</div>
+</div>
+</section>
+
+
+<!-- ########### 9 ###########  -->
+<section data-transition="slide">
+<h2>Outlook</h2>
+<div class="fragment fade-in" data-fragment-index="1">
+<h4>Functionalites</h4>
+<ul style="float:left;width:100%;">
+    <li>Implementation of characteristic wave measures</li>
+    <li>Parallel evaluation of imaging and ECoG data (+EEG)</li>
+    <li>Validation of WaveScalEs model</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="2">
+<h4>Scientific questions & applications</h4>
+<ul style="float:left;width:100%;">
+    <li>Waves in different cortical areas.</li>
+    <li>Correlations to behavior & brain state.</li>
+</ul>
+</div>
+
+<p class="fragment fade-in" data-fragment-index="3" style="font-size:140%;float:right;"><i>Thank you!</i></p>
+</section>
+
+
+    </div>
+  </div>
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Display presentation control arrows
+    	controls: false,
+
+        center: true,
+        // height: "50%",
+        // width: "50%",
+        margin: 0.1,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
