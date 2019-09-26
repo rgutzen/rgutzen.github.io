@@ -36,7 +36,7 @@
 <section id="title-slide" class='title'>
     <h1 style="margin-bottom: 1.5cm;">Building a workflow for the analysis of slow wave activity across heterogeneous measurement</h1>
 
-    <h5 style="margin-bottom: 0.25cm;"><b>Robin Gutzen</b>, Michael Denker, <br> Guila de Bonis, Elena Pastorelli, Cristiano Capone, Pier Stanislao Paolucci</h5>
+    <h5 style="margin-bottom: 0.25cm;"><b>Robin Gutzen</b>, Sonja Grün, Michael Denker, <br> Guila de Bonis, Elena Pastorelli, Cristiano Capone, Pier Stanislao Paolucci</h5>
 
     <h6 style="margin-bottom: 2cm;">Institute of Neuroscience and Medicine (INM-6), Research Center Jülich, Germany<br>
     APE lab, Istituto Nazionale di Fisica Nucleare Rome, Italy</h6>
@@ -55,12 +55,18 @@
 </ul><br>
 <div style="width:33%;float:left;">
 <img src='./images/SW_CaIman.png' style="height:8em;"></a>
+<p style="font-size:60%;text-align:center;">
+<a href="https://arxiv.org/abs/1902.08599"><i>De Bonis et al. (2019) arxiv</i></a></p>
 </div>
 <div style="width:33%;float:left;">
 <img src='./images/SW_model.png' style="height:8em;"></a>
+<p style="font-size:60%;text-align:center;">
+<a href="https://doi.org/10.3389/fnsys.2019.00033"><i>Pastorelli et al. (2019) <br>Front. Sys. Neurosci.</i></a></p>
 </div>
 <div style="width:33%;float:left;">
 <img src='./images/SW_ecog.png' style="height:8em;"></a>
+<p style="font-size:60%;text-align:center;">
+<a href="https://arxiv.org/abs/1811.11687"><i>Celotto et al. (2018) arxiv</i></a></p>
 </div>
 </section>
 
@@ -74,31 +80,31 @@
 <li class="fragment fade-in" data-fragment-index="1"><b>Data</b><br>
     Anesthetized mice<br>
     Calcium Imaging (Ketamin) *<br>
-    ECoG (Isoflurane) **</li>
-<li class="fragment fade-in" data-fragment-index="2"><b>Analysis</b><br>
-    Pipeline for optical and elect. signals<br>
-    as Python and MatLab scripts</li>
-<li class="fragment fade-in" data-fragment-index="3"><b>Model</b><br>
+    ECoG (Isoflurane) **<br>
+    DPSNN simulation data<br>
+    Nest simulation data</li>
+<li class="fragment fade-in" data-fragment-index="2"><b>Model</b><br>
     WaveScalES spiking model<br>
     24x24 modules á 1250 neurons<br>
-    implemented in DPSNN and NEST</li>
+</li>
+<li class="fragment fade-in" data-fragment-index="3"><b>Analysis</b><br>
+    Pipelines for optical and elect. signals<br>
+    as Python and Matlab scripts</li>
 </ul>
-<p class="fragment fade-in" data-fragment-index="1" style="font-size:60%;">* F.S. Pavone Lab, LENS, Florende, Italy <br>
-** M.V. Sancez-Vives Lab, IDIBABS, Barcelona, Spain</p>
-
-
+<p class="fragment fade-in" data-fragment-index="1" style="font-size:60%;">* F.S. Pavone Lab, LENS, Florence, Italy <br>
+** M.V. Sanchez-Vives Lab, IDIBABS, Barcelona, Spain</p>
 </div>
 <div style="width:50%; float:right;">
 <a href="https://www.fz-juelich.de/inm/inm-6/EN/Forschung/Gruen/artikel.html">
 <img src='./images/fzj-logo.png' style="height:4em;"></a><br>
 <ul>
-<li class="fragment fade-in" data-fragment-index="4"><b>Methods</b><br>
-    Signal processing<br>
-    Statistical testing<br>
-    Validation</li>
+<li class="fragment fade-in" data-fragment-index="4"><b>Methods & Validation</b><br>
+    Transfer and further development;
+    Comparison of methods;<br>
+    Validation testing of spatially organized data</li>
 <li class="fragment fade-in" data-fragment-index="5"><b>Implementation</b><br>
-    For data structures & metadata<br>
-    For analysis tools</li>
+    of data structures & metadata;<br>
+    of analysis tools</li>
 <li class="fragment fade-in" data-fragment-index="6"><b>Workflows</b><br>
     For integrating data analyses<br>
     and model calibration/validation</li>
@@ -124,11 +130,12 @@
 <div class="fragment fade-in" data-fragment-index="2" style="width:50%; float:right;">
     <h4>Added value</h4>
 <ul>
-    <li><span class="fragment grow highlight-blue" data-fragment-index="3">F</span>indable on neuroinformatics platform</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">F</span>indability on neuroinformatics platform</li>
     <li><span class="fragment grow highlight-blue" data-fragment-index="3">A</span>ccessibility of data, results, and workflow</li>
-    <li><span class="fragment grow highlight-blue" data-fragment-index="3">I</span>nteroperable linking of data, metadata, and results</li>
-    <li><span class="fragment grow highlight-blue" data-fragment-index="3">R</span>eusablity of analysis elements</li>
-    <li>Briding of scales!</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">I</span>nteroperable link of data, metadata, and results</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="3">R</span>eusablity of generic workflow components for analysis</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="4">E</span>xtension across scales!</li>
+    <li><span class="fragment grow highlight-blue" data-fragment-index="4">R</span>elate standardized features across datasets</li>
 </ul>
 </div>
 </section>
@@ -152,7 +159,7 @@ Data structure to represent electrophysiology data and metadata.<br> Supports a 
     <img src='./images/elephant-logo.png' style="height:3.7em;"></a>
 </div>
 <div style="width:70%; float:right;">
-<p>Toolbox for generic time series and analog signal analysis.<br>
+<p>Tool to analyse spike data and neuronal times series data (e.g. LFP)<br>
 </p>
 </div>
 </div>
@@ -163,7 +170,7 @@ Data structure to represent electrophysiology data and metadata.<br> Supports a 
 snakemake
 </div>
 <div style="width:70%; float:right;">
-<p>Workflow description tool for reproducible and scalable analyses.</p>
+<p>Workflow management tool for reproducible and scalable analyses.</p>
 </div>
 </div>
 <div class="fragment fade-in" data-fragment-index="4" style="display:flex;justify-content:flex-end;align-items:center;width:100%;margin-bottom:0.5em;">
@@ -179,7 +186,7 @@ snakemake
 
 <!-- ########### 5 ###########  -->
 <section data-transition="slide">
-<h2>Reminder: simulator comparison</h2>
+<h2>Reminder: simulator comparison (validation)</h2>
 <p style="text-align:center; margin-top:1.5em; margin-bottom:2em;">The choice of the simulator influences a model's network activity.</p>
 <div style="width:50%; float:left; margin-bottom:2em;">
     <img style="height:12em;" src='./images/substantiation.png'>
@@ -327,7 +334,7 @@ snakemake
 
 <div style="width:110%;margin-left:-10%;margin-right:-10%;">
 <div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="3">
-    <h4> Detect up-transitions </h4>
+    <h4> Detect UP-transitions </h4>
     <img style="margin-top:-0.7em;" style="height:265px;" src='./images/signal_pixel_25_25.png'>
 </div>
 <div style="width:33%;float:left;" class="fragment fade-in" data-fragment-index="4">
