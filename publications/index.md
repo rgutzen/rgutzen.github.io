@@ -24,11 +24,15 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 ## Talks
 **Building a workflow for the analysis of slow wave activity across heterogeneous measurement**<br>
 (2019) Human Brain Project SP3 meeting, Liège<br>
-**[Slides ![<protected>](/assets/lock-solid.svg)](slides/19_SP3Liege/index.html)**
+**[Slides <img src="/assets/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
 
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
 **[Slides](slides/19_INCF/index.html) | [Notes](slides/19_INCF/notes.html)**
+
+**Comparing activity dynamics of models and living brains**<br>
+(2019) Human Brain Project SP4 meeting, Paris<br>
+**[Slides <img src="/assets/lock-solid.svg" style="height:0.8em;">](slides/19_SP4Paris/slides.pdf)**
 
 **How much do you trust a model? - Rigor in neuroscientific modeling and simulation through validation**<br>
 (2019) Brain Twitter Conference<br>
