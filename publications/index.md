@@ -28,7 +28,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
-**[Slides](slides/19_INCF/index.html) | [Notes](slides/19_INCF/notes.html)**
+**[Slides](slides/19_INCF/index.html) | [Video](https://www.youtube.com/watch?v=PQCWAng9j3U)**
 
 **Comparing activity dynamics of models and living brains**<br>
 (2019) Human Brain Project SP4 annual meeting, Paris<br>
@@ -87,3 +87,9 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
 *RRID:SCR_016543*<br>
 **[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**
+
+
+<!-- **Slow-wave analysis pipeline**<br>
+Robin Gutzen, Giulia De Bonis, Michael Denker, Pier Stanislao Paoluccis<br>
+*RRID:XXXXXXX*<br>
+**[GitHub](https://github.com/INM-6/wavescalephant) | [PyPi](https://pypi.org/project/networkunit/)** -->
