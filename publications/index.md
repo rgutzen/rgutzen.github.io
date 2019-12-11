@@ -28,7 +28,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
-**[Slides](slides/19_INCF/index.html) | [Video](https://www.youtube.com/watch?v=PQCWAng9j3U)**
+**[Slides](slides/19_INCF/index.html) | [Stream](https://www.youtube.com/watch?v=PQCWAng9j3U)**
 
 **Comparing activity dynamics of models and living brains**<br>
 (2019) Human Brain Project SP4 annual meeting, Paris<br>
