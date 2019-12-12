@@ -1,6 +1,3 @@
-[submodule "publications/slides/--force"]
-	path = publications/slides/--force
-	url = git@github.com:hakimel/reveal.js.git
 [submodule "publications/slides/reveal.js"]
 	path = publications/slides/reveal.js
-	url = git@github.com:hakimel/reveal.js.git
+	url = https://github.com/hakimel/reveal.js.git
