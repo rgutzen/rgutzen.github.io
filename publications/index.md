@@ -22,6 +22,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**Developing pipelines for ​multi- scale/species/method analysis​**<br>
+(2020) Human Brain Project Summit, Athens<br>
+**[Slides (short version)](slides/20_SummitAthens/short_version.html) |
+[Slides (long version)<img src="/assets/lock-solid.svg" style="height:0.8em;">](slides/20_SummitAthens/long_version.html)**
+
 **Building a workflow for the analysis of slow wave activity across heterogeneous measurement**<br>
 (2019) Human Brain Project SP3 annual meeting, Liège<br>
 **[Slides <img src="/assets/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
@@ -41,6 +46,16 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Designing reproducible analysis workflows for experimental and simulated activity using Elephant**<br>
+Danylo Ulianych, Robin Gutzen, Julia Sprenger, Elena Pastorelli, Giulia De Bonis, Pier Stanislao Paolucci, Andrew Davison, Sonja Grün, Michael Denker<br>
+*(2020) Human Brain Project Summit, Athens*<br>
+**[PDF](poster/2020_Ulianych_HBPSummit.pdf)**
+
+**Multi-scale, multi-species, multi-methodology experiments, analysis tools and simulation models of Brain States and Complexity in SP3-UseCase002**<br>
+Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Robin Gutzen, Alessandra Camassa, Arnau Manasanch Berengué, Francesco Resta, Anna Letizia Allegra Mascar, Antonio Pazienti, Andrea Pigorini, Thierry Nieus, Alessandro Arena, Johan Frederik Storm, Marcello Massimini, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Andrew Davison, Michael Denker, Pier Stanislao Paolucci<br>
+*(2020) Human Brain Project Summit, Athens*<br>
+**[PDF](poster/2020_DeBonis_HBPSummit.pdf)**
 
 **A statistical test of eigenvector angles to evaluate the similarity of neural network simulations**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
