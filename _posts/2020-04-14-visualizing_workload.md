@@ -5,7 +5,7 @@ subtitle: An Alternative to the Gantt Chart
 tags: [visualization]
 <!-- bigimg: -->
 image: /assets/workload/portion_plot_color.png
-share_img: /assets/workload/portion_plot.png
+share-img: /assets/workload/portion_plot.png
 comments: false
 social-share: true
 <!-- css: -->
@@ -169,7 +169,7 @@ def partition_plot(partitions, xvalues=None, colors=None, kind='cubic', N=200,
 
     if sigma:
         s = sigma/Npoints * (N+2*pad)
-        win = sc.signal.hann(int(s))
+        win = sc.signal.hann(int(np.rint(s)))
         for i, curve in enumerate(curves[1:-2]):
             curves[i+1] = sc.signal.convolve(curve, win, mode='same')\
                         / sum(win)
