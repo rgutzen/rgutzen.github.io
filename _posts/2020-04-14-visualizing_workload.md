@@ -32,7 +32,7 @@ And after all, the difficulty of planning may be attested by everyone who ever p
 
 This is at least the line of argument with which I will start off my next PhD planning meeting. In these meetings, students are asked to map out all their projects for up to the next four years. Doing this decently accurate is ambitious at best and illusive at worst. However, that doesn't mean that planning is useless. Quite on the contrary, it is rather the lack of planning or misplanning which causes problems down the road.
 <br>
-Planning time and resources wisely means to to not in worrying about details which are most likely to change anyway, and prevent stepping into common mistakes such as being overly optimistic or pessimistic, misjudging our own abilities and requirements, or ignoring contradicting evidence. Any visualization used to illustrate and help with the planing should therefore be aware of the difficulties in planning workload and ideally help to avoid them.
+Planning time and resources wisely means to not in worrying about details which are most likely to change anyway, and prevent stepping into common mistakes such as being overly optimistic or pessimistic, misjudging our own abilities and requirements, or ignoring contradicting evidence. Any visualization used to illustrate and help with the planing should therefore be aware of the difficulties in planning workload and ideally help to avoid them.
 <br>
 But for some reason the go-to tool to visualize workload and the temporal sequence of tasks is the *Gantt chart*. Even if you are not familiar with the name you have at least seen in action in some project management tool or progress reports. It is simple and straight-forward to understand. Each task ([A], [B], [C], [D]) is represented by a bar on a timeline with a clear-cut beginning and end. Multiple bars are stacked in parallel to represent different tasks or projects.
 
@@ -74,18 +74,19 @@ Thus, for planning my PhD projects, instead of mapping out when they start and e
 </a>
 
 To compare the information content, if I would transform the matrix now to a simple boolean matrix I would arrive again at a Gantt chart, with the horizontal axis (matrix columns) being the time axis and the vertical axis (matrix rows) being the categorical project axis. But here, I want to use the additional information in a way that the estimated workload partitions are being represented on the vertical axis.<br>
-Because I didn't check that the partitions each month actually sums to 1, the first thing the plotting function does is to apply objective a) and normalize each column by its sum. Next, the relative workload partitions for the projects which are defined in the matrix rows need to be arranged vertically. This is very simply done by just stacking them on top of each other so that the entire plot if filled with different areas for the projects. Doing a cumulative sum over the rows gives returns the functions describing the borders between the areas. <br>
+Because I didn't check that the partitions each month actually sum up to 1, the first thing the plotting function does is to apply objective a) and normalize each column by its sum. Next, the relative workload partitions for the projects which are defined in the matrix rows need to be arranged vertically. This is very simply done by just stacking them on top of each other so that the entire plot if filled with different areas for the projects. Doing a cumulative sum over the rows returns the functions describing the borders between the areas. <br>
 For now, these functions have a resolution of one month, which can look a bit clunky. I like to represent the border functions in a more smooth and continuous way, because it is more visually pleasing but also because it gives a better impression of the uncertainty around the given partition values. Thus, the plotting function interpolates the data with a resolution of `N` points using the `scipy.interpolate.interp1d()` function. I find a `'cubic'` interpolation is a good default, however, in case the data would be better represented by a step function this can be replaced by `'nearest'` or `'previous'`.
 To further address objective c), the plotting function also provides an optional smoothing of the functions via a kernel convolution with width `sigma` in units of the matrix columns (so here months). <br>
 And that is basically it. The full code for the *PartitionPlot* can be found below.
 
-There it is, in this alternative for visualizing workload I can now see immediately the extend of each project and can anticipate on which project I plan to focus at which point in time, while not hiding any inherent planning uncertainty, and of course accounting for delays by including with a buffer.
+There it is, in this alternative for visualizing workload I can now see immediately the extend of each project and can anticipate on which project I plan to focus at which point in time, while not hiding any inherent planning uncertainty, and of course accounting for delays by including a buffer.
 
 <a href="" style="display:block;text-align:center;">
 <img src="/assets/workload/portion_plot.png" alt="Portion Plot">
 </a>
 
 ```python
+# Python 3.8.0
 import matplotlib.pyplot as plt  # 3.1.2
 import seaborn as sns  # 0.9.0
 import pandas as pd  # 0.25.3
