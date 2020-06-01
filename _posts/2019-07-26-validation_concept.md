@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Concepts of validation
-subtitle: A review and exploration
+subtitle: A Review and Exploration
 tags: [validation, essay]
 <!-- bigimg: -->
 image: /assets/schlesinger_circle.png
-share_img: /assets/schlesinger_circle.png
+share-img: /assets/schlesinger_circle.png
 comments: false
 social-share: true
 <!-- css: -->

@@ -82,7 +82,7 @@ And that is basically it. The full code for the *PartitionPlot* can be found bel
 There it is, in this alternative for visualizing workload I can now see immediately the extend of each project and can anticipate on which project I plan to focus at which point in time, while not hiding any inherent planning uncertainty, and of course accounting for delays by including a buffer.
 
 <a href="" style="display:block;text-align:center;">
-<img src="/assets/workload/portion_plot.png" alt="Portion Plot">
+<img src="/assets/workload/portion_plot.png" alt="Partition Plot">
 </a>
 
 ```python
