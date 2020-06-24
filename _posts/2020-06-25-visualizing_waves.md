@@ -88,7 +88,7 @@ The thing that I'm least convinced by in this visualization, are the fonts. Alth
 But all in all, I'm very happy how it turned out.
 And of course as planned in the beginning, it is also animated.
 
-<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/brain_wave_visualization.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/visualizing_waves/brain_wave_visualization.mp4" frameborder="0" allowfullscreen></iframe>
 
 ### Conclusion
 #### The Dataset
