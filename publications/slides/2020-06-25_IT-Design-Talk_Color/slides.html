@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Robin Gutzen">
+  <meta name="dcterms.date" content="2020-06-25">
+  <title>Color Spaces, Palettes, and Perception</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="slides.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ########### Title Slide ###########  -->
+<section id="title-slide" class='title'>
+    <h1 style="border-bottom: 4px solid #838383;">Color Spaces, Palettes, and Perception</h1>
+    <h3 style="border-bottom: None; margin-bottom: 3.5cm; font-style: italic">
+        <span style="color:#ff0000;">There</span>
+        <span style="color:#ffa500;">is</span>
+        <span style="color:#ffff00;">Gold</span>
+        <span style="color:#008000;">at</span>
+        <span style="color:#008000;">the</span>
+        <span style="color:#0000ff;">End</span>
+        <span style="color:#4b0082;">of</span>
+        <span style="color:#4b0082;">the</span>
+        <span style="color:#ee82ee;">Rainbow</span>
+    </h3>
+
+    <div id="footer" style="bottom: 20%; border-top: None; font-size: 24px;">
+    <h6>25.06.2020 | Robin Gutzen | Design Talk, <i>Jülich</i></h6>
+</div>
+</section>
+
+<!-- ########### Colors matter ###########  -->
+<section data-transition="slide" style="position: relative;" >
+    <img style="position: absolute" src='./images/color_intro.jpg'>
+    <img class="fragment fade-in" data-fragment-index="2" style="position: absolute" src='./images/color_intro_out.jpg'>
+    <img class="fragment fade-in" data-fragment-index="3" style="position: absolute" src='./images/color_intro_full.jpg'>
+<!-- Footer -->
+<div id="footer" style="bottom: 20%;">
+    <!-- <h6>foo</h6> -->
+</div>
+</section>
+
+<!-- ########### Color Palettes - The Rainbow ###########  -->
+<section data-transition="slide">
+<h2>Why is the Jet palette so bad?</h2>
+
+<p class="fragment fade-in" data-fragment-index="1" style="margin-bottom: 8ex;">
+    Name the colors of the rainbow in the correct order...</p>
+
+<div class="fragment fade-in" data-fragment-index="2" style="margin-bottom: 5ex;">
+<img src='./images/rainbow_colors_newton.png'>
+<p style="text-align: center;"><span style="font-weight: bold;">1.</span>
+    The order is not intuitive to everyone.</p>
+</div>
+
+<div class="fragment fade-in" data-fragment-index="3">
+    <img style="width: 70%;" src='./images/jet.png'>
+<p style="text-align: center;"><span style="font-weight: bold;">2.</span>
+    Categorization is intuitive but unwanted and not consistent.</p>
+</div>
+
+<!-- Footer -->
+<div id="footer" style="bottom: 20%;">
+    <!-- <h6>foo</h6> -->
+</div>
+</section>
+
+<!-- ########### Color Palettes - JET ###########  -->
+<section data-transition="slide">
+    <h2>A Jet-like palette in action</h2>
+
+<img style="position: absolute; width: 80%;" src='./images/bad_jet_example.jpg'>
+<img class="fragment fade-in" data-fragment-index="1"
+     style="position: absolute; width: 80%;" src='./images/bad_jet_example_bw.jpg'>
+
+<p class="fragment fade-in" data-fragment-index="1"
+   style="position: absolute; bottom: 2%; text-align:center;">
+    <span style="font-weight:bold;">3.</span>
+    The lightness is not linear.</p>
+</section>
+
+<!-- ########### Color Spaces ###########  -->
+<section data-transition="slide" data-background-image="./images/colored_lights.jpeg"
+         data-background-position='center' data-background-repeat="repeat">
+<h2 style='color: white; border-bottom: None;'>Color Spaces</h2>
+<ul style="color: white; float: left; width: 100%">
+    <li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 2ex;">
+        <p style="color: white;">Colors are mixable.</p></li>
+    <li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 2ex;">
+        <p style="color: white;">Any 3 colors can span a color space.</p></li>
+    <li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 2ex;">
+        <p style="color: white;">What is the most useful coordinate system?</p></li>
+</ul>
+<div id="footer">
+    <ul>
+    <li style='color: white;'>Most animals have one- (marine mamals), two- (land mamals), or four- (fish, reptiles, birds) cone types. <br>
+        Mantis shrimps have 12, and use them in a totally different manner (<a href="https://http://doi.org/10.1126/science.1245824">doi:10.1126/science.1245824</a>)</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Spaces - Primary Color Spaces ###########  -->
+<section data-transition="slide">
+<h2>Primary Color Spaces</h2>
+
+<div style="float: left; margin-bottom: 0%;">
+<div style="float: left; width: 49%;">
+<ul>
+    <li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+        <p>Color Matching Functions (CMF): <br>
+           spectral colors <-> color space coordinates.</p></li>
+    <li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 0ex;">
+        <p>Color spaces allow only either + or -</p></li>
+    <li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+        <p>Any primary colors have partly negative CMF.</p></li>
+</ul>
+    <figure style="float: left; width: 100%; margin-top: 0ex;">
+    <img src='./images/RGB_cube.png'>
+    <figcaption style="text-align:center;font-style:italic">
+        RGB color space
+    </figcaption>
+    </figure>
+</div>
+<div style="float: right; width: 49%;">
+<ul>
+    <li class="fragment fade-in" data-fragment-index="4" style="padding-bottom: 0ex;">
+        <p>RGB covers most of the spectrum accurately.</p></li>
+    <li class="fragment fade-in" data-fragment-index="5" style="padding-bottom: 0ex;">
+        <p>'Darker' primaries (RGB) for + spaces, <br>
+           'Brighter' primaries (CMY) for - spaces.</p></li>
+    <li class="fragment fade-in" data-fragment-index="6" style="padding-bottom: 0ex;">
+        <p>RGB is not uniquely defined!</p></li>
+</ul>
+    <figure class="fragment fade-in" data-fragment-index="1"
+            style="float: left; width: 80%; margin-top: 3ex;">
+    <img src='./images/CIE1931_RGBCMF.png'>
+    <figcaption style="text-align:center;font-style:italic">
+        RGB Color Matching Functions
+    </figcaption>
+    </figure>
+</div>
+</div>
+
+<div id="footer">
+    <ul>
+    <li><a href="https://de.m.wikipedia.org/wiki/Datei:RGB_color_solid_cube.png">
+         Source RGB Cube</a> (by
+         <a href="https://commons.wikimedia.org/wiki/User:SharkD">
+         SharkD</a>,
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+         CC BY-SA</a>),
+         <a href="https://commons.wikimedia.org/wiki/File:CIE1931_RGBCMF.png">
+         Source RGB CMF</a></li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Spaces - Cylindical Color Spaces ###########  -->
+<section data-transition="slide">
+<h2>Cylindical Color Spaces</h2>
+
+
+<div class="fragment fade-out" data-fragment-index="1" style="position: absolute;">
+<figure style="width: 100%; margin-top:0ex;">
+    <img src='./images/Newton_Goethe_color_circles.jpg'>
+<figcaption style="text-align:center;font-style:italic">
+    Newton's and Goethe's color circles
+</figcaption>
+</figure>
+</div>
+
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute;">
+<img style="width: 80%; margin-top:0ex;"
+         src='./images/HSL_HSV.png'>
+<p class="fragment fade-in" data-fragment-index="2"
+   style="text-align: center; font-style: italic; margin-top: -1ex;
+          margin-bottom: -1ex; font-size: 90%; color: red;">
+   avoid when possible</p>
+<img style="width: 80%; margin-top:0ex;"
+         src='./images/HCL_HCV.png'>
+</div>
+<div id="footer">
+    <ul>
+    <li>Sources
+        <a href="https://upload.wikimedia.org/wikipedia/commons/0/0a/Newton%27s_colour_circle.png">
+        Newton's</a>, and
+        <a href="https://en.wikipedia.org/wiki/Color_theory#/media/File:GoetheFarbkreis.jpg">
+        Goethe's</a> color circles</li>
+    <li>Sources
+        <a href="https://en.wikipedia.org/wiki/HSL_and_HSV#/media/File:HSL_color_solid_cylinder_saturation_gray.png">
+        HSL</a>,
+        <a href="https://en.wikipedia.org/wiki/HSL_and_HSV#/media/File:HSV_color_solid_cylinder_saturation_gray.png">
+        HSV</a> cylinders, and
+        <a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/HSL_color_solid_dblcone_chroma_gray.png">
+        HCL</a>,
+        <a href="https://upload.wikimedia.org/wikipedia/commons/0/00/HSV_color_solid_cone_chroma_gray.png">
+        HCV</a> cones (by
+        <a href="https://commons.wikimedia.org/wiki/User:SharkD">
+        SharkD</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC BY-SA</a>)</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Spaces - Chromticity Diagram ###########  -->
+<section data-transition="slide">
+<h2>CIE Chromaticity Diagram</h2>
+<div style="float: left; width: 100%;">
+<div style="float: left; width: 49%;">
+<img class="fragment fade-out" data-fragment-index="2"
+     style="position: absolute; width: 50%; "
+     src='./images/Cone_Rod_response.png'>
+<img class="fragment fade-in" data-fragment-index="2"
+     style="width: 100%; margin-bottom: -1ex;"
+     src='./images/CIE1931_XYZCMF.png'>
+<ul>
+<li class="fragment fade-in" data-fragment-index="3">
+    <p>$Y \sim$ luminance, $XYZ$ is additive</p></li>
+<li class="fragment fade-in" data-fragment-index="4">
+    <p>$x=\frac{X}{X+Y+Z}, \; y=\frac{Y}{X+Y+Z}, \;z=1-x-y$.</p></li>
+<li class="fragment fade-in" data-fragment-index="5">
+    <p>There is no pink in the rainbow!</p></li>
+<li class="fragment fade-in" data-fragment-index="6">
+    <p>CIE 1931 xyY is (nearly) perceptually uniform.</p></li>
+<li class="fragment fade-in" data-fragment-index="7">
+    <p>Calibrated for "Standard Observer" (2°, fovea).</p></li>
+<li class="fragment fade-in" data-fragment-index="8">
+    <p>Standard Daylight: D65 ($T=6504 K$)</p></li>
+<!-- <li class="fragment fade-in" data-fragment-index="9">
+    <p>Defines the gamut of other color spaces.</p></li> -->
+
+</ul>
+</div>
+<div style="float: right; width: 49%;">
+    <img class="fragment fade-in" data-fragment-index="4"
+         style="position: absolute; width: 60%; margin-left: -20%; margin-top: -2%;"
+         src='./images/CIE1931xy.png'>
+    <img class="fragment fade-in-then-out" data-fragment-index="8"
+         style="position: absolute; width: 57%; margin-left: -20%; margin-top: -2%;"
+         src='./images/CIE1931xy_planck.png'>
+    <img class="fragment fade-in" data-fragment-index="9"
+         style="position: absolute; width: 61%; margin-left: -20%; margin-top: -2%;"
+         src='./images/CIE1931xy_gamut_comparison.png'>
+</div>
+</div>
+<div id="footer">
+    <ul>
+    <li>Sources
+        <a href="https://commons.wikimedia.org/wiki/File:Cone-response-en.svg">
+        Spectral absorption </a>(by
+        <a href="https://en.wikipedia.org/wiki/User:DrBob"> DrBob</a> &
+        <a href="https://en.wikipedia.org/wiki/User:Zeimusu"> Zeimusu</a>),
+        <a href="https://commons.wikimedia.org/wiki/File:CIE_1931_XYZ_Color_Matching_Functions.svg">CIE 1932 XYZ Color Matching Functions</a> (by Acdx)</li>
+    <li>Sources
+        <a href="https://commons.wikimedia.org/wiki/File:CIE1931xy_blank.svg">
+        CIE Chromaticity Diagram</a>, +
+        <a href="https://commons.wikimedia.org/wiki/File:PlanckianLocus.png">
+        Planckian Locus</a>, +
+        <a href="https://commons.wikimedia.org/wiki/File:CIE1931xy_gamut_comparison.svg">
+        Gamuts</a> (by BenRG and cmglee,
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">
+        CC BY-SA</a>)</li>
+    </ul>
+</div>
+</section>
+
+
+<!-- ########### Color Palettes - JET Lightness ###########  -->
+<section data-transition="slide">
+<h2>Hue vs. Lightness</h2>
+
+<div style="float: left;">
+<img style="float: left; width: 40%; margin-top:-6ex;"
+     src='./images/retinal_luminance.png'>
+
+<img class="fragment fade-in" data-fragment-index="1"
+     style="float: right; width: 40%; margin-top:-2ex;"
+     src='./images/jet_lightness.png'>
+</div>
+
+<p class="fragment fade-in" data-fragment-index="2"
+   style="margin-top:3ex;">
+   Lightness and saturation is more important than hue in guiding attention.</br>
+   But hue helps to indentify and distinguish values.</p>
+
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>Williamson & Cummins (1983) "Light and Color in Nature and Art" p.173 <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vision/bright.html#c2">ISBN-10: 0471083747</a></li>
+    <li>Google developed <a href="">'Turbo'</a> as an improvement to 'Jet'</li>
+    <li>Camgöz (2003) "Effects of hue, saturation, and brightness: Part 2: Attention"  <a href="https://doi.org/10.1002/col.10214">doi: 10.1002/col.10214</a> </li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Palettes - Adjusting Lightness ###########  -->
+<section data-transition="slide">
+<h2>Adjusting Lightness</h2>
+<div class="fragment fade-in-then-out" data-fragment-index="1"
+     style="position: absolute; top: 10%;">
+    <img style="width: 100%;" src='./images/singlehue_red.png'>
+    <p style="text-align: center;">
+        For single-hue palettes nonlinear lightness is not problem.</p>
+</div>
+
+<div style="position: absolute; top: 6%;">
+<div class="fragment fade-in" data-fragment-index="2">
+    <img style="width: 60%;" src='./images/multihue_hot_lightness.png'>
+    <img style="width: 60%;" src='./images/multihue_hot.png'>
+    <p class="fragment fade-in-then-out" data-fragment-index="2"
+       style="text-align: center; margin-bottom:-3ex;">
+       For the multi-hue 'Hot' palette nonlinear lightness is a problem.</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+    <img style="width: 60%;" src='./images/multihue_hot_bezier_lightness.png'>
+    <img style="width: 60%;" src='./images/multihue_hot_bezier.png'>
+    <p class="fragment fade-in-then-out" data-fragment-index="3"
+       style="text-align: center; margin-bottom:-3ex;">
+       Bezier curves in the color space can smoothen lightness.</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+    <img style="width: 60%;" src='./images/mutlihue_hot_linear_lightness.png'>
+    <img style="width: 60%;" src='./images/multihue_hot_linear.png'>
+    <p class="fragment fade-in-then-out" data-fragment-index="4"
+       style="text-align: center; margin-bottom:-3ex;">
+       The lightness can simply be linearized.</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="5">
+    <p style="text-align: center; margin-top:1ex;">
+    <a href="https://www.colorbox.io/#steps=21#hue_start=0#hue_end=285#hue_curve=linear#sat_start=100#sat_end=100#sat_curve=linear#sat_rate=200#lum_start=100#lum_end=100#lum_curve=linear#minor_steps_map=none">
+    How to linearize the rainbow?</a></p>
+</div>
+</div>
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li><a href="https://github.com/gka/chroma.js">chroma.js</a> is a tool to help adjusting multi-hue palettes, <a href="https://gka.github.io/palettes/">with a web interface</a></li>
+    <li><a href="https://www.colorbox.io">colorbox.io</a> helps adjusting hue, saturation, and brightness</li>
+    <li><a href="https://colorbrewer2.org/">colorbrewer</a> provides some nice single- and multi-hue palettes</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Palettes - JET Mastering multihue ###########  -->
+<section data-transition="slide">
+<h2>Why are there still Categories in the Rainbow?</h2>
+<div style="float: left;">
+<div style="float: left; width: 49%;">
+
+<ul>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 4ex;">
+    <p><span style="font-weight: italic;">Brightness</span>:
+        how much light a colored area seems to emit.</p>
+    <p><span style="font-weight: italic;">Lightness</span>:
+        brightness relative to a reference white (~relative luminance)</p></li>
+
+<li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 4ex;">
+    <p>The color spectrum is not perceptually uniform.</p></li>
+
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+    <p>Words for colors shapes out perception.</p></li>
+</ul>
+</div>
+
+<div style="float: right; width: 49%;">
+<img class="fragment fade-in" data-fragment-index="1"
+     style="margin-top: 0ex; width: 60%;"
+     src='./images/CIE1931xy.png'>
+
+<img class="fragment fade-in" data-fragment-index="2"
+     style="margin-top:0ex; width: 75%; margin-bottom: 20%;"
+     src='./images/Cone_Rod_response.png'>
+</div>
+</div>
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>Regan et al. (2001) "Fruits, foliage and the evolution of primate colour vision" <a href="https://doi.org/10.1098/rstb.2000.0773">doi: 10.1098/rstb.2000.0773</a></li>
+    <li>Changizi et al. (2006) "Bare skin, blood and the evolution of primate colour vision" <a href="https://dx.doi.org/10.1098%2Frsbl.2006.0440">doi: 10.1098%2Frsbl.2006.0440</a></li>
+    <li>Winawer et al. (2007) "Russian blues reveal effects of language on color discrimination" <a href="https://doi.org/10.1073/pnas.0701644104">doi: 10.1073/pnas.0701644104</a></li>
+    <li>Goldstein et al. (2009) "Knowing color terms enhances recognition: Further evidence from English and Himba" <a href="https://doi.org/10.1016/j.jecp.2008.06.002">doi: 10.1016/j.jecp.2008.06.002</a></li>
+    </ul>
+</div>
+</section>
+
+
+<!-- ########### Color Palettes - JET Palette types ###########  -->
+<section data-transition="slide">
+<h2>For what Type of Data is Jet even intended?</h2>
+<ul>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 3ex;">
+    <p><span style="font-weight: bold;">Sequential</span>:
+        ordered hues, linear lightness</p>
+    <img style="width: 60%;" src='./images/viridis.png'>
+<li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 3ex;">
+    <p><span style="font-weight: bold;">Diverging</span>:
+        ordered hues with center, (bi)linear lightness</p>
+    <img style="width: 60%;" src='./images/coolwarm.png'>
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 3ex;">
+    <p><span style="font-weight: bold;">Cyclical</span>:
+        cyclical hues, cyclical lightness</p>
+    <img style="width: 60%;" src='./images/twilight.png'>
+<li class="fragment fade-in" data-fragment-index="4" style="padding-bottom: 0ex;">
+    <p><span style="font-weight: bold;">Qualitative</span>:
+        distinctive but uniform hues, distinct color names, varying lightness</p>
+    <img style="width: 60%;" src='./images/Set2.png'>
+</ul>
+
+<h5 class="fragment fade-in" data-fragment-index="5"
+    style="border-bottom: 1.5px solid #838383; font-style: italic;">
+    Jet tries to be all, and is none.</h5>
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>All examples are <a href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">
+        matplotlib colormaps.</a></li>
+    </ul>
+</div>
+</section>
+
+
+<!-- ########### Color Palettes - Practical Guide ###########  -->
+<section data-transition="slide">
+<h2>A practical Guide to choose good Colors</h2>
+<ol style="margin-bottom: 24%; list-style: none;">
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 2ex;">
+    <p><img style="width: 15%; margin-bottom: -6%;" src='./images/meaning.jpg'>
+        The colors need to fit the data, and be accessible.</p></li>
+<li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 2ex;">
+    <p><img style="width: 15%; margin-bottom: -6%;" src='./images/engagement.jpg'>
+        The colors need to fit the application.</p></li>
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 2ex;">
+    <p><img style="width: 15%; margin-bottom: -6%;" src='./images/understanding.jpg'>
+        The colors should guide the attention and interpretation.</p></li>
+<li class="fragment fade-in" data-fragment-index="4" style="padding-bottom: 0ex;">
+    <p><img style="width: 15%; margin-bottom: -6%;" src='./images/aesthetics.jpg'>
+        The end product should be pleasant to look at.</p></li>
+</ol>
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li><a href="https://colorhunt.co/">Matplotlib</a>
+        has it all: the Good, the Bad, and the Ugly.</a></li>
+     <li><a href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">Seaborn</a>
+        has few but good palettes.</li>
+    <li><a href="https://colorhunt.co/">Colorhunt,</a>
+        just many, many, many, quadruplets of color combinations.</li>
+    <li><a href="https://colorbrewer2.org/">ColorBrewer,</a>
+        the classic by Cynthia Brewer.</li>
+    <li><a href="https://www.instagram.com/colours.cafe/">Colours.cafe</a>
+        is a Instagram page of pretty color combinations to scroll through.</li>
+    <li><a href="https://material.io/design/color/the-color-system.html#color-usage-and-palettes">Material</a> is not only the famous Google Design template but also provides a great guide for (qualitative) palettes.</li>
+    <li><a href="https://www.canva.com/colors/">Canva's colors</a>
+        offers a whole range of interactive color action.</li>
+    <li><a href="http://vrl.cs.brown.edu/color">Colorgorical</a>
+        is the most scientificly rigorous color tool.</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### 1 Colors ~ Data ###########  -->
+<section data-transition="slide">
+<h2>1. Meaning - The Colors need to fit the Data, and be Accessible</h2>
+<div style="float: left; margin-bottom: 5%;">
+<div style="float: left; width: 49%;">
+<p class="fragment fade-in" data-fragment-index="0"
+   style="font-weight: bold; margin-bottom: -1ex;">
+    Data ~ Colors</p>
+<ul style="margin-bottom: 0%;">
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Data Type ~ Palette Type</p></li>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Context ~ Number of Hues</p></li>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Data Values ~ Lightness Values</p></li>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Value Types ~ Continous/Categorical</p></li>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Missing Data Points ~ Extra Color</p></li>
+<li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+    <p>Value Distinctions ~ Color Name Distinctions</p></li>
+</ul>
+<img class="fragment fade-in" data-fragment-index="3"
+     style="margin-top:0ex; width: 75%; margin-bottom: 0%;"
+     src='./images/Cone_Rod_response.png'>
+</div>
+<div style="float: right; width: 49%;">
+<p class="fragment fade-in" data-fragment-index="2"
+   style="font-weight: bold; margin-bottom: -1ex;">
+    Accessibility</p>
+<ul style="margin-bottom: 0%;">
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+    <p>Color deficiencies (8% in men, 0.5% in women)</p></li>
+<li class="fragment fade-in" data-fragment-index="5" style="padding-bottom: 0ex;">
+    <p>RGB screens</p></li>
+<li class="fragment fade-in" data-fragment-index="5" style="padding-bottom: 0ex;">
+    <p>CMYK prints, black/white prints</p></li>
+<li class="fragment fade-in" data-fragment-index="5" style="padding-bottom: 0ex;">
+    <p>Low contrast beamer</p></li>
+</ul>
+<img class="fragment fade-in" data-fragment-index="4"
+     style="margin-top:0ex; width: 75%; margin-bottom: 0%;"
+     src='./images/colorblind_test.jpg'>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>Test visibility for different color deficiencies with
+        <a href="http://colororacle.org/">colororacle</a>,
+        <a href="https://projects.susielu.com/viz-palette">viz-palette</a>, or
+        <a href="https://www.color-blindness.com/coblis-color-blindness-simulator">coblis simulator</a>.</li>
+    <li>Test your colorblindness with the
+        <a href="https://www.color-blindness.com/ishihara-38-plates-cvd-test/">Ishihara CVD Test</a> and the
+        <a href="https://www.color-blindness.com/color-arrangement-test/">Farnsworth Arrangement Test</a>.
+    </ul>
+</div>
+</section>
+
+<!-- ########### 2 Colors ~ Application ###########  -->
+<section data-transition="slide">
+<h2>2. Engagement - The Colors need to fit the Application</h2>
+<p style="font-style: italic;">Color perception is strongly influenced by context.</p>
+
+<div style="float: left; margin-bottom: 14%;">
+<div style="float: left; width: 33%;">
+<img class="fragment fade-in" data-fragment-index="1"
+     style="margin-top:-1ex; width: 65%; margin-bottom: 1ex;"
+     src='./images/checker_shadow_illusion.png'>
+<img class="fragment fade-in" data-fragment-index="2"
+     style="margin-top:0ex; width: 100%; margin-bottom: ex;"
+     src='./images/colormap_background_study.png'>
+<img class="fragment fade-in" data-fragment-index="2"
+  style="margin-top:0ex; width: 100%; margin-bottom: 2ex;"
+  src='./images/background_response_time.png'>
+<img class="fragment fade-in" data-fragment-index="4"
+      style="margin-top:0ex; width: 100%; margin-bottom: 2ex;"
+      src='./images/viz_palette_cropped.png'>
+</div>
+<div style="float: right; width: 60%;">
+
+<p class="fragment fade-in" data-fragment-index="2"
+   style="font-weight: bold; margin-bottom: -1ex;">
+    Look out for influences by</p>
+<ul style="margin-bottom: 0%;">
+<li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 0ex;">
+    <p>background color (dark-is-more, opaque-is-more)</p></li>
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+    <p>amount of 'ink' (alpha, linewidth, bar height, ...)</p></li>
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+    <p>neighbouring and overlapping colors within figure</p></li>
+<li class="fragment fade-in" data-fragment-index="4" style="padding-bottom: 0ex;">
+    <p>existing color schemes in related figures</p></li>
+</ul>
+
+<div class="fragment fade-in" data-fragment-index="5">
+<p style="font-weight: bold;">Pysiological Basis: The Opponent Process</p>
+<img class="fragment fade-in" data-fragment-index="5"
+     style="margin-top: 1ex; width: 60%; margin-bottom: 2ex;
+            margin-left: 0%; float: left;"
+     src='./images/opponent_colors.png'>
+ <img class="fragment fade-in" data-fragment-index="6"
+      style="margin-top: 0ex; width: 40%; margin-bottom: 2ex;
+             margin-left: 0%; float: right;"
+      src='./images/opponent_process.jpg'>
+</div>
+
+</div>
+</div>
+
+<div class="fragment fade-in-then-out" data-fragment-index="0"
+      style="position: absolute; margin-bottom: 14%; margin-top: 0%;">
+  <img class="fragment fade-in" data-fragment-index="0"
+       style="margin-top:0ex; width: 65%; margin-bottom: 0ex;"
+       src='./images/checker_shadow_illusion.png'>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1"
+      style="position: absolute; margin-bottom: 14%; margin-top: 1%; text-align: right;">
+<img style="margin-top:0ex; width: 70%; margin-bottom: ex;"
+     src='./images/colormap_background_study.png'>
+<img style="margin-top:0ex; width: 70%; margin-bottom: 2ex;"
+  src='./images/background_response_time.png'>
+</div>
+
+<div class="fragment fade-in-then-out" data-fragment-index="3"
+      style="position: absolute; margin-bottom: 14%; margin-top: 5%; text-align: right;">
+<img class="fragment fade-in" data-fragment-index="0"
+   style="margin-top:0ex; width: 40%; margin-bottom: 0ex;"
+   src='./images/viz_palette.png'>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>
+        Source <a href="https://commons.wikimedia.org/wiki/File:Checker_shadow_illusion.svg">checker shadow illustion</a>
+        (by Edward H. Adelson,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        CC BY-SA</a>).</li>
+    <li>
+        Karen B. Schloss et al. (2019) "Mapping Color to Meaning in Colormap Data Visualizations"
+        <a href="https://doi.org/10.1109/TVCG.2018.2865147">doi: 10.1109/TVCG.2018.2865147</a></li>
+    <li>
+        Check for impact of color arrangement with
+        <a href="https://projects.susielu.com/viz-palette">viz-palette</a>
+        </li>
+    <li>Ralph W. Pridmore (2013) "Single cell spectrally opposed responses: opponent colours or complementary colours?"
+        <a href="https://doi.org/10.1007/s12596-012-0090-0">doi:10.1007/s12596-012-0090-0</a></li>
+    <li>
+        Fatigueing certain color pathways can cause impressions of 'chimerical' and 'fobidden' colors (<a href="https://doi.org/10.1364/JOSAA.18.002398">doi:10.1364/JOSAA.18.002398</a>)</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### 3 Colors ~ attention ###########  -->
+<section data-transition="slide">
+<h2>3. Intuitive Understanding - The Colors should Guide the Attention and Interpretation.</h2>
+
+<div style="float: left; margin-bottom: 5%;">
+<div style="float: left; width: 49%;">
+    <p style="font-style: italic;">Colors themselves have meaning.</p>
+    <ul style="margin-bottom: 0%;">
+    <li class="fragment fade-in" data-fragment-index="1" style="padding-bottom: 0ex;">
+        <p>Colors can evoke emotions.</p></li>
+    <li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 0ex;">
+        <p>Colors are associated to concepts.</p></li>
+    <li class="fragment fade-in" data-fragment-index="6" style="padding-bottom: 0ex;">
+        <p>-> highlight, discriminate, guide visual flow</p></li>
+    <li class="fragment fade-in" data-fragment-index="7" style="padding-bottom: 0ex;">
+        <p>depend on context and cultural background</p></li>
+    <li class="fragment fade-in" data-fragment-index="8" style="padding-bottom: 0ex;">
+        <p>Beware of conventions in the field.</p></li>
+    </ul>
+</div>
+<div style="float: right; width: 49%; margin-top: 3%;">
+ <img class="fragment fade-in" data-fragment-index="1"
+      style="margin-top:0ex; width: 80%; margin-bottom: 1ex;"
+      src='./images/inside_out_emotions.jpg'>
+  <p class="fragment fade-in" data-fragment-index="2"
+    style="font-size: 16px; float: left; width: 49%;">
+    one Color - many Concepts</p>
+  <p class="fragment fade-in" data-fragment-index="3"
+     style="font-size: 16px; float: right; width: 49%;">
+     many Colors - one Concept</p>
+  <img class="fragment fade-in" data-fragment-index="2"
+      style="margin-top:-3ex; width: 49%; margin-bottom: 0ex;"
+      src='./images/red_fruit.png'>
+ <img class="fragment fade-in" data-fragment-index="3"
+     style="margin-top:-3ex; width: 49%; margin-bottom: 0ex;"
+     src='./images/colored_apples.png'>
+ <img class="fragment fade-in" data-fragment-index="4"
+    style="margin-top:2ex; width: 90%; margin-bottom: 0ex; float: left;"
+    src='./images/paper_plastic_colors.png'>
+<img class="fragment fade-in" data-fragment-index="5"
+   style="margin-top:0ex; width: 9%; margin-bottom: 0ex; float: right; padding-top: 6ex;"
+   src='./images/recycling_color.png'>
+
+<figure class="fragment fade-in" data-fragment-index="8"
+        style="width: 57%; position: absolute; margin-top: -33%;
+               margin-left: -2%; background-color: white;">
+<img src="./images/excitatory_inhibitory.png">
+<figcaption style="text-align:center; font-style: italic;">
+   Mongillo et al. (2018) "Inhibitory connectivity defines the realm of excitatory plasticity" <br> Nature, <a href="https://doi.org/10.1038/s41593-018-0226-x">doi: 10.1038/s41593-018-0226-x</a>
+</figcaption>
+</figure>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>
+        Karen B. Schloss et al. (2018) "Color inference in visual communication: The meaning of colors in recycling"
+        <a href="https://doi.org/10.1186/s41235-018-0090-y">doi: 10.1186/s41235-018-0090-y</a></li>
+    <li><a href="https://picular.co">Picular</a> is a search engine for colors, and can help test associations.</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### 4 Colors -> aesthetics ###########  -->
+<section data-transition="slide">
+<h2>4. Aestetics - The End Product should be Pleasant to Look at.</h2>
+
+<div style="margin-bottom: 1%; width: 100%;">
+<div style="float: left; text-align: left; width: 49%;">
+<p style="float: left; font-style: italic; margin-right:-15ex;">Aestetics are directly related to Understanding and Engagement.</p>
+<ul style="margin-bottom: 0%; text-align: left;">
+<li class="fragment fade-in" data-fragment-index="1" style="width: 100;">
+    <p>Aesthetics vs. Discrimination</p></li>
+<li class="fragment fade-in" data-fragment-index="2" style="padding-bottom: 0ex;">
+    <p>Color Harmony?</p></li>
+<li class="fragment fade-in" data-fragment-index="3" style="padding-bottom: 0ex;">
+    <p>Color preferences <br>~ preferences of associatiated concepts</p></li>
+<li class="fragment fade-in" data-fragment-index="4" style="padding-bottom: 0ex;">
+    <p>Taste is subjective.</p></li>
+</ul>
+</div>
+<div style="float: right; width: 49%;">
+    <img class="fragment fade-in-then-out" data-fragment-index="2"
+         style="position: absolute; margin-top: 2ex; margin-left: -20%;"
+         src="./images/color_harmony.png">
+    <img class="fragment fade-in-then-out" data-fragment-index="3"
+         style="position: absolute; width: 35%; margin-top: 4ex; margin-left: -20%;"
+         src="./images/lucky_lime.png">
+    <img class="fragment fade-in-then-out" data-fragment-index="4"
+         style="position: absolute; width: 35%; margin-top: 4ex; margin-left: -20%;"
+         src="./images/vomit_colors.png">
+    <img class="fragment fade-in-then-out" data-fragment-index="5"
+         style="position: absolute; width: 35%; margin-top: 4ex; margin-left: -20%;"
+         src="./images/salt_paper_inital.png">
+    <figure class="fragment fade-in-then-out" data-fragment-index="6"
+    style="position: absolute; width: 33%; margin-top: 3.5ex; margin-left: 10%;">
+    <img src="./images/sunset.png">
+     <figcaption style="text-align:center; font-style: italic;">
+        By <a href="https://www.flickr.com/photos/wfryer/12577018343">
+            Wesley Freyer</a>,(
+            <a href="https://creativecommons.org/licenses/by/2.0/">
+                CC BY 2.0</a>)
+    </figcaption>
+    </figure>
+    <img class="fragment fade-in" data-fragment-index="7"
+         style="position: absolute; width: 35%; margin-top: 4ex; margin-left: -17%;"
+         src="./images/Claude_Monet_color.png">
+</div>
+</div>
+<div style="width: 100%; margin-bottom: 17%;">
+<div style="float: left; width: 49%;">
+    <img class="fragment fade-in-then-out" data-fragment-index="6"
+         style="position: absolute; width: 45%; margin-top: 0ex; margin-left: -22%;"
+         src="./images/sunset_colorpalette.png">
+    <img class="fragment fade-in-then-out" data-fragment-index="5"
+         style="position: absolute; width: 35%; margin-top: 0ex; margin-left: -16%;"
+         src="./images/salt_pepper_improved.png">
+    <img class="fragment fade-in-then-out" data-fragment-index="7"
+         style="position: absolute; width: 45%; margin-top: 0ex; margin-left: -22%;"
+         src="./images/Claude_Monet.jpg">
+</div>
+<div style="float: right; width: 49%">
+<ul style="margin-bottom: 0%;">
+<li class="fragment fade-in" data-fragment-index="5" style="padding-bottom: 0ex;">
+    <p>Less is more.<br>Use colors sparingly. Use subtle colors.</p></li>
+<li class="fragment fade-in" data-fragment-index="6" style="padding-bottom: 0ex;">
+    <p>Use color combinations from nature.</p></li>
+<li class="fragment fade-in" data-fragment-index="7" style="padding-bottom: 0ex;">
+    <p>Copy from your favorite artists.</p></li>
+</ul>
+</div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <ul>
+    <li>
+        Karen B. Schloss et al. (2018) "Modeling color preference using color space metrics" <a href="https://doi.org/10.1016/j.visres.2017.07.001">doi: 10.1016/j.visres.2017.07.001</a></li>
+    <li>
+        <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a> provides a harmony based palette tool. <a href="https://www.canva.com/colors/color-palettes/">Canva</a> cataloges color meanings, associations, and combinations.</li>
+    <li>
+        <a href="https://colortheft.com/">Color Theft</a> recreates the color palettes from painters.</li>
+    </ul>
+</div>
+</section>
+
+<!-- ########### Color Life Hacks ###########  -->
+<section data-transition="slide">
+<!-- <h2>Color Life Hacks</h2> -->
+<iframe src="./images/custom_color_palettes.html" title=""
+        style="width: 100%; height: 720px; margin-top: -5%;"></iframe>
+</section>
+
+<!-- ########### Color Life Hacks ###########  -->
+<section data-transition="slide">
+<!-- <h2>Color Life Hacks</h2> -->
+<iframe src="./images/CIE_sRGB_transform.html" title=""
+        style="width: 100%; height: 720px; margin-top: -5%;"></iframe>
+</section>
+
+</section>
+
+<!-- ########### References ###########  -->
+<section>
+<h2>References & Further Reading</h2>
+<!-- Newton
+Goethe -->
+<ul style="font-size: 10px;">
+    <h4 style="margin-bottom: 0px;">Books</h4>
+    <li><a href="https://archive.org/details/opticksoratreat00newtgoog">
+        Isaac Newton (1704) "Opticks"</a></li>
+    <li><a href="https://books.google.de/books?id=XmjgrWAAOkkC&printsec=frontcover&dq=Zur+Farbenlehre&hl=de#v=onepage&q=Zur%20Farbenlehre&f=false">
+        Johann Wolfgang von Goethe (1810) "Zur Farbenlehre"</a></li>
+    <li><a href="">
+        Williamson, S J & Cummins, H Z, (1983) "Light and Color in Nature and Art"</a></li>
+    <li><a href="https://www.goodreads.com/book/show/23461394-outside-color">
+        Mazviita Chirimuuta (2015) "Outside Color: Perceptual Science and the Puzzle of Color in Philosophy"</a></li>
+    <li><a href="https://doi.org/10.1117/3.2500912">
+        Jennifer D. T. Kruschwitz (2018) "Field Guide to Colorimetry and Fundamental Color Modeling"</a></li>
+    <li><a href="https://www.elsevier.com/books/digital-video-and-hd/poynton/978-0-12-391926-7">
+        	Charles Poynton (2012) "Digital Video and HD : Algorithms and Interfaces."</a></li>
+<h4 style="margin-bottom: 0px;">Articles</h4>
+    <li><a href="https://www.youtube.com/watch?v=iDsrzKDB_tA">
+        Youtube lecture on color by Craig Blackwell</a></li>
+    <li><a href="https://eagereyes.org/basics/rainbow-color-map">
+        Robert Kosara "How The Rainbow Color Map Misleads"</a></li>
+    <li><a href="https://eagereyes.org/blog/2011/you-only-see-colors-you-can-name">
+        Robert Kosara "You Only See Colors You Can Name"</a></li>
+    <li><a href="https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html">
+        Anton Mikhailov "Turbo, An Improved Rainbow Colormap for Visualization"</a></li>
+    <li><a href="https://twitter.com/jscarto/status/1164190471222116352">
+        Joshua Stevens, Twitter Thread on Turbo as Improvement on Jet"</a></li>
+    <li><a href="https://www.vis4.net/blog/2013/09/mastering-multi-hued-color-scales/">
+        Gregor Aisch "Mastering Multi-hued Color Scales with Chroma.js"</a></li>
+    <li><a href="https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/">
+        Gregor Aisch "How To Avoid Equidistant HSV Colors"</a></li>
+    <li><a href="https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.k1zjxtfet">
+        Samantha Zhang "Finding the Right Color Palettes for Data Visualizations"</a></li>
+    <li><a href="https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/">
+        Robert Simmon "Subtleties of Color"</a></li>
+    <li><a href="https://mycarta.wordpress.com/2012/05/29/the-rainbow-is-dead-long-live-the-rainbow-series-outline/">
+        Matteo Niccoli  "The Rainbow is Dead... Long live the Rainbow!"</a></li>
+    <li><a href="https://www.c82.net/werner/#colors">
+        Nicholas Rougeux "Werner's Nomenclature of Colours by P. Syme"</a></li>
+    <li><a href="https://personal.sron.nl/~pault/">
+        Paul Tol "Colour schemes and templates"</a></li>
+
+<h4 style="margin-bottom: 0px;">Paper</h4>
+    <li><a href="https://doi.org/10.1111/phc3.12131">
+        Yasmina Jraissati (2014) "On Color Categorization: Why Do We Name Seven Colors in the Rainbow?" doi: 10.1111/phc3.12131</a></li>
+    <li><a href="https://doi.org/10.1002/col.10214">
+        Nilgün Camgöz, Cengiz Yener, Dilek Güvenç (2003) "Effects of hue, saturation, and brightness: Part 2: Attention" doi: 10.1002/col.10214</a></li>
+    <li><a href="https://doi.org/10.1559/152304003100011126">
+        Cynthia A. Brewer (2013) "A Transition in Improving Maps: The ColorBrewer Example" doi: 10.1559/152304003100011126</a></li>
+    <li><a href="https://doi.org/10.1109/MCG.2007.323435">
+        David Borland, Russell M. Taylor (2007) "Rainbow Color Map (Still) Considered Harmful" doi: 10.1109/MCG.2007.323435</a></li>
+    <li><a href="https://serialmentor.com/dataviz/">
+        Claus O. Wilke "Fundamentals of Data Visualization" GitBook</a></li>
+    <li><a href="https://doi.org/10.1098/rstb.2000.0773">
+        Regan et al. (2001) "Fruits, foliage and the evolution of primate colour vision" doi: 10.1098/rstb.2000.0773</a></li>
+    <li><a href="https://dx.doi.org/10.1098%2Frsbl.2006.0440">
+        Changizi et al. (2006) "Bare skin, blood and the evolution of primate colour vision" doi: 10.1098%2Frsbl.2006.0440</a></li>
+    <li><a href="https://doi.org/10.1073/pnas.0701644104">
+        Winawer et al. (2007) "Russian blues reveal effects of language on color discrimination" doi: 10.1073/pnas.0701644104</a></li>
+    <li><a href="https://doi.org/10.1016/j.jecp.2008.06.002">
+        Goldstein et al. (2009) "Knowing color terms enhances recognition: Further evidence from English and Himba" doi: 10.1016/j.jecp.2008.06.002</a></li>
+    <li><a href="https://doi.org/10.1109/TVCG.2018.2865147">
+        Karen B. Schloss et al. (2019) "Mapping Color to Meaning in Colormap Data Visualizations" doi: 10.1109/TVCG.2018.2865147</a></li>
+    <li><a href="https://doi.org/10.1186/s41235-018-0090-y">
+        Karen B. Schloss et al. (2018) "Color inference in visual communication: The meaning of colors in recycling" doi: 10.1186/s41235-018-0090-y</a></li>
+    <li><a href="https://doi.org/10.1016/j.visres.2017.07.001">
+        Karen B. Schloss et al. (2018) "Modeling color preference using color space metrics" doi: 10.1016/j.visres.2017.07.001</a></li>
+    <li><a href="https://doi.org/10.1007/s12596-012-0090-0">
+        Ralph W. Pridmore (2013) "Single cell spectrally opposed responses: opponent colours or complementary colours?" doi: 10.1007/s12596-012-0090-0</a></li>
+    <li><a href="https://doi.org/10.1364/JOSAA.18.002398">
+        Vincent A. Billock et al. (2001) "Perception of forbidden colors in retinally stabilized equiluminant images: an indication of softwired cortical color opponency?" doi: 10.1364/JOSAA.18.002398</a></li>
+    <li><a href="https://doi.org/10.1126/science.1245824">
+        Hanne H. Thoen et al. (2014) "A Different Form of Color Vision in Mantis Shrimp" doi: 10.1126/science.1245824</a></li>
+    <li><a href="https://doi.org/10.1109/TVCG.2018.2876539">
+        Dasgupta A. et al. (2018) "The Effect of Color Scales on Climate Scientists’ Objective and Subjective Performance in Spatial Data Analysis Tasks" doi: 10.1126/science.1245824</a></li>
+
+<h4 style="margin-bottom: 0px;">Podcasts</h4>
+    <li><a href="https://datastori.es">
+        DataStories Podcast.</a>
+        <a href="https://datastori.es/119-color-with-karen-schloss/">
+        Episode 119 with Karen Schloss on Color</a></li>
+    <li><a href="http://www.storytellingwithdata.com/">
+        Storytelling With Data Podcast</a></li>
+</ul>
+
+<!-- https://schlosslab.discovery.wisc.edu/ -->
+</section>
+
+    </div>
+  </div>
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+  <script src="../reveal.js/plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        slideNumber: true,
+
+        // Display presentation control arrows
+    	controls: false,
+
+        center: true,
+        // height: "50%",
+        // width: "50%",
+        margin: 0.1,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '..reveal.js/plugin/notes/notes.js', async: true },
+          { src: '../reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+    </script>
+
+    <style type="text/css">
+        /* 1. Style header/footer <div> so they are positioned as desired. */
+        #footer{
+            position: absolute;
+            bottom: 2%;
+            left: 0%;
+            border-top: 1px solid #838383;
+            font-size: 18px;
+        }
+    </style>
+<!--
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+        var header = $('#header').html();
+        if ( window.location.search.match( /print-pdf/gi ) ) {
+            Reveal.addEventListener( 'ready', function( event ) {
+                $('.slide-background').append(header);
+            });
+        }
+        else {
+            $('div.reveal').append(header);
+       }
+    </script> -->
+
+    </body>
+</html>
