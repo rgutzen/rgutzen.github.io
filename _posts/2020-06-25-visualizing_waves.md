@@ -88,7 +88,7 @@ The thing that I'm least convinced by in this visualization, are the fonts. Alth
 But all in all, I'm very happy how it turned out.
 And of course as planned in the beginning, it is also animated.
 
-<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/visualizing_waves/brain_wave_visualization.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/visualizing_waves/brain_wave_visualization.webm" frameborder="0" allowfullscreen></iframe>
 
 ### Conclusion
 #### The Dataset
@@ -106,7 +106,7 @@ During the actual movement, however, they are reduced in favor of Theta and Delt
 Such visualized relations between the aspects of the neural signals and their correlations to behavioral events may serve as a basis to guide further investigations of the functional role of brain waves.
 
 #### Code Snippet Memo
-The thing that took up __by far__ the most time, nerves, and frankly sanity was the legend. So here, the solution for displaying multiple, differently colored markers in one legend entry:
+The thing that took up the most time, nerves, and frankly sanity was the legend. So here, the solution for displaying multiple, differently colored markers in one legend entry:
 
 ```python
 import matplotlib as mpl  # 3.2.1
