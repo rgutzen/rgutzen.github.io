@@ -47,6 +47,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 
+**Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+*(2020) Bernstein Conference, online*<br>
+**[PDF](poster/2020_Gutzen_Bernstein.pdf)**
+
 **Designing reproducible analysis workflows for experimental and simulated activity using Elephant**<br>
 Danylo Ulianych, Robin Gutzen, Julia Sprenger, Elena Pastorelli, Giulia De Bonis, Pier Stanislao Paolucci, Andrew Davison, Sonja Grün, Michael Denker<br>
 *(2020) Human Brain Project Summit, Athens*<br>
