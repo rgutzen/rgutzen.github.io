@@ -119,3 +119,6 @@ legend = plt.legend([grey_patch, tuple(color_patches)],
                     ['Full Signal', 'Frequency Components'],
                     handler_map={tuple: mpl.legend_handler.HandlerTuple(ndivide=None)})
 ```
+
+#### Update
+This visualization made the second place in the 2020 [John Hunter Excellence in plotting contest](https://jhepc.github.io/gallery.html).
