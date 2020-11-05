@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 subtitle: What I'm working on
+show-avatar: false
 ---
 
 ## Network-level validation

@@ -2,6 +2,7 @@
 layout: page
 title: Publications
 subtitle: <a href="#paper">Paper</a> | <a href="#talks">Talks</a> | <a href="#poster">Poster</a> | <a href="#software">Software</a>
+show-avatar: false
 ---
 
 <a name="paper"></a>
