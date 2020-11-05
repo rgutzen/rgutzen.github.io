@@ -15,7 +15,7 @@ You can also find me here,<br>
 </span></a>
 <b>@rgutzen</b>
 
-&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;
 <a href="https://github.com/rgutzen">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <!-- <i class="fa fa-circle fa-stack-2x" style="font-size: 200%"></i> -->
@@ -23,14 +23,14 @@ You can also find me here,<br>
 </span></a>
 <b>@rgutzen</b>
 
-&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;
 <a href="https://www.linkedin.com/in/robin-gutzen/">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <i class="fa fa-linkedin fa-stack-2x" style="color: #0077B5;"></i>
 </span></a>
 <b>robin-gutzen</b>
 
-&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;
 <a href="https://open.spotify.com/user/schnurrpfeifer">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <i class="fa fa-spotify fa-stack-2x" style="color: #1ED760;"></i>
