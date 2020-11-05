@@ -5,8 +5,8 @@ subtitle: Color Theory Part I - Color Spaces and Perception
 tags: [essay, visualization]
 bigimg:
     - '/assets/color_post/jellyfish.jpg': by Kon Karampelas
-image: /assets/color_post/Goethe_Farbkreis.jpg
-share-img: /assets/color_post/Goethe_Farbkreis.jpg
+image: '/assets/color_post/Goethe_Farbkreis.jpg'
+share-img: '/assets/color_post/Goethe_Farbkreis.jpg'
 comments: false
 social-share: true
 <!-- css: -->
