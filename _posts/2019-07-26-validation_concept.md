@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concepts of validation
+title: Concepts of Validation
 subtitle: A Review and Exploration
 tags: [validation, essay]
 <!-- bigimg: -->

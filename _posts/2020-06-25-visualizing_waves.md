@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualizing cortical waves
+title: Visualizing Cortical Waves
 subtitle:
 tags: [visualization, waves]
 bigimg:
