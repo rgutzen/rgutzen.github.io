@@ -91,6 +91,7 @@ Edgar Adriean & Patrick Merton
 
 ## Reticular theory vs. neuron doctrine
 * Camillo Golgi (1843-1926): developed staining method to contrast soma, axon, and dendrites against the background so they are clearly visible under a microscope (1873)
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4350409/pdf/fnana-09-00014.pdf
 * Reticular theory:
     * proposed by Joseph von Gerlach (1871) and refined and popularised by Camillo Golgi
     * states that everything in the brain is a single continuous network

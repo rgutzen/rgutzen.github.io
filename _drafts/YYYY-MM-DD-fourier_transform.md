@@ -16,3 +16,5 @@ googlefonts: ["Roboto", "Lobster"]
 <!-- gh-reop: -->
 <!-- gh-badge: -->
 ---
+
+... to stretch my thinking-in-frequencies muscles.

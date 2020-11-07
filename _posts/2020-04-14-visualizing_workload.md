@@ -3,18 +3,8 @@ layout: post
 title: Visualizing Workload
 subtitle: An Alternative to the Gantt Chart
 tags: [visualization]
-<!-- bigimg: -->
-image: /assets/workload/portion_plot_color.png
-share-img: /assets/workload/portion_plot.png
-comments: false
-social-share: true
-<!-- css: -->
-<!-- ext-css: -->
-<!-- js: -->
-<!-- js-ext: -->
-googlefonts: ["Roboto", "Lobster"]
-<!-- gh-reop: -->
-<!-- gh-badge: -->
+thumbnail-img: /assets/img/post_visualizing_workload/portion_plot_color.png
+share-img: /assets/img/post_visualizing_workload/portion_plot.png
 ---
 
 Planning is difficult. Predicting priorities, problems, and potentials months or even years into the uncertain and ever-changing future is immensely complex. Not only do we need to forecast future conditions, but also estimate our own behavior, requirements, and efficiency, all while taking into account various known and unknown environment variables. <br>
@@ -37,7 +27,7 @@ Planning time and resources wisely means to not in worrying about details which 
 But for some reason the go-to tool to visualize workload and the temporal sequence of tasks is the *Gantt chart*. Even if you are not familiar with the name you have at least seen in action in some project management tool or progress reports. It is simple and straight-forward to understand. Each task ([A], [B], [C], [D]) is represented by a bar on a timeline with a clear-cut beginning and end. Multiple bars are stacked in parallel to represent different tasks or projects.
 
 <a href="" style="display:block;text-align:center;">
-<img src="/assets/workload/gantt_chart.png" alt="Gantt Chart">
+<img src="/assets/img/post_visualizing_workload/gantt_chart.png" alt="Gantt Chart">
 </a>
 
 However, the Gantt chart has many shortcomings for this application. Although, simplicity is often a good attribute it can come at a cost. Here, the vertical axis is merely a categorical axis with the main purpose of separating the task bars so they won't overlap, and even though this brings readability to the graph the vertical position has no inherent meaning. The classification could just as well be done by a legend or other annotations. Of course, categorical axes are not generally worse than 'analog' axes, but here it takes space away which could be used to represent additional information. And there are task properties which are arguably at least as important to the successful planning as the start and end times, for example, the relative priority of the task, the required manpower, amount of daily attention, or other resources. <br>
@@ -46,7 +36,7 @@ Naturally, within the immense catalog of plots there are alternatives which alre
 For example, the *JoyPlot* (also known as *RidgePlot*), named after the iconic album cover of Joy Divison's 'Unkown Pleasures', combines the vertical categorical axis with a pseudo-dimension to represent not bars but distributions, and thus provides additional information.
 
 <a href="" style="display:block;text-align:center;">
-<img src="/assets/workload/joyplot.png" alt="JoyPlot">
+<img src="/assets/img/post_visualizing_workload/joyplot.png" alt="JoyPlot">
 </a>
 
 Fun fact: the plot on the original album cover <a href="https://blogs.scientificamerican.com/sa-visual/pop-culture-pulsar-the-science-behind-joy-division-s-unknown-pleasures-album-cover/">shows the radio frequencies from the first discovered pulsar</a>.
@@ -70,7 +60,7 @@ and an extra one that is less related to the type to plot,</li>
 Thus, for planning my PhD projects, instead of mapping out when they start and end, I rather describe the portion of time I intend spending on each one, let's say, on a monthly basis. This data can be comfortably written as a `pandas.DataFrame` or `numpy.ndarray`.
 
 <a href="" style="display:block;text-align:center;">
-<img src="/assets/workload/dataframe.png" alt="Workload Dataframe">
+<img src="/assets/img/post_visualizing_workload/dataframe.png" alt="Workload Dataframe">
 </a>
 
 To compare the information content, if I would transform the matrix now to a simple boolean matrix I would arrive again at a Gantt chart, with the horizontal axis (matrix columns) being the time axis and the vertical axis (matrix rows) being the categorical project axis. But here, I want to use the additional information in a way that the estimated workload partitions are being represented on the vertical axis.<br>
@@ -82,7 +72,7 @@ And that is basically it. The full code for the *PartitionPlot* can be found bel
 There it is, in this alternative for visualizing workload I can now see immediately the extend of each project and can anticipate on which project I plan to focus at which point in time, while not hiding any inherent planning uncertainty, and of course accounting for delays by including a buffer.
 
 <a href="" style="display:block;text-align:center;">
-<img src="/assets/workload/portion_plot.png" alt="Partition Plot">
+<img src="/assets/img/post_visualizing_workload/portion_plot.png" alt="Partition Plot">
 </a>
 
 ```python
@@ -195,13 +185,13 @@ Finally, to not let this post be a pure Gantt rant, here are some excellent exam
 
 
 <a href="https://www.anychart.com/products/anygantt/gallery/Gantt_Charts/Server_Status_List.php" style="display:block;text-align:center;">
-<img src="/assets/workload/gantt_server_status.png" alt="Sever Status Gantt Plot">
+<img src="/assets/img/post_visualizing_workload/gantt_server_status.png" alt="Sever Status Gantt Plot">
 </a>
 
 <a href="https://inanirishhome.com/2014/10/09/three-simple-food-rules-to-live-by/" style="display:block;text-align:center;">
-<img src="/assets/workload/gantt_seasonal_veggies.png" alt="Seasonal Veggies Gantt Plot">
+<img src="/assets/img/post_visualizing_workload/gantt_seasonal_veggies.png" alt="Seasonal Veggies Gantt Plot">
 </a>
 
 <a href="https://www.officetimeline.com/timeline-template/meeting-schedule-template" style="display:block;text-align:center;">
-<img src="/assets/workload/gantt_meeting_schedule.png" alt="Seasonal Veggies Gantt Plot">
+<img src="/assets/img/post_visualizing_workload/gantt_meeting_schedule.png" alt="Seasonal Veggies Gantt Plot">
 </a>

@@ -5,7 +5,7 @@ subtitle:
 tags: [validation, computational, essay, interactive]
 <!-- bigimg: -->
 image:
-share_img:
+share-img:
 comments: false
 social-share: true
 <!-- css: -->

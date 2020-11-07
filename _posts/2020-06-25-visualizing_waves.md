@@ -3,19 +3,10 @@ layout: post
 title: Visualizing Cortical Waves
 subtitle:
 tags: [visualization, waves]
-bigimg:
-    - '/assets/visualizing_waves/the_great_wave_cropped.jpg': by Katsushika Hokusai
-image: '/assets/visualizing_waves/the_great_wave_shareimg.jpg'
-share-img: '/assets/visualizing_waves/the_great_wave_shareimg.jpg'
-comments: false
-social-share: true
-<!-- css: -->
-<!-- ext-css: -->
-<!-- js: -->
-<!-- js-ext: -->
-googlefonts: ["Roboto", "Lobster"]
-<!-- gh-reop: -->
-<!-- gh-badge: -->
+cover-img:
+    - '/assets/img/post_visualizing_waves/the_great_wave_cropped.jpg': by Katsushika Hokusai
+thumbnail-img: '/assets/img/post_visualizing_waves/the_great_wave_shareimg.jpg'
+share-img: '/assets/img/post_visualizing_waves/the_great_wave_shareimg.jpg'
 ---
 There is a quote about visualizing data. Although I don't remember where and in which context I read it, and I don't know who is to be credited (Apologies!), the quote stuck with me. It was something like 'If you can not visualize an effect with an appropriate figure, you can not find an significant effect with data analysis'.<br>
 One the one hand, I find this idea humbling in the face of the sheer number and sophistication of the existing statistical methods. On the other hand it spawns the follow-up question: what is the appropriate figure?
@@ -23,12 +14,7 @@ And what if you don't know about an effect beforehand; how does the data visuali
 Even though, I'm not sure these questions are to be actually answered, they are inspiring me to dig deeper into visualizations, to adapt, refine, and revise. So, recently I started experimenting with ways of visualizing the many-faced properties of cortical wave dynamics. And I thought it might be fun to note down some of my thoughts along the way.
 
 <!-- "There is no such thing as information overload. There is only bad design" Edward Tufte -->
-<!-- ToDo:
-* proof read
-* bigimg
-* shareimg
-* Refine Headings
--->
+
 >__The code is open-source, the dataset open-access,
 and the visualization is replicable.__
 <br>
@@ -42,8 +28,6 @@ Different frequencies correlate to different types of brain states and activity 
 Yet, the phenomenon of oscillatory and wave-like neural signals is immensely complex and the underlying mechanisms remain unclear.
 <br>
 Even on a purely descriptive level, the rich dynamics of neural oscillations are challenging to capture in a coherent picture. There are complex interactions between spatially separated signal sources as well as between their frequency components. Such interactions, for example, give rise to a variety of propagating wave patterns that are observable in the amplitude and the phase of the neural activity.
-
-<!-- But how to go about visualizing such a complex, many-faced phenomenon? -->
 
 ### Initial Thoughts on Visualization Aspects
 
@@ -61,7 +45,7 @@ The major challenge here is to bring these aspects together within one visualiza
 
 ### The First Attempt
 <figure>
-<img src="/assets/visualizing_waves/figure_v1.png" alt="version 1">
+<img src="/assets/img/post_visualizing_waves/figure_v1.png" alt="version 1">
 </figure>
 
 This is what I got after wrestling with matplotlib for an afternoon. It somehow works and includes most of the ideas I had going in, but there are a couple of things I don't like.
@@ -78,7 +62,7 @@ But mostly I'm not happy with the arrangement of the different elements. Here, t
 Before jumping back into the code to make changes, I started making concept sketches on how to arrange the elements. I had the idea that it would be cool to arrange the square elements diagonally. However, after a couple of sketches I realized that no matter how I turned it, it really didn't make any sense here. So, I narrowed it down to a more traditionally ordered, left-to-right reading premise.
 
 <figure>
-<img src="/assets/visualizing_waves/snapshot.png" alt="version 2">
+<img src="/assets/img/post_visualizing_waves/snapshot.png" alt="version 2">
 </figure>
 
 Here we go, much better. The larger, more prominent illustration of the brain and the electrode placement introduces the story of the visualization. It is overall calmer and decluttered. This is mostly due to getting rid of spines, ticks, and labels as far as possible. The frequency colors are now more similar in hue and no longer overlap with the phase color map. Because of perpendicular arrangement of time and frequency and the separation of the frequency components, the frequency colors don't play a crucial role in the time domain anymore and are just there to slightly ease the distinction of frequency regimes.
@@ -88,7 +72,7 @@ The thing that I'm least convinced by in this visualization, are the fonts. Alth
 But all in all, I'm very happy how it turned out.
 And of course as planned in the beginning, it is also animated.
 
-<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/visualizing_waves/brain_wave_visualization.webm" frameborder="0" allowfullscreen></iframe>
+<iframe width="750" height="422" style="text-align:center;" src="https://rgutzen.github.io/assets/img/post_visualizing_waves/brain_wave_visualization.webm" frameborder="0" allowfullscreen></iframe>
 
 ### Conclusion
 #### The Dataset
