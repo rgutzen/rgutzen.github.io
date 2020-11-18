@@ -53,6 +53,11 @@ Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luc
 *(2020) Bernstein Conference, online*<br>
 **[PDF](poster/2020_Gutzen_Bernstein.pdf)**
 
+**Estimation of the cortical microconnectome from in vivo spiking activity in the macaque monkey**<br>
+Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada <br>
+*(2020) CNS, online*<br>
+**[PDF](poster/2020_MoralesGregorio_OCNS.pdf)**
+
 **Designing reproducible analysis workflows for experimental and simulated activity using Elephant**<br>
 Danylo Ulianych, Robin Gutzen, Julia Sprenger, Elena Pastorelli, Giulia De Bonis, Pier Stanislao Paolucci, Andrew Davison, Sonja Grün, Michael Denker<br>
 *(2020) Human Brain Project Summit, Athens*<br>

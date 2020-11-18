@@ -17,7 +17,6 @@ In either scenario, several aspects must be considered. Any validation test only
 * [Validation paper](https://doi.org/10.3389/fninf.2018.00090)
 * [Verification paper](https://doi.org/10.3389/fninf.2018.00081)
 
-
 Related tags: [Validation](../tags/#validation)
 
 <!-- ![](/assets/rasterplot.png)
