@@ -2,9 +2,9 @@
 layout: post
 title: Visualizing Workload
 subtitle: An Alternative to the Gantt Chart
-tags: [visualization]
 thumbnail-img: /assets/img/post_visualizing_workload/portion_plot_color.png
 share-img: /assets/img/post_visualizing_workload/portion_plot.png
+tags: [visualization]
 ---
 
 Planning is difficult. Predicting priorities, problems, and potentials months or even years into the uncertain and ever-changing future is immensely complex. Not only do we need to forecast future conditions, but also estimate our own behavior, requirements, and efficiency, all while taking into account various known and unknown environment variables. <br>
@@ -15,7 +15,7 @@ Thinking about it this way, it is not surprising that we as humans are notorious
  <!-- Gödel, Escher, Bach: An Eternal Golden Braid. 20th anniversary ed., 1999, p. 152. ISBN 0-465-02656-7. -->
 
 > <a href="https://doi.org/10.1145/4284.315122">90 percent rule:</a> <br>
-> *The first 90 percent of the code accounts for the first 10 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.*
+> *The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.*
 <!-- Tom Cargill, Bell Labs: Bentley, Jon (1985). "Programming pearls: Bumper-Sticker Computer Science" (fee required). Communications of the ACM. 28 (9): 896–901. doi:10.1145/4284.315122. ISSN 0001-0782. -->
 
 And after all, the difficulty of planning may be attested by everyone who ever procrastinated until the last minute to do something, to then did it under tremendous stress and quality trade-offs.
