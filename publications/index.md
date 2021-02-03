@@ -47,6 +47,10 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+**Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+*(2021) Relating slow waves from different measurement techniques through an adaptable pipeline, online*<br>
+**[PDF](poster/2021_Gutzen_HBPSC.pdf)**
 
 **Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
@@ -115,6 +119,9 @@ Robin Gutzen, Michael von Papen, Michael Denker<br>
 *RRID:SCR_016543*<br>
 **[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**
 
+**Elephant Tutorial: LFP analysis**
+Robin Gutzen, Alexander Kleinjohann<br>
+**[Video](https://vimeo.com/507843717/4f40ff84c8) | [Notebook (limited access)](https://wiki.ebrains.eu/bin/view/Collabs/elephant-tutorials/)**
 
 <!-- **Slow-wave analysis pipeline**<br>
 Robin Gutzen, Giulia De Bonis, Michael Denker, Pier Stanislao Paoluccis<br>
