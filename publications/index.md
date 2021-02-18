@@ -47,9 +47,9 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
-**Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
+**Relating slow waves from different measurement techniques through an adaptable pipeline**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
-*(2021) Relating slow waves from different measurement techniques through an adaptable pipeline, online*<br>
+*(2021) Human Brain Project Student Conference , online*<br>
 **[PDF](poster/2021_Gutzen_HBPSC.pdf)**
 
 **Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
