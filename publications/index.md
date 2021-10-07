@@ -23,6 +23,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**Eigenangles: evaluating the statistical similarity of neural network simulations via eigenvector angles**<br>
+(2021) Neural Coding, online<br>
+**[Slides](slides/2021-07-27_Neural_Coding_Eigenangles/Gutzen_Neural_Coding_2021_Eigenangles.pdf) |
+[Proceedings](https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/b/8998/files/2021/07/Proceedings.pdf)**
+
 **Developing pipelines for ​multi- scale/species/method analysis​**<br>
 (2020) Human Brain Project Summit, Athens<br>
 **[Slides (short version)](slides/20_SummitAthens/short_version.html) |
@@ -55,7 +60,7 @@ Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luc
 **Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2020) Bernstein Conference, online*<br>
-**[PDF](poster/2020_Gutzen_Bernstein.pdf)**
+**[PDF](poster/2020_Gutzen_Bernstein.pdf) | [Abstract](http://doi.org/10.12751/nncn.bc2020.0030)**
 
 **Estimation of the cortical microconnectome from in vivo spiking activity in the macaque monkey**<br>
 Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada <br>
