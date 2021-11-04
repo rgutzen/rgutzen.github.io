@@ -23,10 +23,13 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**An adaptable analysis pipeline makes cortical wave phenomena comparable across heterogeneous datasets**<br>
+(2021) Sfn, online<br>
+**[Slides](slides/2021-11-11_Sfn_SWAP/2021_Sfn_slides_Gutzen.pdf) | [Presentation](slides/2021-11-11_Sfn_SWAP/2021_Sfn_presentation_Gutzen.mp4)**
+
 **Eigenangles: evaluating the statistical similarity of neural network simulations via eigenvector angles**<br>
 (2021) Neural Coding, online<br>
-**[Slides](slides/2021-07-27_Neural_Coding_Eigenangles/Gutzen_Neural_Coding_2021_Eigenangles.pdf) |
-[Proceedings](https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/b/8998/files/2021/07/Proceedings.pdf)**
+**[Slides](slides/2021-07-27_Neural_Coding_Eigenangles/Gutzen_Neural_Coding_2021_Eigenangles.pdf) | [Proceedings](https://cpb-us-e1.wpmucdn.com/sites.uw.edu/dist/b/8998/files/2021/07/Proceedings.pdf)**
 
 **Developing pipelines for ​multi- scale/species/method analysis​**<br>
 (2020) Human Brain Project Summit, Athens<br>
@@ -53,12 +56,12 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 **Relating slow waves from different measurement techniques through an adaptable pipeline**<br>
-Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2021) Human Brain Project Student Conference, online*<br>
 **[PDF](poster/2021_Gutzen_HBPSC.pdf)**
 
 **Building adaptable and reusable pipelines for investigating the features of slow cortical rhythms across scales, methods, and species**<br>
-Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francescgo Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2020) Bernstein Conference, online*<br>
 **[PDF](poster/2020_Gutzen_Bernstein.pdf) | [Abstract](http://doi.org/10.12751/nncn.bc2020.0030)**
 
