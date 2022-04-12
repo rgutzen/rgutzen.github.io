@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Robin Gutzen">
+  <meta name="dcterms.date" content="2019-05-06">
+  <title>Resting State LFP Phase Waves</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../reveal.js/css/theme/../../../slides.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Resting State LFP Phase Waves</h1>
+  <p class="author">Robin Gutzen</p>
+  <p class="date">2019-05-06</p>
+</section>
+
+<section><section id="the-lfp-and-phase-waves" class="title-slide slide level1"><h1>The LFP and Phase Waves</h1></section><section id="the-local-field-potential---lfp" class="slide level2">
+<h2>The Local Field Potential - LFP</h2>
+<p>The local field potential (LFP) reflects activity of many neurons in the vicinity of the recording electrode</p>
+<p>lowpass filtered to reduce the influence of spikes (~250Hz)</p>
+<figure>
+<img data-src="./images/LFP_reach_linden.jpg" alt="Linden et al. 2011" /><figcaption><em>Linden et al. 2011</em></figcaption>
+</figure>
+<aside class="notes">
+<ul>
+<li>and is therefore useful for studying local network dynamics.</li>
+<li>“All extracellular potentials stem from summed contributions of transmembrane currents across the surfaces of neurons.”</li>
+<li>depends on morphology and location of synaptic input</li>
+<li>reach extends with correlation of the synaptic inputs - Linden et al. 2011</li>
+</ul>
+</aside>
+</section><section id="why-study-lfp" class="slide level2">
+<h2>Why study LFP?</h2>
+<h3 id="lfp-as-summary-of-local-network-dynamics">LFP as summary of local network dynamics</h3>
+<p><em>overcoming under sampling?</em></p>
+<h3 id="lfp-as-driver-of-population-dynamics">LFP as driver of population dynamics</h3>
+<p><em>ephatic coupling?</em></p>
+</section><section id="lfp-oscillations" class="slide level2">
+<h2>LFP oscillations</h2>
+<p>beta band: 13-30Hz</p>
+<p><img src="./images/beta_lfp.png" alt="beta_lfp" height="560"/></p>
+</section><section id="lfp-oscillations-1" class="slide level2">
+<h2>LFP oscillations</h2>
+<h3 id="interesting-properties-phase-amplitude-spindles">interesting properties: phase, amplitude, spindles</h3>
+<p><img src="./images/beta_lfp_closeup.png" alt="beta_lfp_closeup" height="560"/></p>
+</section><section id="what-is-a-face-wave" class="slide level2">
+<h2>What is a face wave?</h2>
+<p><img data-src="./images/face_wave.gif" /></p>
+</section><section id="what-is-phase-wave" class="slide level2">
+<h2>What is phase wave?</h2>
+<h3 id="spatial-and-temporal-oscillation-of-lfp-phase">spatial and temporal oscillation of LFP phase</h3>
+<figure>
+<img data-src="./images/denker_waves.png" alt="Denker et al. 2018" /><figcaption>Denker et al. 2018</figcaption>
+</figure>
+</section><section id="what-we-know-so-far-excerpt" class="slide level2">
+<h2>What we know so far (excerpt)</h2>
+<p>(<em>Rubino et al. 2006</em>) there are planar phase waves with preferred directions (M1)</p>
+<p>(<em>Denker et al. 2018, Rule et al. 2018</em>) types of waves: planar, synchronous, circular, radial, random</p>
+<p>(<em>Townsend et al. 2015, Denker et al. 2018</em>) wave type, propagation velocity, beta power, and behavior correlate</p>
+<p>(<em>Townsend et al. 2015</em>) there are preferred transitions between wave types</p>
+<p>(<em>Huang et al. 2010</em>) different frequencies are dominant for different wave types</p>
+<p>(<em>Denker et al. 2011</em>) phase locking of spikes, stronger for unitary events</p>
+<p>(<em>Vinck et al. 2019</em>) gamma phase locking is tuned to orientation (V1)</p>
+</section><section id="what-is-the-functional-role-lfp-oscillations-in-neural-network-dynamics" class="slide level2">
+<h2>What is the functional role LFP oscillations in neural network dynamics?</h2>
+<p>can we find similar wave dynamics in other datasets (tasks, areas)?</p>
+<p>how to best characterize the wave dynamics?</p>
+<p>investigate relationship of beta power to wave properties</p>
+<p>investigate relationship of wave properties to behavior/state</p>
+<p>are the findings consistent in other frequency bands?</p>
+<p>use wave dynamics to calibrate/validate models</p>
+<p>what is the LFP relation to spikes (phase locking, location)?</p>
+<aside class="notes">
+<p>whether this is causal or not, is still another questions</p>
+</aside>
+</section></section>
+<section><section id="resting-state-lfp-phase-waves" class="title-slide slide level1"><h1>Resting state LFP phase waves</h1></section><section id="nikos-doing-nothing" class="slide level2">
+<h2>Nikos ‘doing nothing’</h2>
+<video  height="680" controls autoplay loop muted>
+<source data-src="./images/i140701-004_betalarge_50Hz_6000-14000ms_movie_100fps_png.mp4" type="video/mp4">
+<source data-src="./images/i140701-004_betalarge_50Hz_6000-14000ms_movie_100fps_png.webm" type="video/webm">
+<p>Your browser does not support the video tag. </video></p>
+<!-- ## frequency spectrum **ToDo**
+![](./images/frequency_spectrum.png) -->
+</section><section id="visualization-of-wave-properties" class="slide level2">
+<h2>Visualization of wave properties</h2>
+<video  height="620" controls autoplay loop muted>
+<source data-src="./images/i140701-004_betalarge_1000Hz_1500-3000ms_movie_30fps_png.mp4" type="video/mp4">
+<source data-src="./images/i140701-004_betalarge_1000Hz_1500-3000ms_movie_30fps_png.webm" type="video/webm">
+<p>Your browser does not support the video tag. </video></p>
+<aside class="notes">
+<p>video 1500-3000ms width=“960”</p>
+</aside>
+</section><section id="phase-wave-planarity" class="slide level2">
+<h2>Phase wave planarity</h2>
+<video  height="620" controls autoplay loop muted>
+<source data-src="./images/i140701-004_betalarge_1000Hz_200-1200ms_movie_30fps_png.mp4" type="video/mp4">
+<source data-src="./images/i140701-004_betalarge_1000Hz_200-1200ms_movie_30fps_png.webm" type="video/webm">
+<p>Your browser does not support the video tag. </video></p>
+</section><section id="beta-power---phase-wave-planarity" class="slide level2">
+<h2>beta power - phase wave planarity</h2>
+<p><img src="./images/planarity_bpower.png" alt="planarity_bpower" height="560"/></p>
+</section><section id="beta-event" class="slide level2">
+<h2>beta event</h2>
+<video  height="620" controls autoplay loop muted>
+<source data-src="./images/i140701-004_betalarge_1000Hz_146200-146800ms_movie_30fps_png.mp4" type="video/mp4">
+<source data-src="./images/i140701-004_betalarge_1000Hz_146200-146800ms_movie_30fps_png.webm" type="video/webm">
+<p>Your browser does not support the video tag. </video></p>
+<aside class="notes">
+<p>video 146200-146800ms</p>
+</aside>
+</section><section id="beta-power---phase-wave-planarity-1" class="slide level2">
+<h2>beta power - phase wave planarity</h2>
+<p><img src="./images/planarity_bpower_corr.png" alt="planarity_bpower_corr" height="560"/></p>
+</section><section id="beta-power---phase-wave-planarity---state" class="slide level2">
+<h2>beta power - phase wave planarity - state</h2>
+<p><img src="./images/planarity_bpower_corr_state.png" alt="planarity_bpower_corr_state" height="560"/></p>
+</section><section id="beta-power---state" class="slide level2">
+<h2>beta power - state</h2>
+<p><img src="./images/beta_state_stats.png" alt="beta_state_stats" height="560"/></p>
+</section><section id="preferred-direction-of-phase-waves" class="slide level2">
+<h2>preferred direction of phase waves</h2>
+<p><img src="./images/beta_direction.png" alt="beta_direction" height="560"/></p>
+</section><section id="up-next" class="slide level2">
+<h2>Up next</h2>
+<ul>
+<li><p>implement and compare methods for wave characterization</p></li>
+<li><p>apply the analysis to V4A data</p></li>
+<li><p>compare wave characteristics to spike pattern</p></li>
+<li><p>use wave characteristic for model validation</p></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
