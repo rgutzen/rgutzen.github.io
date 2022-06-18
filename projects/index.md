@@ -26,6 +26,8 @@ Related tags: [Validation](../tags/#validation)
 *[to be filled]*
 ## Eigenangles
 *[to be filled]*
+## The Kintsugi Brain
+*[to be filled]*
 ## Dynamics of cortical LFP waves and spikes
 *[to be filled]*
 ## Links to related projects

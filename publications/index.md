@@ -9,7 +9,7 @@ show-avatar: false
 
 ## Paper
 
-**Evaluating the statistical similarity of neural network activity andconnectivity via eigenvector angles**<br>
+**Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
 *(2022) in review*<br>
 <!-- **[Paper](https://doi.org/10.3389/fninf.2018.00090) | [PDF](paper/fninf-12-000090.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)** -->
