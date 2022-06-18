@@ -9,6 +9,12 @@ show-avatar: false
 
 ## Paper
 
+**Evaluating the statistical similarity of neural network activity andconnectivity via eigenvector angles**<br>
+Robin Gutzen, Sonja Grün, Michael Denker<br>
+*(2022) in review*<br>
+<!-- **[Paper](https://doi.org/10.3389/fninf.2018.00090) | [PDF](paper/fninf-12-000090.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)** -->
+
+
 **Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
 *(2018) Frontiers in Neuroinformatics 12:90, doi:10.3389/fninf.2018.00090*<br>
@@ -23,13 +29,17 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
+(2022) EBRAINS BASSES workshop, Rome<br>
+<!-- **[Slides](slides/2022-01-25_BrainMatters/HBPwebinar_slides_Gutzen.pdf) | [Stream](https://www.youtube.com/watch?v=ego6HPyaz4k)** -->
+
+**Rigorous comparison and validation of network activity data**<br>
+(2022) Helmholtz PoF Topic 3 Talk Series, online<br>
+**[Slides](slides/2022-05-18_Topic3/PofTopic3_network-comparisons_2022-05-18_Talk.pdf)**
+
 **An adaptable analysis pipeline makes cortical wave phenomena comparable across heterogeneous datasets**<br>
 (2022) Brain Matters webinar, online<br>
 **[Slides](slides/2022-01-25_BrainMatters/HBPwebinar_slides_Gutzen.pdf) | [Stream](https://www.youtube.com/watch?v=ego6HPyaz4k)**
-
-**An adaptable analysis pipeline makes cortical wave phenomena comparable across heterogeneous datasets**<br>
-(2021) Sfn Neuroscience, online<br>
-**[Slides](slides/2021-11-11_Sfn_SWAP/2021_Sfn_slides_Gutzen.pdf) | [Presentation](slides/2021-11-11_Sfn_SWAP/2021_Sfn_presentation_Gutzen.mp4)**
 
 **Eigenangles: evaluating the statistical similarity of neural network simulations via eigenvector angles**<br>
 (2021) Neural Coding, online<br>
@@ -59,10 +69,16 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Cobrawap: a modular cortical wave analysis pipeline for heterogeneous data**<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+*(2022) OHBM Conference, Glasgow*<br>
+**[PDF](poster/2022_Gutzen_OHBM.pdf)**
+
 **An adaptable analysis pipeline makes cortical wave phenomena comparable across heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2021) Sfn Neuroscience, online*<br>
-**[PDF](poster/2021_Gutzen_Sfn.pdf) | [Talk](poster/2021_Gutzen_Sfn_talk.mp4)**
+**[PDF](poster/2021_Gutzen_Sfn.pdf) | [Video](poster/2021_Gutzen_Sfn_talk.mp4)**
 
 **Relating slow waves from different measurement techniques through an adaptable pipeline**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
@@ -130,6 +146,9 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 <a name="software"></a>
 
 ## Software
+**Cobrawap**<br>
+Robin Gutzen, Giulia De Bonis, Chiara De Luca, Michael Denker<br>
+**[GitHub](https://github.com/INM-6/cobrawap)**
 
 **NetworkUnit v0.1.1**<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
