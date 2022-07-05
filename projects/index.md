@@ -13,7 +13,7 @@ The only measure to assess how much trust we can place in a given model is how w
 In either scenario, several aspects must be considered. Any validation test only considers a specific statistic of a certain aspect of a finitely sampled data set. Therefore, in order to gain a more complete and less biased evaluation, it is necessary to apply multiple validation tests, taking into account different aspects and statistical measures. For example, for a neural network model the dynamics on the single-cell and network activity level are not trivially related, and thus should be regarded individually. Additionally, any test score should be quantitative, reproducible, and ideally based on open, standardized software tools.
 </p>
 * Python package [NetworkUnit](https://github.com/INM-6/NetworkUnit)
-* Interactive tutorial [notebook](https://gke.mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Findex.ipynb)
+<!-- * Interactive tutorial [notebook](https://gke.mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Findex.ipynb) -->
 * [Validation paper](https://doi.org/10.3389/fninf.2018.00090)
 * [Verification paper](https://doi.org/10.3389/fninf.2018.00081)
 
@@ -22,7 +22,7 @@ Related tags: [Validation](../tags/#validation)
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
 
-## Slow waves analysis pipeline
+## Cortical waves analysis pipeline
 *[to be filled]*
 ## Eigenangles
 *[to be filled]*

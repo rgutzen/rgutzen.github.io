@@ -31,7 +31,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 ## Talks
 **Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
 (2022) EBRAINS BASSES workshop, Rome<br>
-<!-- **[Slides](slides/2022-01-25_BrainMatters/HBPwebinar_slides_Gutzen.pdf) | [Stream](https://www.youtube.com/watch?v=ego6HPyaz4k)** -->
+**[Slides](slides/2022-06-14_BASSES/BASSES_slides_Gutzen.pdf)**
 
 **Rigorous comparison and validation of network activity data**<br>
 (2022) Helmholtz PoF Topic 3 Talk Series, online<br>
