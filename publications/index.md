@@ -8,12 +8,22 @@ show-avatar: false
 <a name="paper"></a>
 
 ## Paper
+**Activity-driven microconnectome estimation of macaque visuomotor cortices**
+Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
+*(2022) in preparation*<br>
+
+**Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, \& Michael Denker<br>
+*(2022) in preparation*<br>
 
 **Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
 *(2022) in review*<br>
-<!-- **[Paper](https://doi.org/10.3389/fninf.2018.00090) | [PDF](paper/fninf-12-000090.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)** -->
 
+**Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
+Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, Elena Pastorelli, Francesco Simula, Cosimo Lupo, Leonardo Tonielli, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Pavone, Micheal Denker, Pier Stanislao Paolucci<br> 
+*(2022) arxiv*<br>
+**[Paper](https://doi.org/10.48550/arXiv.2104.07445)** 
 
 **Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
