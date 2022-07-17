@@ -6,6 +6,7 @@ show-avatar: false
 ---
 
 ## Network-level validation
+[expand]
 <p style="display:inline-block">
 <img src="/assets/img/validation_environment.png" style="float:right" alt="" width="400"/>
 Modeling and the simulation of the activity in neuronal networks is an essential part of modern neuroscience and represents a powerful vehicle to combine insights from experiments and theory into a coherent understanding of brain function.
@@ -19,15 +20,46 @@ In either scenario, several aspects must be considered. Any validation test only
 
 Related tags: [Validation](../tags/#validation)
 
+[/expand]
+
+
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
 
-## Cortical waves analysis pipeline
-*[to be filled]*
+## Collaborative Wave Analysis Pipeline 
+<p style="display:inline-block">
+<img src="/assets/img/slow_waves.gif" style="float:right" alt="" width="400"/>
+In the past decades, neuroscience excelled at accumulating a rich, heterogeneous landscape of datasets and methodologies. It poses, however, a new challenge to effectively leverage the benefits of such diversity by combining the insights from across experiments, studied species, and measurement techniques in order to build a cumulative understanding of brain function. 
+Integration of this heterogeneity requires rigorous analysis workflows that offer to distill consistent, reproducible, comparable, and reusable conclusions. Aligning data from various sources enables not only “big-data” analysis approaches, but also allows to produce a broader experimental basis for validating models and theories across the experimental and computational scales of description. 
+I explore this approach in the context of cortical wave activity, which is persistently observed in across various species, measurement techniques, and brain states. In particular, slow wave activity (1-5 Hz) is ubiquitous during sleep and anesthesia, and beta waves are prominent in the motor cortex during movement planning.
+The Collaborative Wave Analysis Pipeline (Cobrawap) is a framework of modular elements that makes it possible to adapt analysis workflows to diverse data modalities and derive comparable characterizations of wave activity. Here, the key objective is to interface existing methods, standards, and tools in a flexible manner in order to serve the requirements of a wide range of datasets and research questions using a common set of analysis components. Moreover, by building on and co-developing other specialized open-source tools, I further emphasize the reusability and extendability of each of the pipeline components. 
+To demonstrate the pipeline I perform "meta-studies" of wave characteristics (such as velocities or directions) across a range of openly available ECoG and calcium imaging datasets and investigate the influences of experimental parameters such as the mice’s genetic strain, the type and dosage of anesthetics, the measurement technique and the spatial resolution. Further the pipeline can also be used to benchmark
+specific methods within the analysis by switching them with another method and analyzing the same pool of data. Finally, its reusable design  and modularity helps to derive other analysis pipelines for similar research endeavors to amplify collaborative research.
+</p>
+* Python implementation of [Cobrawap](https://github.com/INM-6/cobrawap)
+* [Paper of related modeling study](https://doi.org/10.48550/arXiv.2104.07445)
+* Publication in preparation
+* Talk in postproduction
+
+<!-- Related tags: [Validation](../tags/#validation) -->
+
 ## Eigenangles
-*[to be filled]*
-## The Kintsugi Brain
-*[to be filled]*
+<p style="display:inline-block">
+<img src="/assets/img/eigenangles.png" style="float:right" alt="" width="400"/>
+Neural systems can be represented as networks, where neurons constitute the nodes and the connection between pairs of neurons is given by either the synaptic strength or functional connectivity, as given for example by the correlations of spiking activity.
+Performing quantitative comparisons between different networks is a prevalent task in many research scenarios. Overcoming the some limitations of just comparing the one dimensional distributions of characteristic measures, I constructed a statistical test for the
+comparison of matrices representing pairwise aspects of neural networks, in particular the correlation of spiking activity and the anatomical connectivity. 
+The "eigenangle test" quantifies the similarity of two matrices by the angles between their ranked eigenvectors. Applying the test to correlation matrices of stochastic models of correlated spiking activity it demonstrates how it can detect structural aspects of the correlation (e.g., correlated assemblies) that is not visible for classical two-sample tests.
+Furthermore, the principle of the eigenangle test can be applied to compare the similarity of adjacency matrices of certain types of networks. Thus, the approach can be used to quantitatively explore the relationship between connectivity and activity with the same metric. By applying the eigenangle test to the comparison of connectivity matrices and correlation matrices of a random balanced network model before and after a specific synaptic rewiring intervention, it becomes possible to gauge the influence of connectivity features onto the correlated activity of the network. Potential applications of the eigenangle test include simulation experiments, model validation, and data analysis.
+</p>
+* Python implementation of [Eigenangles](https://gin.g-node.org/INM-6/eigenangles)
+
+## Neuro Pottery
+<p style="display:inline-block">
+<img src="/assets/img/post_kintsugi_brain/20210818_112047.jpg" style="float:right" alt="" width="400"/>
+
+</p>
+
 ## Dynamics of cortical LFP waves and spikes
 *[to be filled]*
 ## Links to related projects

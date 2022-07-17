@@ -165,7 +165,7 @@ Robin Gutzen, Michael von Papen, Michael Denker<br>
 *RRID:SCR_016543*<br>
 **[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**
 
-**Elephant Tutorial: LFP analysis**
+**Elephant Tutorial: LFP analysis**<br>
 Robin Gutzen, Alexander Kleinjohann<br>
 **[Video](https://vimeo.com/507843717/4f40ff84c8) | [Notebook (limited access)](https://wiki.ebrains.eu/bin/view/Collabs/elephant-tutorials/)**
 
