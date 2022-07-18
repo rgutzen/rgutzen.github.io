@@ -127,6 +127,9 @@ site-js:
     - "/assets/js/mathjax.js"
   # - "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 
+# sass:
+#   implementation: sass-embedded
+
 # --- Web Analytics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag

@@ -57,12 +57,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Developing pipelines for ​multi- scale/species/method analysis​**<br>
 (2020) Human Brain Project Summit, Athens<br>
-**[Slides (short version)](slides/20_SummitAthens/short_version.html) |
-[Slides (long version)<img src="/assets/img/lock-solid.svg" style="height:0.8em;">](slides/20_SummitAthens/long_version.html)**
+**[Slides (short version)](slides/20_SummitAthens/short_version.html) | [Slides (long version)<img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/20_SummitAthens/long_version.html)**
 
 **Building a workflow for the analysis of slow wave activity across heterogeneous measurement**<br>
 (2019) Human Brain Project SP3 annual meeting, Liège<br>
-**[Slides <img src="/assets/img/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
+**[Slides <img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
 
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
@@ -70,7 +69,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Comparing activity dynamics of models and living brains**<br>
 (2019) Human Brain Project SP4 annual meeting, Paris<br>
-**[Slides <img src="/assets/img/lock-solid.svg" style="height:0.8em;">](slides/19_SP4Paris/slides.pdf)**
+**[Slides <img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/19_SP4Paris/slides.pdf)**
 
 **How much do you trust a model? - Rigor in neuroscientific modeling and simulation through validation**<br>
 (2019) Brain Twitter Conference<br>
