@@ -56,6 +56,7 @@ Furthermore, the principle of the eigenangle test can be applied to compare the 
 </p>
 <br>
 * Python implementation of [Eigenangles](https://gin.g-node.org/INM-6/eigenangles)
+* Publication in review
 
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
