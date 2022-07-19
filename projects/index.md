@@ -26,7 +26,9 @@ Related tags: [Validation](../tags/#validation)
 {% enddetails %}
 
 
-{% details ## Collaborative Brain-Wave Analysis Pipeline %}
+<!-- {% details  -->
+## Collaborative Brain-Wave Analysis Pipeline 
+<!-- %} -->
 <p style="display:inline-block">
 <img src="/assets/img/slow_waves.gif" style="float:right" alt="" width="350"/>
 In the past decades, neuroscience excelled at accumulating a rich, heterogeneous landscape of datasets and methodologies. It poses, however, a new challenge to effectively leverage the benefits of such diversity by combining the insights from across experiments, studied species, and measurement techniques in order to build a cumulative understanding of brain function. 
@@ -43,9 +45,11 @@ specific methods within the analysis by switching them with another method and a
 * Talk in postproduction
 
 <!-- Related tags: [Validation](../tags/#validation) -->
-{% enddetails %}
+<!-- {% enddetails %} -->
 
-{% details ## Eigenangles %}
+<!-- {% details  -->
+## Eigenangles 
+<!-- %} -->
 <p style="display:inline-block">
 <img src="/assets/img/eigenangles.png" style="float:right" alt="" width="400"/>
 Neural systems can be represented as networks, where neurons constitute the nodes and the connection between pairs of neurons is given by either the synaptic strength or functional connectivity, as given for example by the correlations of spiking activity.
@@ -61,23 +65,27 @@ Furthermore, the principle of the eigenangle test can be applied to compare the 
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
 
-{% enddetails %}
+<!-- {% enddetails %} -->
 
-{% details ## Neuro Pottery %}
+<!-- {% details  -->
+## Neuro Pottery 
+<!-- %} -->
 <p style="display:inline-block">
 <img src="/assets/img/post_kintsugi_brain/close-up_exhibition_shot.jpeg" style="float:right" alt="" width="300"/>
 [to be filled]
 </p>
 
-{% enddetails %}
+<!-- {% enddetails %} -->
 
-{% details ## Dynamics of cortical LFP waves and spikes %}
+<!-- {% details  -->
+## Dynamics of cortical LFP waves and spikes 
+<!-- %} -->
 <p style="display:inline-block">
 <!-- <img src="/assets/img/post_kintsugi_brain/20210818_112047.jpg" style="float:right" alt="" width="400"/> -->
 [to be filled]
 </p>
 
-{% enddetails %}
+<!-- {% enddetails %} -->
 
 <!-- <h2 class="details-empty"> Links to related projects</h2>
 
