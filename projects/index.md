@@ -5,7 +5,9 @@ subtitle: What I'm working on
 show-avatar: false
 ---
 
-{% details ## Network-level validation%}
+<!-- {% details  -->
+## Network-level validation
+<!-- %} -->
 <p style="display:inline-block">
 <img src="/assets/img/validation_environment.png" style="float:right" alt="" width="400"/>
 Modeling and the simulation of the activity in neuronal networks is an essential part of modern neuroscience and represents a powerful vehicle to combine insights from experiments and theory into a coherent understanding of brain function.
@@ -23,7 +25,7 @@ Related tags: [Validation](../tags/#validation)
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
 
-{% enddetails %}
+<!-- {% enddetails %} -->
 
 
 <!-- {% details  -->
