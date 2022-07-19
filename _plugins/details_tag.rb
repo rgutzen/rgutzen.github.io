@@ -1,7 +1,7 @@
 # _plugins/details_tag.rb
 
 module Jekyll
-    module Tags
+    # module Tags
       class DetailsTag < Liquid::Block
   
         def initialize(tag_name, markup, tokens)
@@ -20,7 +20,7 @@ module Jekyll
         end
   
       end
-    end
+    # end
   end
   
-  Liquid::Template.register_tag('details', Jekyll::Tags::DetailsTag)
+  Liquid::Template.register_tag('details', Jekyll::DetailsTag) #Tags::DetailsTag)

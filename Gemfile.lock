@@ -8,6 +8,11 @@ PATH
       kramdown (~> 2.3.0)
       kramdown-parser-gfm (~> 1.1)
 
+PATH
+  remote: _plugins
+  specs:
+    details_tag (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   beautiful-jekyll-theme!
   bundler (>= 1.16)
+  details_tag (= 0.1.0)!
   rake (~> 12.0)
 
 BUNDLED WITH
