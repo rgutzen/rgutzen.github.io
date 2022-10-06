@@ -8,28 +8,28 @@ show-avatar: false
 <a name="paper"></a>
 
 ## Paper
-**Activity-driven microconnectome estimation of macaque visuomotor cortices**
+**Activity-driven microconnectome estimation of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
 *(2022) in preparation*<br>
 
-**Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**
+**Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, \& Michael Denker<br>
 *(2022) in preparation*<br>
 
 **Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
-*(2022) in review*<br>
+*(2022) in review*<br> 
+**[Preprint](https://doi.org/10.48550/arXiv.2209.04024)** 
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
 Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, Elena Pastorelli, Francesco Simula, Cosimo Lupo, Leonardo Tonielli, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Pavone, Micheal Denker, Pier Stanislao Paolucci<br> 
-*(2022) arxiv*<br>
-**[Paper](https://doi.org/10.48550/arXiv.2104.07445)** 
+*(2022) in review* <br>
+**[Preprint](https://doi.org/10.48550/arXiv.2104.07445)** 
 
 **Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
 *(2018) Frontiers in Neuroinformatics 12:90, doi:10.3389/fninf.2018.00090*<br>
 **[Paper](https://doi.org/10.3389/fninf.2018.00090) | [PDF](paper/fninf-12-000090.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)**
-
 
 **Rigorous Neural Network Simulations: A Model Substantiation Methodology for Increasing the Correctness of Simulation Results in the Absence of Experimental Validation Data**<br>
 Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<br>
@@ -78,6 +78,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Using eigenvector angles to statistically evaluate the influences of connectivity structure on correlation structure**<br>
+Robin Gutzen, Sonja Grün, Michael Denker<br>
+*(2022) Bernstein Conference, Berlin*<br>
+**[PDF](poster/2022_Gutzen_Bernstein.pdf)**
 
 **Cobrawap: a modular cortical wave analysis pipeline for heterogeneous data**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Glynis Mattheisen, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
