@@ -9,9 +9,8 @@ Besides that, I live in the beautiful city of Cologne and spend a considerable t
 I use this space to blog about research related topics, but also potentially about anything I find interesting and/or amusing.
 
 You can also find me here,<br>
-<br>
 <!-- <p> -->
-<a href="https://mstdn.social/@rgutzen">
+<a rel="me" href="https://mstdn.social/@rgutzen">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <i class="fab fa-mastodon fa-stack-2x" style="color: #5e59f3;"></i>
 </span></a>
