@@ -9,14 +9,28 @@ Besides that, I live in the beautiful city of Cologne and spend a considerable t
 I use this space to blog about research related topics, but also potentially about anything I find interesting and/or amusing.
 
 You can also find me here,<br>
-<p>
+<br>
+<!-- <p> -->
+<a href="https://mstdn.social/@rgutzen">
+<span class="fa-stack fa-lg" aria-hidden="true">
+  <i class="fab fa-mastodon fa-stack-2x" style="color: #5e59f3;"></i>
+</span></a>
+<b>@rgutzen@mstdn.social</b>
+
 <a href="https://twitter.com/rgutzen">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <i class="fa fa-twitter fa-stack-2x" style="color: #0084b4;"></i>
 </span></a>
 <b>@rgutzen</b>
 
-&nbsp; &nbsp;
+<!-- &nbsp; &nbsp; -->
+<a href="https://www.linkedin.com/in/robin-gutzen/">
+<span class="fa-stack fa-lg" aria-hidden="true">
+  <i class="fa fa-linkedin fa-stack-2x" style="color: #0077B5;"></i>
+</span></a>
+<b>robin-gutzen</b>
+
+<!-- &nbsp; &nbsp; -->
 <a href="https://github.com/rgutzen">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <!-- <i class="fa fa-circle fa-stack-2x" style="font-size: 200%"></i> -->
@@ -24,17 +38,10 @@ You can also find me here,<br>
 </span></a>
 <b>@rgutzen</b>
 
-&nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/robin-gutzen/">
-<span class="fa-stack fa-lg" aria-hidden="true">
-  <i class="fa fa-linkedin fa-stack-2x" style="color: #0077B5;"></i>
-</span></a>
-<b>robin-gutzen</b>
-
-&nbsp; &nbsp;
+<!-- &nbsp; &nbsp; -->
 <a href="https://open.spotify.com/user/schnurrpfeifer">
 <span class="fa-stack fa-lg" aria-hidden="true">
   <i class="fa fa-spotify fa-stack-2x" style="color: #1ED760;"></i>
 </span></a>
 <b>schnurrpfeifer</b>
-</p>
+<!-- </p> -->

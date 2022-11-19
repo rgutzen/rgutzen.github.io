@@ -13,12 +13,13 @@ Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandr
 *(2022) in preparation*<br>
 
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
-Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, \& Michael Denker<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, \& Michael Denker<br>
 *(2022) in preparation*<br>
+**[Preprint](https://doi.org/10.48550/arXiv.2211.08527)** 
 
 **Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
-*(2022) in review*<br> 
+*(2022) accepted*<br> 
 **[Preprint](https://doi.org/10.48550/arXiv.2209.04024)** 
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
