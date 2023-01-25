@@ -10,32 +10,32 @@ show-avatar: false
 ## Paper
 **Activity-driven microconnectome estimation of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
-*(2022) in preparation*<br>
+*(2023) in preparation*<br>
 
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
-Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, \& Michael Denker<br>
-*(2022) in preparation*<br>
+Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, Michael Denker<br>
+*(2023) in preparation*<br>
 **[Preprint](https://doi.org/10.48550/arXiv.2211.08527)** 
-
-**Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
-Robin Gutzen, Sonja Grün, Michael Denker<br>
-*(2022) accepted*<br> 
-**[Preprint](https://doi.org/10.48550/arXiv.2209.04024)** 
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
 Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, Elena Pastorelli, Francesco Simula, Cosimo Lupo, Leonardo Tonielli, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Pavone, Micheal Denker, Pier Stanislao Paolucci<br> 
-*(2022) in review* <br>
+*(2023) in review* <br>
 **[Preprint](https://doi.org/10.48550/arXiv.2104.07445)** 
+
+**Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
+Robin Gutzen, Sonja Grün, Michael Denker<br>
+*(2022) Biosystems, 223, 104813. doi.org:10.1016/j.biosystems.2022.104813* <br> 
+**[Paper](https://doi.org/10.1016/j.biosystems.2022.104813) | [Repository](https://gin.g-node.org/INM-6/eigenangles) | [Thread](https://mstdn.social/@rgutzen/109545916676451431)** 
 
 **Reproducible Neural Network Simulations: Statistical Methods for Model Validation on the Level of Network Activity Data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
 *(2018) Frontiers in Neuroinformatics 12:90, doi:10.3389/fninf.2018.00090*<br>
-**[Paper](https://doi.org/10.3389/fninf.2018.00090) | [PDF](paper/fninf-12-000090.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)**
+**[Paper](https://doi.org/10.3389/fninf.2018.00090) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00090/reader)**
 
 **Rigorous Neural Network Simulations: A Model Substantiation Methodology for Increasing the Correctness of Simulation Results in the Absence of Experimental Validation Data**<br>
 Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<br>
 *(2018) Frontiers in Neuroinfromatics 12:81, doi:10.3389/fninf.2018.00081*<br>
-**[Paper](https://doi.org/10.3389/fninf.2018.00081) | [PDF](paper/fninf-12-00081.pdf) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00081/reader)**
+**[Paper](https://doi.org/10.3389/fninf.2018.00081) | [Repository](https://web.gin.g-node.org/INM-6/network_validation) | [Summary](https://www.growkudos.com/publications/10.3389%25252Ffninf.2018.00081/reader)**
 
 <a name="talks"></a>
 
@@ -79,6 +79,15 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
+Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker <br>
+*(2023) Meeting of the German Neuroscience Society, Göttingen, Göttingen*<br>
+
+**Estimation of microscale connectivity from spiking activity of macaque visuomotor cortices**<br>
+Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panogiotis Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada <br>
+*(2023) HBP Student Conference, Madrid*<br>
+**[PDF](poster/2023_MoralesGregorio_HBPStudent.pdf)
 
 **Using eigenvector angles to statistically evaluate the influences of connectivity structure on correlation structure**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
@@ -163,9 +172,10 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 ## Software
 **Cobrawap**<br>
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Michael Denker<br>
+*RRID:SCR_022966*<br>
 **[GitHub](https://github.com/INM-6/cobrawap)**
 
-**NetworkUnit v0.1.1**<br>
+**NetworkUnit**<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
 *RRID:SCR_016543*<br>
 **[GitHub](https://github.com/INM-6/NetworkUnit) | [PyPi](https://pypi.org/project/networkunit/)**
@@ -173,8 +183,3 @@ Robin Gutzen, Michael von Papen, Michael Denker<br>
 **Elephant Tutorial: LFP analysis**<br>
 Robin Gutzen, Alexander Kleinjohann<br>
 **[Video](https://vimeo.com/507843717/4f40ff84c8) | [Notebook (limited access)](https://wiki.ebrains.eu/bin/view/Collabs/elephant-tutorials/)**
-
-<!-- **Slow-wave analysis pipeline**<br>
-Robin Gutzen, Giulia De Bonis, Michael Denker, Pier Stanislao Paoluccis<br>
-*RRID:XXXXXXX*<br>
-**[GitHub](https://github.com/INM-6/wavescalephant) | [PyPi](https://pypi.org/project/networkunit/)** -->

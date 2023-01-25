@@ -18,6 +18,7 @@ In either scenario, several aspects must be considered. Any validation test only
 <!-- * Interactive tutorial [notebook](https://gke.mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Findex.ipynb) -->
 * [Validation paper](https://doi.org/10.3389/fninf.2018.00090)
 * [Verification paper](https://doi.org/10.3389/fninf.2018.00081)
+* [latest Poster](../publications/poster/2019_Gutzen_NWG.pdf)
 
 Related tags: [Validation](../tags/#validation)
 <!-- ![](/assets/rasterplot.png)
@@ -34,9 +35,10 @@ To demonstrate the pipeline I perform "meta-studies" of wave characteristics (su
 specific methods within the analysis by switching them with another method and analyzing the same pool of data. Finally, its reusable design  and modularity helps to derive other analysis pipelines for similar research endeavors to amplify collaborative research.
 </p>
 <!-- <br> -->
-* Python implementation of [Cobrawap](https://github.com/INM-6/cobrawap)
-* [Paper of related modeling study](https://doi.org/10.48550/arXiv.2104.07445)
-* Publication in preparation
+* [Cobrawap Repository](https://github.com/INM-6/cobrawap)
+* [Preprint](https://doi.org/10.48550/arXiv.2211.08527)
+* [Preprint of companion modeling study](https://doi.org/10.48550/arXiv.2104.07445)
+* [latest Poster](../publications/poster/2022_Gutzen_OHBM.pdf)
 * Talk in postproduction
 
 <!-- Related tags: [Validation](../tags/#validation) -->
@@ -52,7 +54,8 @@ Furthermore, the principle of the eigenangle test can be applied to compare the 
 </p>
 <!-- <br> -->
 * Python implementation of [Eigenangles](https://gin.g-node.org/INM-6/eigenangles)
-* Publication in review
+* [Paper](https://doi.org/10.1016/j.biosystems.2022.104813)
+* [latest Poster](../publications/poster/2022_Gutzen_Bernstein.pdf)
 
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
@@ -61,7 +64,10 @@ Furthermore, the principle of the eigenangle test can be applied to compare the 
 ## Neuro Pottery 
 <p style="display:inline-block">
 <img src="/assets/img/post_kintsugi_brain/close-up_exhibition_shot.jpeg" style="float:right" alt="" width="300"/>
-[to be filled]
+Art and science can interact a symbiotic relationship. Scientific topics are often a sources for compelling art pieces; and art can as a creative approach to address scientific questions in thought provoking ways. There are many efforts that promote "SciArt", and "BrainArt" (or "NeuroArt") in particular. One of them is the  <a href="https://ohbm-brainart.github.io">OHBM BrainArt exhibition</a>, that is organized as a part of the annual OHBM (Organization for Human Brain Mapping) conference. In this context, I presented the piece "The kintsugi brain".
+<p style="font-style: italic;">
+"This artwork is inspired by the brain's plasticity. The brain can rewire and repair its broken connections. Kintsugi is the Japanese art of repairing broken bowls or other pottery with gold, highlighting its cracks, and celebrating its imperfections as part of its history. Initially, plasticity allows for molding the clay and for molding the brain in its early development by the external influences imposed on it. Once in its apparent final shape, it is still subject to change and external forces. Bowls can break. Brains can break. Plasticity does not end. In many cases, they can still be repaired and become more valuable in the process. The philosophy of kintsugi, thus, raises the question: how much do we gain from our scars? And in which way is the brain entirely unlike a bowl?"
+</p>
 </p>
 
 
