@@ -60,7 +60,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 (2020) Human Brain Project Summit, Athens<br>
 **[Slides (short version)](slides/20_SummitAthens/short_version.html) | [Slides (long version)<img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/20_SummitAthens/long_version.html)**
 
-**Building a workflow for the analysis of slow wave activity across heterogeneous measurement**<br>
+**Building a workflow for the analysis of slow wave activity across heterogeneous measurements**<br>
 (2019) Human Brain Project SP3 annual meeting, Liège<br>
 **[Slides <img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
 
@@ -87,7 +87,7 @@ Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, So
 **Estimation of microscale connectivity from spiking activity of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panogiotis Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada <br>
 *(2023) HBP Student Conference, Madrid*<br>
-**[PDF](poster/2023_MoralesGregorio_HBPStudent.pdf)
+**[PDF](poster/2023_MoralesGregorio_HBPStudent.pdf)**
 
 **Using eigenvector angles to statistically evaluate the influences of connectivity structure on correlation structure**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
