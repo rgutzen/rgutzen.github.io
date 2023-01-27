@@ -9,7 +9,7 @@ show-avatar: false
 
 ## Paper
 **Activity-driven microconnectome estimation of macaque visuomotor cortices**<br>
-Aitor Morales-Gregorio, Pauline Dąbrowska, Robin Gutzen, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
+Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
 *(2023) in preparation*<br>
 
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
