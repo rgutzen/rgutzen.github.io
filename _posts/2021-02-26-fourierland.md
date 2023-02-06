@@ -38,7 +38,7 @@ In this step we also discard all the color from the image's pixels (R,G,B,A), ke
 ```python
 # creating a grayscale array by selecting the alpha value of the image
 image_array = np.array(image)[:,:,-1]
-# flipping the image to it's side
+# flipping the image to its side
 image_array = np.rot90(image_array, axes=(1,0))
 print(f'Image dimensions in pixels: {image_array.shape}')
 ```
@@ -103,7 +103,7 @@ noise = scipy.ndimage.filters.gaussian_filter(np.random.rand(len(image_signal)),
                                               sigma=noise_sigma)
 noise = scipy.stats.zscore(noise)    
 ```
-While it is still warm we then convolve the noise with our image signal, generating a more realistic looking signal while leaving the frequency features quasi unchanged. Convolving a signal with white noise in the time domain is equivalent to just adding an offset to the signal in the frequency domain. Or generally stated, the Fourier transform of a convolution of two signals is equal to the product of the individual Fourier transforms. This feature is exactly used by the function `fftconvolve()` to speed up the computation by doing *Fourier transform -> Multiplication -> Inverse Fourier transform* instead of the more computationally convoluted convolution procedure of `convolve()`.
+While it is still warm we then convolve the noise with our image signal, generating a more realistic looking signal while leaving the frequency features quasi unchanged. Convolving a signal with white noise in the time domain is equivalent to just adding an offset to the signal in the frequency domain. Or generally stated, the Fourier transform of a convolution of two signals is equal to the product of the individual Fourier transforms. This feature is used exactically by the function `fftconvolve()` to speed up the computation by doing *Fourier transform -> Multiplication -> Inverse Fourier transform* instead of the more computationally convoluted convolution procedure of `convolve()`.
 
 In case the resulting signal looks a bit weird and not entirely like itself, it can be beneficial to inverse the image signal before convolving to get rid of some artifacts in the convolved signal. Afterwards, of course it needs to be reversed back into the right order so that it starts at the beginning and when it is finished, it stops.
 
@@ -123,7 +123,7 @@ When you get lost in all the various frequencies, filtering is a great way to fi
 There are [all kinds of practical considerations](http://www.billconnelly.net/?p=501) for filtering a signal,
 but here, for better or worse, we take of a bite of the layman's handbook and choose the popular butterworth filter. Butter, oh? Ah, thank you, butter!
 
-Applied correctly, the filter will make the unwanted frequency components small. The filter function may be a bit confusing but when you read the documentation, the directions will directly direct you into the right direction.
+Applied correctically, the filter will make the unwanted frequency components small. The filter function may be a bit confusing but when you read the documentation, the directions will directly direct you into the right direction.
 
 ```python
 Fs = num_samples
