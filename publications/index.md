@@ -22,6 +22,10 @@ Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, 
 *(2023) in review* <br>
 **[Preprint](https://doi.org/10.48550/arXiv.2104.07445)** 
 
+**Analysis and quantitative comparison of neural network dynamics on a neuron-wise and population level**<br>
+Robin Gutzen (Doctoral Thesis)<br>
+*(2022)*
+
 **Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
 *(2022) Biosystems, 223, 104813. doi.org:10.1016/j.biosystems.2022.104813* <br> 
