@@ -16,6 +16,7 @@ In either scenario, several aspects must be considered. Any validation test only
 
 * Python package [NetworkUnit](https://github.com/INM-6/NetworkUnit)
 <!-- * Interactive tutorial [notebook](https://gke.mybinder.org/v2/gh/INM-6/NetworkUnit/master?filepath=examples%2Findex.ipynb) -->
+* [Talk](https://www.youtube.com/watch?v=PQCWAng9j3U)
 * [Validation paper](https://doi.org/10.3389/fninf.2018.00090)
 * [Verification paper](https://doi.org/10.3389/fninf.2018.00081)
 * [latest Poster](../publications/poster/2019_Gutzen_NWG.pdf)
@@ -24,7 +25,7 @@ Related tags: [Validation](../tags/#validation)
 <!-- ![](/assets/rasterplot.png)
 ![](/assets/validation_results.png) -->
 
-## Collaborative Brain-Wave Analysis Pipeline 
+## Collaborative Brain Wave Analysis Pipeline 
 <p style="display:inline-block">
 <img src="/assets/img/slow_waves.gif" style="float:right" alt="" width="350"/>
 In the past decades, neuroscience excelled at accumulating a rich, heterogeneous landscape of datasets and methodologies. It poses, however, a new challenge to effectively leverage the benefits of such diversity by combining the insights from across experiments, studied species, and measurement techniques in order to build a cumulative understanding of brain function. 
@@ -36,10 +37,10 @@ specific methods within the analysis by switching them with another method and a
 </p>
 <!-- <br> -->
 * [Cobrawap Repository](https://github.com/INM-6/cobrawap)
+* [Talk](https://www.youtube.com/watch?v=1Qf4zIzV9ow&list=PLvAS8zldX4Ci5uG9NsWv5Kl4Zx2UtWQPh&index=13)
 * [Preprint](https://doi.org/10.48550/arXiv.2211.08527)
 * [Preprint of companion modeling study](https://doi.org/10.48550/arXiv.2104.07445)
 * [latest Poster](../publications/poster/2022_Gutzen_OHBM.pdf)
-* Talk in postproduction
 
 <!-- Related tags: [Validation](../tags/#validation) -->
 
