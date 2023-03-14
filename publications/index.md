@@ -19,8 +19,8 @@ Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luc
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
 Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, Elena Pastorelli, Francesco Simula, Cosimo Lupo, Leonardo Tonielli, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Pavone, Micheal Denker, Pier Stanislao Paolucci<br> 
-*(2023) in review* <br>
-**[Preprint](https://doi.org/10.48550/arXiv.2104.07445)** 
+*(2023) Communications Biology 6, 266, doi: 10.1038/s42003-023-04580-0* <br>
+**[Paper](https://doi.org/10.1038/s42003-023-04580-0)** 
 
 **Analysis and quantitative comparison of neural network dynamics on a neuron-wise and population level**<br>
 Robin Gutzen (Doctoral Thesis)<br>
@@ -84,9 +84,13 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 
+**Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**
+Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanc, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+*(2023) HBP Summit, Marseille*<br>
+
 **Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
 Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker <br>
-*(2023) Meeting of the German Neuroscience Society, Göttingen, Göttingen*<br>
+*(2023) Meeting of the German Neuroscience Society, Göttingen*<br>
 
 **Estimation of microscale connectivity from spiking activity of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panogiotis Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada <br>
