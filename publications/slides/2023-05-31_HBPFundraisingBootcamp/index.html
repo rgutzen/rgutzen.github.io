@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Collaborative Brain Wave Analysis Pipeline"}' />
+		<title>Collaborative Brain Wave Analysis Pipeline</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-sand-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="b038d64c36555bf7bc67ef83cd0515fd"><section data-id="2dd0fe39162c140b02b917c2d2ef9417" data-background-color="rgba(0, 0, 0, 0)"><div class="sl-block" data-block-type="text" style="width: 800px; left: 240px; top: 126px; height: auto;" data-block-id="f4ba2d7d98a6f9bf59c0b3071f5f3812"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; text-align: center; color: rgb(68, 68, 68);">
+<h1>Collaborative</h1>
+
+<h1>Brain Wave Analysis Pipeline</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 351px; top: 488px;" data-name="text-2d12e9" data-block-id="f237538ca8121a3fa4f339a8d7544230">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(102, 102, 102);"><p>Robin Gutzen  &amp;  Giulia De Bonis</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="dnXmp"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 185.865px; height: 53.615px; left: 320px; top: 579px; min-width: 1px; min-height: 1px;" data-name="image-8adb13" data-block-id="aaf7ec37abf12e0082d4e5fd36ad7951"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="208" data-natural-height="60" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/e3170be0ced2ebe99e4e90e19b212cb7.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 118.419px; height: 59.88px; left: 783px; top: 579px; min-width: 1px; min-height: 1px;" data-name="image-6e3c09" data-block-id="2b6a3078732563587a8b680f07de38a1"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="530" data-natural-height="268" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/d50a3e30ed85714583b089bfc1b3db34.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 51.1795px; height: 59.88px; left: 915.727px; top: 579px; min-width: 1px; min-height: 1px;" data-name="image-aeb82f" data-block-id="5c1d249098b0948ede92f049cde17614"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="100" data-natural-height="117" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/1df1d963b1dea65bf9c6c71d06691a89.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 188px; left: 320px; top: 657px;" data-block-id="ca36aecbcb358716184390d7d8e30d2f" data-name="text-4e3684"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(102, 102, 102); font-size: 50%;"><p><em>r.gutzen@fz-juelich.de</em></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 211px; left: 774.5px; top: 657px;" data-block-id="0c4fb58aaafc21ba599c0c781a2f761f" data-name="text-d06b85"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(102, 102, 102); font-size: 50%;"><p><em>giulia.debonis@roma1.infn.it</em></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 340px; top: 529px;" data-block-id="3c54da10b1a67e0ff58741470dac1475" data-name="text-79eb5b">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(102, 102, 102); font-size: 60%;"><p>on behalf the development team</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="dnXmp"></grammarly-extension>
+</div></section><section data-id="b58c313bc792f48189582b0039a532e6">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 21px;" data-name="text-3089c6" data-block-id="c8c5ed3b7cdc7671595651bb957f532c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(68, 68, 68); text-align: left;"><h3>The Context</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 456px; top: 347px;" data-block-id="7929498b17b77caa80c36d8f628650c7" data-name="text-d561b6"><div class="sl-block-style" style="z-index: 12; opacity: 0.8;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(7, 55, 99); text-align: left; background-color: rgb(238, 238, 238); font-size: 110%;"><p style="text-align:center"><strong>Cortical Wave Activty</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 312.735px; height: 337.66px; left: 483.633px; top: 238.34px; min-width: 1px; min-height: 1px;" data-name="image-5243a0" data-block-id="53c57f518ded5fead194fad4c35aa25c"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="665" data-natural-height="718" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/eae989706bf6d8e3d3299b443032566c.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 204px; left: 538.001px; top: 389px;" data-block-id="0cda20fcf7b763d3061e051dbd61ebed" data-name="text-55340e"><div class="sl-block-style" style="z-index: 13; opacity: 0.8;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(7, 55, 99); text-align: left; background-color: rgb(238, 238, 238); font-size: 50%;">
+<p style="text-align:center"><em>(in different frequency ranges)</em></p>
+
+<p style="text-align:center"><em>is thought to ...</em></p>
+</div></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-142471" data-block-id="91fff79d28486e405fb7140297662e3e" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 482px 195.885px 0px; z-index: 63;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-3a801c" data-block-id="719695fc10159a14fc0c1748138fd612" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 482px 171px 0px; z-index: 64;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 348px; top: 113px;" data-block-id="522c1198a0cdb260fb05053a4f1ae754" data-name="text-62c4d5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 65; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align:center">degree of consciousness</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 384px; top: 176px;" data-block-id="4a58ce29bec1908c943cff2f3a8983fc" data-name="text-a4749e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 66; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Koch et al. (2016)</p>
+
+<p>Dasilva et al. (2021)</p>
+
+<p>Pazienti et al. (2022)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-7ae17d" data-block-id="033788a2529f8f87dd25804229af6c64" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 561.682px 236.635px 0px; z-index: 67;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 527px; top: 194.5px;" data-name="line-972ad2" data-block-id="f1eae561d790b0b8ef006d73656a0c5b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="53" data-line-y2="78" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 68;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="53" height="78" viewbox="0 0 53 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="1.686059816869184" y1="2.4813710512414406" x2="53" y2="78"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="1.686059816869184" y1="2.4813710512414406" x2="53" y2="78"></line><ellipse rx="3" ry="3" cx="1.686059816869184" cy="2.4813710512414406" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 528.924px; top: 233.964px;" data-block-id="dbe61cb69f012e3b9d344fbeac3cff2b" data-name="text-3e3db8"><div class="sl-block-style" style="z-index: 69; transform: rotate(56deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 69; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p>indicate</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-35af09" data-block-id="f8815276c1cf40377b08ec96363aa88a" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 897.194px 189px 0px; z-index: 56;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-e08b7b" data-block-id="c920073c6f3f5b3ad03e840731c48798" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 920px 189px 0px; z-index: 57;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 182px; left: 784px; top: 128.5px;" data-block-id="fdc548f11dd62ba18886e07d36376ccc" data-name="text-15fec1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 58; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align:center">attention</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 824px; top: 159.5px;" data-block-id="54f836499b77319ddd0706da457edef1" data-name="text-735748"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 59; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Ermentrout &amp; Kleinfeld (2001)</p>
+
+<p>Fries et al. (2001)</p>
+
+<p>Lakatos et al. (2008)</p>
+
+<p>Jensen et al. (2021)</p>
+
+<p>Bhattacharya et al. (2022)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-a358d9" data-block-id="e94c3b43aa591046d81f2f394f8dc25b" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 772.694px 191.56px 0px; z-index: 60;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 749px; top: 159.5px;" data-block-id="a512e2b56390ce428c50b296083ec15c" data-name="line-37384f"><div class="sl-block-content" data-line-x1="58" data-line-y1="0" data-line-x2="0" data-line-y2="68.5" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 61;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="58" height="68.5" viewbox="0 0 58 68.5"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="56.06142422693137" y1="2.2895248354344995" x2="0" y2="68.5"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="56.06142422693137" y1="2.2895248354344995" x2="0" y2="68.5"></line><ellipse rx="3" ry="3" cx="56.06142422693137" cy="2.2895248354344995" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 731.012px; top: 181.303px;" data-block-id="8b7b6ff843d85059e09e205c4a4f4b21" data-name="text-2c59a8"><div class="sl-block-style" style="z-index: 62; transform: rotate(-49deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 62; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p style="text-align: center;">gate</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-f6cc26" data-block-id="cc2ebedc9a58fd9fd00fd46515520d61" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 1037px 352.75px 0px; z-index: 42;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-54a21b" data-block-id="4f259991a311674a3c411edcb9ee124d" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 1105.68px 352.75px 0px; z-index: 43;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 182px; left: 978.368px; top: 272.5px;" data-block-id="85ee1a7a7c68bcee8cb15b3d7b3d4195" data-name="text-9439a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 44; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align:center">information processing</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 1001px; top: 343px;" data-block-id="9639d2119b54bc2496a71219aa996238" data-name="text-87355c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 45; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Fries (2005)</p>
+
+<p>Roland et al. (2006)</p>
+
+<p>Xu et al. (2007)</p>
+
+<p>van Kerkoerle et al. (2014)</p>
+
+<p>Michalareas et al. (2016)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-205bf3" data-block-id="2cd0a8445f712f87bb7c660439b84da2" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 914.501px 325.776px 0px; z-index: 46;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 841.001px; top: 311.5px;" data-block-id="67f217e55799526fa20169ff02b62c39" data-name="line-83ad84"><div class="sl-block-content" data-line-x1="146.49900000000002" data-line-y1="0" data-line-x2="0" data-line-y2="35.5" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 47;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="146.49900000000002" height="35.5" viewbox="0 0 146.49900000000002 35.5"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="143.58338175699149" y1="0.7065198235264593" x2="0" y2="35.5"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="143.58338175699149" y1="0.7065198235264593" x2="0" y2="35.5"></line><ellipse rx="3" ry="3" cx="143.58338175699149" cy="0.7065198235264593" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 873.273px; top: 313.25px;" data-block-id="cf110ad9f31277dc5acaf252dde271b6" data-name="text-ee6ec6"><div class="sl-block-style" style="z-index: 48; transform: rotate(-14deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 48; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p>coordinate</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-dc0a77" data-block-id="1217a05757a722af4a2cfa7f093e878a" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 964.751px 506.75px 0px; z-index: 49;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-dace0d" data-block-id="6bd227f2c3b1b0efd5179cc64a652f88" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 1040px 537.25px 0px; z-index: 50;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 924px; top: 504px;" data-block-id="a29dbbf16dca42ec5d3d55fa8ee299e3" data-name="text-5eb867"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 51; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p>task performance</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 924px; top: 536.5px;" data-block-id="342a43cfc91fce96cfc68628a5dd46ed" data-name="text-f25076"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 52; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Zhang et al. (2018)</p>
+
+<p>Davis et al. (2020)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-29eba5" data-block-id="1f0bce0c0d035fa99e4ebe8c5f2bff4b" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 841.001px 481.5px 0px; z-index: 53;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 773.501px; top: 443px;" data-block-id="5df0d768ed46ccc9723ce099be79d098" data-name="line-9f4449"><div class="sl-block-content" data-line-x1="135" data-line-y1="76.5" data-line-x2="0" data-line-y2="0" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 54;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="135" height="76.5" viewbox="0 0 135 76.5"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="132.38993344245415" y1="75.02096228405736" x2="0" y2="0"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="132.38993344245415" y1="75.02096228405736" x2="0" y2="0"></line><ellipse rx="3" ry="3" cx="132.38993344245415" cy="75.02096228405736" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 815.777px; top: 471.303px;" data-block-id="3c7ade5f0328274bce990877f4b5040f" data-name="text-572124"><div class="sl-block-style" style="z-index: 55; transform: rotate(29deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 55; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p>predict</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-1eee2d" data-block-id="ee303984d40ad695261534b026b4b9d8" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-down" style="transform-origin: 830px 602.25px 0px; z-index: 35;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ab3c98" data-block-id="e967f9f4a361fff51fc130dffe76a4b8" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 830px 651px 0px; z-index: 36;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 714px; top: 617px;" data-block-id="a6427a179aa7c2b6427ff54de257f45c" data-name="text-fb0c9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p>working memory</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 714px; top: 651px;" data-block-id="52eca9ea89874ea8349eb09bec379d87" data-name="text-a7da8c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 38; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Jutras et al. (2013)</p>
+
+<p>Bhattacharya et al. (2022)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-672c8e" data-block-id="3cc8d9f6bdb266681ebf3109cf40221b" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 749.5px 564.5px 0px; z-index: 39;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 714px; top: 519.5px;" data-block-id="9d0887e6a8e0d2832980ae79e8693690" data-name="line-acc062"><div class="sl-block-content" data-line-x1="70" data-line-y1="89.5" data-line-x2="0" data-line-y2="0" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 40;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="70" height="89.5" viewbox="0 0 70 89.5"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="68.1517872214967" y1="87.13692794748508" x2="0" y2="0"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="68.1517872214967" y1="87.13692794748508" x2="0" y2="0"></line><ellipse rx="3" ry="3" cx="68.1517872214967" cy="87.13692794748508" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 715.685px; top: 550.158px;" data-block-id="789ad6a4211e64e604389141577d05a1" data-name="text-a34d9f"><div class="sl-block-style" style="z-index: 41; transform: rotate(52deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p style="text-align:center">maintain</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-42d9ac" data-block-id="4f9d15148cd369ef553c804a9c6130b5" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-down" style="transform-origin: 378px 605.085px 0px; z-index: 28;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-6b65d3" data-block-id="4081340e83588d208a6131bf0ef4aff0" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 378px 638.25px 0px; z-index: 29;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 240px; top: 570.5px;" data-block-id="68ae915fbc2c3712a5c6f3a464a1da4e" data-name="text-5b0acb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align:center">neurological disorders</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 284px; top: 635px;" data-block-id="d9c359e8033bfcc8bb778487bada839f" data-name="text-b8557c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 31; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Alexander et al. (2009)</p>
+
+<p>Ferrarelli et al. (2007)</p>
+
+<p>Dasilva et al, (2020)</p>
+
+<p>Sato et al. (2022)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-dfaace" data-block-id="667dd6d1169d4e0b769ca725d5b6ae6c" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 443.684px 534.193px 0px; z-index: 32;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 406px; top: 519.5px;" data-block-id="33d51bde226a8730e54ebb9b02e8c957" data-name="line-e68b8d"><div class="sl-block-content" data-line-x1="0" data-line-y1="34" data-line-x2="74" data-line-y2="0" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 33;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="74" height="34" viewbox="0 0 74 34"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="2.726030531889938" y1="32.747499485347866" x2="74" y2="0"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="2.726030531889938" y1="32.747499485347866" x2="74" y2="0"></line><ellipse rx="3" ry="3" cx="2.726030531889938" cy="32.747499485347866" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 404.684px; top: 518.693px;" data-block-id="40ff76c51849ee8a1417d77d978ed57b" data-name="text-cc60f1"><div class="sl-block-style" style="z-index: 34; transform: rotate(-24deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 34; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p style="text-align:center">potentially mark</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-b9d600" data-block-id="3e939dcd78d0e0938b89a57d8c70722f" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-left" style="transform-origin: 258.5px 451.5px 0px; z-index: 21;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-613727" data-block-id="25ebab1cd316972145aee014a2d4389a" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 215px 451.5px 0px; z-index: 22;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 74px; top: 410.5px;" data-block-id="e4d340af5c70608d3c9fcd80a8091763" data-name="text-978e2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align: center;">classification learning</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 124px; top: 476.5px;" data-block-id="963680960c4415fc340648f189527d3c" data-name="text-1bc91a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p>Tonielli et al. (2022)</p></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-7a9817" data-block-id="8b5983a3dcf7d746f3dca771aeb6478f" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 356px 438.153px 0px; z-index: 25;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 269px; top: 432px;" data-block-id="425f4c28888f552ee289e7fbb067b4d5" data-name="line-7151f9"><div class="sl-block-content" data-line-x1="0" data-line-y1="21" data-line-x2="174" data-line-y2="0" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 26;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="174" height="21" viewbox="0 0 174 21"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="2.9783868390299024" y1="20.640539519427424" x2="174" y2="0"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="2.9783868390299024" y1="20.640539519427424" x2="174" y2="0"></line><ellipse rx="3" ry="3" cx="2.9783868390299024" cy="20.640539519427424" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 313.563px; top: 428px;" data-block-id="ab5f5eff604d3b6f0fff3998f9b07f73" data-name="text-fdfe42"><div class="sl-block-style" style="z-index: 27; transform: rotate(-7deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p style="text-align:center">improve</p></div></div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-eff503" data-block-id="4af4b3553f4a276e62b59f7bad0a2f76" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-left" style="transform-origin: 279.5px 302.25px 0px; z-index: 14;" data-fragment-index="0">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ced9f1" data-block-id="5a88ecf5549e2a22ed32ad8ce3f5a9e6" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 254px 301.25px 0px; z-index: 15;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 116px; top: 257px;" data-block-id="66a5a07966b36f5774696cd9f8897d98" data-name="text-3dbf6a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(34, 34, 34); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 80%;"><p style="text-align: center;">sleep quality</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 232px; left: 160px; top: 292.5px;" data-block-id="1982f5570fb67697f23467d79bcab414" data-name="text-c8fe13"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(170, 170, 170); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;">
+<p>Massimini et al. (2004)</p>
+
+<p>Huber et al. (2004)</p>
+
+<p>Muller et al. (2016)</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-bfcdb9" data-block-id="7fbec18dfe3a06651379b04f71d93f2a" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 377.5px 323.34px 0px; z-index: 18;">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 312px; top: 303.5px;" data-block-id="b0a1468d73b1c1d374099126ad37b5c4" data-name="line-dea793"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="131" data-line-y2="43.5" data-line-color="#888888" data-line-start-type="circle" data-line-end-type="none" style="z-index: 19;" data-line-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="131" height="43.5" viewbox="0 0 131 43.5"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="2.8471347196237455" y1="0.9454225977376559" x2="131" y2="43.5"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="2.8471347196237455" y1="0.9454225977376559" x2="131" y2="43.5"></line><ellipse rx="3" ry="3" cx="2.8471347196237455" cy="0.9454225977376559" fill="#888888"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 78px; left: 341.563px; top: 310.84px;" data-block-id="69d5c638095dd17f86ca46a02c2c72e8" data-name="text-83ce47"><div class="sl-block-style" style="z-index: 20; transform: rotate(18deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(102, 102, 102); text-align: left; background-color: rgba(0, 0, 0, 0); font-size: 40%;"><p style="text-align:center">underlie</p></div></div></div>
+</div></div>
+</div></div></section><section data-id="0213f8802980402de2f8922b3b2744e1" data-auto-animate=""><div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 21px;" data-name="text-3089c6" data-block-id="2ef6ac906027f1a60ced204fb1e30599"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(68, 68, 68); text-align: left;"><h3>The Team</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 341.991px; left: 19.4005px; top: 292.246px;" data-block-id="326e23f5173f05a989052725decbbc2a" data-name="text-a50324"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(102, 102, 102); font-size: 75%;">
+<p style="text-align: left;">combining <strong>expertise</strong> in</p>
+
+<ul>
+	<li><em>data analysis</em></li>
+	<li><em>software development</em></li>
+	<li><em>neural recording techniques</em></li>
+	<li><em>signal processing</em></li>
+	<li><em>brain modeling and simulation</em></li>
+	<li><em>data management</em></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 366.991px; left: 244.944px; top: 520px;" data-block-id="ae247fdfcb1c47869a7d5e8eb167f564" data-name="text-87d804"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(102, 102, 102); font-size: 75%;">
+<p>emphasizing our <strong>values</strong> of</p>
+
+<ul>
+	<li><em>open science &amp; open-source</em></li>
+	<li><em>rigor &amp; reproducibility</em></li>
+	<li><em>reusability</em></li>
+	<li><em>interoperability</em></li>
+</ul>
+</div></div>
+
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-1a48d8" data-block-id="1e748aa711dfd327e9bc06b84c9ce481" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-down" style="transform-origin: 793px 232px 0px; z-index: 11;" data-fragment-index="0">
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 400px; left: 593px; top: 32px;" data-name="shape-f21bec" data-block-id="df0a789bd63e12d3329b57a175a8fd63"><div class="sl-block-style" style="z-index: 12; opacity: 0.2;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 400"><ellipse rx="200" ry="200" cx="200" cy="200" class="shape-element" fill="rgb(74, 134, 232)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 694px; top: 44.5px;" data-name="text-db4a75" data-block-id="ec879184b07d40cce8c1f577a949178b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(74, 134, 232); font-size: 95%;"><p>Creators and Developers</p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-704df6" data-block-id="3503008370d54b339d3c4bfacb7090e9" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 741.505px 234.5px 0px; z-index: 17;">
+<div class="sl-block" data-block-type="image" style="width: 146.014px; height: 85.4px; left: 616.009px; top: 110.65px; min-width: 1px; min-height: 1px;" data-name="image-747896" data-block-id="699f3ddba115dc90102fd8c1fb5a1e9a"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="595" data-natural-height="348" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/a9740579bff8c6310012226953f6327b.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230.991px; left: 636.009px; top: 195.35px;" data-block-id="ac208f7b7d2948700425514faa63d2c7" data-name="text-8f8123"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align:left"><strong>Giulia De Bonis</strong></p>
+
+<p style="text-align:left"><span style="color:#666666">Chiara De Luca</span></p>
+
+<p style="text-align:left"><span style="color:#666666">Cosimo Lupo</span></p>
+
+<p style="text-align:left"><span style="color:#666666">Irene Bernava</span></p>
+
+<p style="text-align:left">Alessandra Cardinale</p>
+
+<p style="text-align:left"><span style="color:#666666">Pier Stanislao Paolucci</span></p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-d982fc" data-block-id="803375590f682ce6f7f6f775b1593260" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 871.399px 194.15px 0px; z-index: 14;">
+<div class="sl-block" data-block-type="image" style="width: 144.002px; height: 41.539px; left: 791.798px; top: 131px; min-width: 1px; min-height: 1px;" data-name="image-f53adf" data-block-id="9a4b653619763d1209802a7d539758ef"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="208" data-natural-height="60" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/7a892e1e04db5d484e70d6024eda5637.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 153.991px; left: 797.009px; top: 178.3px;" data-name="text-143d95" data-block-id="31a03c13a5651e222b19179551d25e8b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align:left"><strong>Robin Gutzen</strong></p>
+
+<p style="text-align:left">Sonja Grün</p>
+
+<p style="text-align:left">Michael Denker</p>
+</div></div>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-7031d8" data-block-id="8c2878abefa5dc898beb9f18d41e4609" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 847px 520px 0px; z-index: 22;" data-fragment-index="2">
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 863.8px; top: 456.976px; min-width: 1px; min-height: 1px;" data-name="image-001a83" data-block-id="a746db1d608d9a90658322b1117a120c"><div class="sl-block-content" style="z-index: 31;"><img class="" data-natural-width="14" data-natural-height="14" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/fadcb09a9c8b7e5aaad925c45a05ec9f.svg"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 400px; left: 647px; top: 320px;" data-block-id="bbe32c6a3964698a30ff9092979d4e33" data-name="shape-259237"><div class="sl-block-style" style="z-index: 23; opacity: 0.2;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 400"><ellipse rx="200" ry="200" cx="200" cy="200" class="shape-element" fill="rgb(224, 102, 102)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 186.992px; height: 78.975px; left: 742.793px; top: 344.513px; min-width: 1px; min-height: 1px;" data-name="image-e8b1a9" data-block-id="b150892a92f8bbd183878c1a3f519484"><div class="sl-block-content" style="z-index: 27;"><img class="" data-natural-width="1835" data-natural-height="775" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/de70e7a7b9a1e063481f6f2653a04048.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 53.754px; height: 53.754px; left: 691.605px; top: 400.246px; min-width: 1px; min-height: 1px;" data-name="image-75960e" data-block-id="004fb6365f9f9ece41907b7901ae15b8"><div class="sl-block-content" style="z-index: 26;"><img class="" data-natural-width="55" data-natural-height="55" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/cdb1de269d5bd8117dfc6102fd597fdb.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 153.991px; left: 656.098px; top: 456.5px;" data-block-id="4c69fa23c554b55ac85b4a86f469b292" data-name="text-9de031"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; color: rgb(102, 102, 102); font-size: 60%;"><p>Andrew Davison</p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 88.476px; height: 88.476px; left: 711.524px; top: 504.5px; min-width: 1px; min-height: 1px;" data-name="image-03c486" data-block-id="6c1ad541c73f2d1ccbcc01a564f1f3e4"><div class="sl-block-content" style="z-index: 25;"><img class="" data-natural-width="391" data-natural-height="391" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/e42bb1d370a2157ae61d403a932fabca.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 179.484px; left: 857.516px; top: 530.976px;" data-block-id="13554b063c0033a3a7a2f3b6a04bc316" data-name="text-e4b24c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align: left;">Andrea Pigorini</p>
+
+<p style="text-align: left;">Marcello Massimini</p>
+
+<p style="text-align: left;">Gianluca Gaglioti</p>
+
+<p style="text-align: left;">Thierry Nieus</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 153.991px; left: 688.856px; top: 592.468px;" data-block-id="9dfd1e513e24f3ca373c100fbb9615bf" data-name="text-2e6f47"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29; color: rgb(102, 102, 102); font-size: 60%;"><p>Maurizio Mattia</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 754.993px; top: 655.5px;" data-block-id="5a82a3752cfa6f3557f29d2c2f4d7938" data-name="text-07b4b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(224, 102, 102); font-size: 95%; line-height: 0.845;" data-has-line-height="">
+<p>Advisory</p>
+
+<p>Partners</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-000f0f" data-block-id="5a031afe69646b1d8516a0d3ce8841e9" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-left" style="transform-origin: 1082.78px 331px 0px; z-index: 32;" data-fragment-index="1">
+<div class="sl-block" data-block-type="image" style="width: 75.73px; height: 66.7769px; left: 966px; top: 221.223px; min-width: 1px; min-height: 1px;" data-name="image-589512" data-block-id="54279de3f689f1f08b78ae584134c7fb"><div class="sl-block-content" style="z-index: 33;"><img class="" data-natural-width="1531" data-natural-height="1350" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/8559f4437521adf1fa7c9686bd326a61.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 400px; height: 400px; left: 880px; top: 131px;" data-block-id="d700f9ad5147ae67ae343eee9f27b9c7" data-name="shape-460df7"><div class="sl-block-style" style="z-index: 35; opacity: 0.2;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 35;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 400 400"><ellipse rx="200" ry="200" cx="200" cy="200" class="shape-element" fill="rgb(106, 168, 79)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.55px; left: 957px; top: 151px;" data-block-id="d1a6a10a5c9e0e2d54924d77415f4fec" data-name="text-7d8a38"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 36; color: rgb(106, 168, 79); font-size: 95%; line-height: 1.04;" data-has-line-height=""><p>Experimental (alpha) Customers</p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 69.012px; height: 69.012px; left: 1156.49px; top: 216.494px; min-width: 1px; min-height: 1px;" data-name="image-546821" data-block-id="e911385b34666a95d059814cb98e53b2"><div class="sl-block-content" style="z-index: 42;"><img class="" data-natural-width="150" data-natural-height="150" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/1e5fedcae369de3625bea0a79e277e5c.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 283.991px; left: 928.559px; top: 291.5px;" data-block-id="233f8b10e499ac9ae29f2aed0cea652a" data-name="text-2391eb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 38; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align:left"><span style="color:#666666">Anna Allegra Mascaro</span></p>
+
+<p style="text-align:left"><span style="color:#666666">Francesco Resta</span></p>
+
+<p style="text-align:left"><span style="color:#666666">Francesco Pavone</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 148px; left: 1137.55px; top: 288px;" data-block-id="b0cd83a01372d92b9598774e959ea392" data-name="text-081579"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 40; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align: left;">Eric Landness</p>
+
+<p style="text-align: left;">Ben Miao</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 103.824px; height: 66.5089px; left: 1125px; top: 333.513px; min-width: 1px; min-height: 1px;" data-name="image-9b24ea" data-block-id="fcd0b855ec340cb26f1cf40142e079d0"><div class="sl-block-content" style="z-index: 34;"><img class="" data-natural-width="473" data-natural-height="303" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/2ec81e61aa90750b214fdd018e497579.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 109.431px; height: 42.278px; left: 951px; top: 386.861px; min-width: 1px; min-height: 1px;" data-name="image-e41fea" data-block-id="ffa8db5fff20f74a7e129984424f6b0e"><div class="sl-block-content" style="z-index: 37;"><img class="" data-lazy-loaded="" data-natural-width="1157" data-natural-height="447" data-src="collaborative-brain-wave-analysis-pipeline/3b32934d6c789e27b3b461aa06f3b4fb.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 148px; left: 1117px; top: 397.754px;" data-block-id="fd2aec31feed501d18c491e2f242e037" data-name="text-558913"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align: left;">Thomas Brochier</p>
+
+<p style="text-align: left;">Alexa Riehle</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 283.991px; left: 944.833px; top: 429.139px;" data-block-id="65520cc71eb3b24c5398a4737b4c4def" data-name="text-5feb78"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39; color: rgb(102, 102, 102); font-size: 60%;">
+<p style="text-align:left">Arnau Manasanch</p>
+
+<p style="text-align:left">Maria V. Sanchez-Vives</p>
+</div></div>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 121.199px; height: 126.112px; left: 19.4005px; top: 72px; min-width: 1px; min-height: 1px;" data-name="image-02ca33" data-block-id="a58fdeb4f847a1f10be01463ba751100"><div class="sl-block-content" style="z-index: 43; border-style: solid; border-width: 1px; border-radius: 200px; border-color: rgb(255, 255, 255);"><img class="" data-natural-width="600" data-natural-height="900" data-crop-x="0.003831" data-crop-y="0.06959" data-crop-width="0.996169" data-crop-height="0.69103" style="left: 0px; top: -13px; width: 122px; height: 182px;" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/6f05f4b8c571373c4a1c35105258fd56.jpeg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 128px; height: 126.266px; left: 146.996px; top: 136.094px; min-width: 1px; min-height: 1px;" data-name="image-d05e7c" data-block-id="dfde7739c6aa24aefb3a5b1b9c1fb2da"><div class="sl-block-content" style="z-index: 44; border-width: 1px; border-style: solid; border-radius: 200px;"><img class="" data-natural-width="600" data-natural-height="900" data-lazy-loaded="" data-crop-x="0" data-crop-y="0.069002" data-crop-width="1" data-crop-height="0.657638" style="left: 0px; top: -13px; width: 128px; height: 192px;" data-src="collaborative-brain-wave-analysis-pipeline/f7de8033563e1736be06da962aa1f9a1.jpeg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 122.73px; height: 124.586px; left: 279.635px; top: 72.763px; min-width: 1px; min-height: 1px;" data-name="image-b2b63c" data-block-id="b7e44c984732c87aefc8f6feeb3ac321"><div class="sl-block-style" style="z-index: 45; transform: rotate(-45deg);"><div class="sl-block-content" style="z-index: 45; border-style: solid; border-width: 1px; border-radius: 200px;"><img class="" data-natural-width="200" data-natural-height="200" data-crop-x="0.11151" data-crop-y="0" data-crop-width="0.867339" data-crop-height="0.880454" style="left: -16px; top: 0px; width: 142px; height: 142px;" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/8ef4ab2950338ef66ae904168386766f.jpeg"></div></div></div>
+<div class="sl-block" data-block-type="image" style="width: 124.19px; height: 124.19px; left: 406.905px; top: 137.132px; min-width: 1px; min-height: 1px;" data-name="image-9b4c4a" data-block-id="f826a1d420989b0ec7a2066e4ff6a76c"><div class="sl-block-content" style="z-index: 46; border-style: solid; border-width: 1px; border-radius: 200px;"><img class="" data-natural-width="512" data-natural-height="512" style="" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/6d9c47a5a9c90e3b10890065f2e7f0d3.jpg"></div></div></section><section data-id="03892a321e98e8be40d5b327f441c3ac"><div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 22px;" data-name="text-3089c6" data-block-id="581a3761ca912516fba91597895832cc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(68, 68, 68); text-align: left;"><h3>The Tool</h3></div></div>
+
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-350e56" data-block-id="091c011fa520f0a33947b9a377d5720d" style="height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 183.246px 339.914px 0px; z-index: 14;" data-fragment-index="0">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 387.991px; left: 0.0005px; top: 88.5px;" data-name="text-a50324" data-block-id="54febb46b0e2c4ef3412879533e533d3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(68, 68, 68); font-size: 70%;">
+<p style="text-align:left"><strong>Problem: </strong></p>
+
+<p style="text-align: left;"><span style="color:#424242">Results are not comparable </span><span style="color:#424242">across domains and data sources.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 173px; height: 173px; left: 82.5px; top: 364.328px;" data-name="shape-0fd647" data-block-id="703a1139d554b810316e91c737ea48cd"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgb(88, 164, 144) 0px 0px 4px) opacity(100%);"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 16;" data-shape-stroke-color="#58a490" data-shape-stroke-width="2px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 173 173"><defs><clippath id="shape-mask-3-1685353188181"><ellipse rx="86.5" ry="86.5" cx="86.5" cy="86.5" fill="rgba(0, 0, 0, 0)" stroke="#58a490" stroke-width="4"></ellipse></clippath></defs><ellipse rx="86.5" ry="86.5" cx="86.5" cy="86.5" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#58a490" stroke-width="4" clip-path="url(#shape-mask-3-1685353188181)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: -21.5px; top: 411.562px;" data-name="text-0f027a" data-block-id="81ee276e67a0b285c346834f4bd312c1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(40, 121, 140); font-size: 60%;"><p>EEG</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: 214.5px; top: 486.54px;" data-block-id="fe4d65db51fcb7f59fea4886f90535d7" data-name="text-f6ce50"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(40, 121, 140); font-size: 60%;"><p>M<span style="display:none"> </span>EG</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: 158px; top: 329.173px;" data-block-id="b2786770aeeb9f356542281fbb65b160" data-name="text-a52533"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(40, 121, 140); font-size: 60%;"><p>ECoG</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: 137px; top: 544.328px;" data-block-id="4fcc4e85feb310d6cabc0d7292404449" data-name="text-61d20e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(40, 121, 140); font-size: 60%;"><p>Calcium Imaging</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: 18.5px; top: 326.673px;" data-block-id="96f7ed09fc5969914ed9cec7c537e605" data-name="text-97c3a8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(40, 121, 140); font-size: 60%;">
+<p>Implanted</p>
+
+<p>Arrays</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: -12px; top: 499.828px;" data-block-id="87317c9e5fe93cb2f7786e2526bb94a8" data-name="text-b38b16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(40, 121, 140); font-size: 60%;">
+<p>Model</p>
+
+<p>Simulation</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 135px; left: 221px; top: 400.062px;" data-block-id="243f9b9ac5d4dfd765e196fa6f088261" data-name="text-213ea7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(40, 121, 140); font-size: 60%;"><p>...</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 255px; left: 41.5px; top: 423.062px;" data-name="text-e8aff2" data-block-id="17ad6caa2e09dee49280dc0cec579b62"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(136, 136, 136); font-size: 70%;">
+<p>spatio-temporal</p>
+
+<p>activity data</p>
+</div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-f0bbdd" data-block-id="612bef15b27261c242f11be86696b568" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 612px 337.856px 0px; z-index: 11;" data-fragment-index="1">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 470px; left: 400px; top: 88.5px;" data-block-id="9e3f92205afb515ae1a7a095a707e942" data-name="text-ef6488"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(68, 68, 68); font-size: 70%;">
+<p style="text-align:left"><strong>Approach:</strong></p>
+
+<p style="text-align:left"><span style="color:#424242">Creating modular shared components<br>
+operating on common standardized descriptions.</span></p>
+
+<p style="text-align:left"> </p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 569px; height: 256.424px; left: 327.5px; top: 330.788px; min-width: 1px; min-height: 1px;" data-name="image-d89473" data-block-id="7a2783189a850e06ed24de7b4ba16953"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="2500" data-natural-height="964" data-lazy-loaded="" data-crop-x="0.144361" data-crop-y="0" data-crop-width="0.855639" data-crop-height="1" style="left: -96px; top: 0px; width: 665px; height: 256px;" data-src="collaborative-brain-wave-analysis-pipeline/fd6590fbca3cc7c790ffcb3da7a97eac.png"></div></div>
+</div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-954a61" data-block-id="486f3b46b39bed2e269bf4a81123a234" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-right" style="transform-origin: 1058.51px 404.25px 0px; z-index: 25;" data-fragment-index="2">
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c9d5cc" data-block-id="83d7b28afc52c380cf23a20d1cd1cf1b" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 1160px 622.664px 0px; z-index: 28;">
+<div class="sl-block" data-block-type="image" style="width: 141.211px; height: 137.922px; left: 1138.79px; top: 525.328px; min-width: 1px; min-height: 1px;" data-name="image-9f4976" data-block-id="8272c84bddaaa1292891c7daa632d786"><div class="sl-block-content" style="z-index: 29;"><img class="" data-natural-width="644" data-natural-height="629" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/8b450d5000668c58c5c56eab731cbb14.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 240px; left: 1040px; top: 654px;" data-block-id="9ec12cbb0f44cf4c5b3490e806654dd3" data-name="text-35e6b8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; color: rgb(136, 136, 136); font-size: 50%; text-align: right;">
+<p><em>Gutzen et al. (in review)</em></p>
+
+<p><em>Cell Press Methods</em></p>
+
+<p><em>https://cobrawap.readthedocs.io</em></p>
+</div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 442.991px; left: 837.009px; top: 88.5px;" data-block-id="98e20080ffa751b4d33eba8ee7663188" data-name="text-787e7a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; color: rgb(68, 68, 68); font-size: 70%;">
+<p style="text-align:left"><strong>Goals:</strong></p>
+
+<p style="text-align: left;"><span style="color:#424242">Providing reusable analysis workflows for</span> <span style="color:#424242">relating knowledge</span><span style="color:#424242"> across neuroscience domains.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 255px; left: 856.5px; top: 416.04px;" data-block-id="7df25eb373c4db967ea6b3131b1943c3" data-name="text-0c2182"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; color: rgb(136, 136, 136); font-size: 70%;"><p>common<br>
+brain wave characterizations</p></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 176px; left: 1084px; top: 429px;" data-block-id="6d18bf2da268fb3b63ad56a01b329486" data-name="text-4369e5"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 31; color: rgb(136, 136, 136); font-size: 70%;" data-fragment-index="3">
+<p>cross-domain</p>
+
+<p>comparisons</p>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-d90619" data-block-id="af2a70be7fd3f0b8e3f16032b11f9e61"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 674.25px 615.106px 0px; z-index: 38;" data-fragment-index="3">
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 1064.5px; top: 509.54px;" data-block-id="4369d07f3ef194cb3b870cf9f8f1754e" data-name="line-b2e428"><div class="sl-block-content" data-line-x1="0" data-line-y1="66.45999999999998" data-line-x2="80.49000000000001" data-line-y2="0" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 39;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="80.49000000000001" height="66.45999999999998" viewbox="0 0 80.49000000000001 66.45999999999998"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="66.45999999999998" x2="78.94777793798958" y2="1.2734013944740017"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="66.45999999999998" x2="78.94777793798958" y2="1.2734013944740017"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(78.94777793798958,1.2734013944740017) rotate(50.454)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+<div class="sl-block" data-block-type="video" style="min-width: 30px; min-height: 30px; width: 136.933px; height: 162.961px; left: 915.534px; top: 557.039px;" data-name="video-bb0092" data-block-id="b1d13e5b35dd172aec3589c391013237"><div class="sl-block-content" style="z-index: 43;" data-media-id="10506349" data-video-thumb="collaborative-brain-wave-analysis-pipeline/c803a703b00a0a7c9b93292a2111bc3e.jpg"><video playsinline="" poster="collaborative-brain-wave-analysis-pipeline/c803a703b00a0a7c9b93292a2111bc3e.jpg" data-lazy-loaded="" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="collaborative-brain-wave-analysis-pipeline/738d1ad4738161c75d097adbf1e139de.mp4"></video></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 204px; top: 601.211px;" data-block-id="8782ecba283eacef8925f5b56e9c59b8" data-name="line-633624"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="43" data-line-y2="30.34749999999991" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 41;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="43" height="30.34749999999991" viewbox="0 0 43 30.34749999999991"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="41.36596686392818" y2="29.194271614024572"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="0" x2="41.36596686392818" y2="29.194271614024572"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(41.36596686392818,29.194271614024572) rotate(125.213)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+<div class="sl-block" data-block-type="video" style="min-width: 30px; min-height: 30px; width: 123.133px; height: 123.133px; left: 258.434px; top: 597.539px;" data-name="video-d3f838" data-block-id="3e1d127138a577373aa89e70b19e5286"><div class="sl-block-content" style="z-index: 42;" data-media-id="10506348" data-video-thumb="collaborative-brain-wave-analysis-pipeline/5b68feb5f31cfd9090c3f4a5e9f51eb4.jpg"><video playsinline="" poster="collaborative-brain-wave-analysis-pipeline/5b68feb5f31cfd9090c3f4a5e9f51eb4.jpg" data-lazy-loaded="" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="collaborative-brain-wave-analysis-pipeline/0c8ca79bcaadecb7d624b4d5aecb9be2.mp4"></video></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 421.5px; top: 658.106px;" data-block-id="3ed084b5d795aa1daffd7ec1c46863dd" data-name="line-dce0ec"><div class="sl-block-content" data-line-x1="0" data-line-y1="5.684341886080802e-14" data-line-x2="470.5" data-line-y2="0" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 40;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="470.5" height="1" viewbox="0 0 470.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="5.684341886080802e-14" x2="468.5" y2="2.4162983575263767e-16"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="5.684341886080802e-14" x2="468.5" y2="2.4162983575263767e-16"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(468.5,2.4162983575263767e-16) rotate(90)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-8d6a39" data-block-id="d0d6dddb01197ef9ce6562d8afbd4012"><div class="sl-block-content sl-block-group-content fragment fade-down" style="transform-origin: 687.217px 301.087px 0px; z-index: 32;" data-fragment-index="3">
+<div class="sl-block" data-block-type="video" style="min-width: 30px; min-height: 30px; width: 71.021px; height: 122.921px; left: 284.979px; top: 202.5px;" data-name="video-03a52d" data-block-id="7d6ba59df132f27ceca13d3b76d5bfe9"><div class="sl-block-content" style="z-index: 36;" data-media-id="10506347" data-video-thumb="collaborative-brain-wave-analysis-pipeline/b64d1b6eca1bd6439e57dcd3b5b37833.jpg"><video playsinline="" poster="collaborative-brain-wave-analysis-pipeline/b64d1b6eca1bd6439e57dcd3b5b37833.jpg" data-lazy-loaded="" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="collaborative-brain-wave-analysis-pipeline/0f206025a7616b7078d89d30889d9b27.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" style="min-width: 30px; min-height: 30px; width: 94.1552px; height: 162.961px; left: 924.923px; top: 202.5px;" data-name="video-9de272" data-block-id="54a1ae2d30de8b5c0ae578be2d8f76b3"><div class="sl-block-content" style="z-index: 37;" data-media-id="10506350" data-video-thumb="collaborative-brain-wave-analysis-pipeline/133c3599c2f6f9757414989066ba75b9.jpg"><video playsinline="" poster="collaborative-brain-wave-analysis-pipeline/133c3599c2f6f9757414989066ba75b9.jpg" data-lazy-loaded="" data-paused-by-reveal="" data-autoplay="" muted="" loop="loop" data-src="collaborative-brain-wave-analysis-pipeline/b144d121c8046333f879cc5c33ed74a9.mp4"></video></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 421px; top: 263.961px;" data-block-id="400b15bbf5b6ef946e2643fc600e31f3" data-name="line-bf5784"><div class="sl-block-content" data-line-x1="0" data-line-y1="5.684341886080802e-14" data-line-x2="470.5" data-line-y2="0" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 35;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="470.5" height="1" viewbox="0 0 470.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="5.684341886080802e-14" x2="468.5" y2="2.4162983575263767e-16"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="5.684341886080802e-14" x2="468.5" y2="2.4162983575263767e-16"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(468.5,2.4162983575263767e-16) rotate(90)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 229.934px; top: 282px;" data-block-id="35ebaed843f96e4de07cdf9a88159d80" data-name="line-3bb7b5"><div class="sl-block-content" data-line-x1="0" data-line-y1="36.673000000000116" data-line-x2="43" data-line-y2="0" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 34;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="43" height="36.673000000000116" viewbox="0 0 43 36.673000000000116"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="36.673000000000116" x2="41.47827145613993" y2="1.2978221136972194"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="36.673000000000116" x2="41.47827145613993" y2="1.2978221136972194"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(41.47827145613993,1.2978221136972194) rotate(49.54)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 1058.5px; top: 326.673px;" data-block-id="2171bc326ac35da13eb365f6b38e8150" data-name="line-40df52"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="86.49000000000001" data-line-y2="73.38900000000001" data-line-color="#888888" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 33;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="86.49000000000001" height="73.38900000000001" viewbox="0 0 86.49000000000001 73.38900000000001"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="84.96501256912752" y2="72.09500875749451"></line><line class="line-element" stroke="#888888" stroke-width="2" x1="0" y1="0" x2="84.96501256912752" y2="72.09500875749451"></line><path style="fill: rgba(0,0,0,0);" stroke="#888888" stroke-width="2" transform="translate(84.96501256912752,72.09500875749451) rotate(130.315)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+</div></div></section><section data-id="484402ae05eec88793ee4ea2371d4e01" data-auto-animate="" data-auto-animate-easing="ease-in" data-auto-animate-unmatched="false" data-auto-animate-duration="0.5"><div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 23px;" data-name="text-3089c6" data-block-id="d520e1c809c2fd521de9c0d3249fd2f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(68, 68, 68); text-align: left;"><h3>The Services</h3></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-2a8447" data-block-id="e3072badc924ef4ed677a5119ef8d0da" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 640px 629.91px 0px; z-index: 10;">
+<div class="sl-block" data-block-type="shape" style="width: 800px; height: 180.18px; left: 240px; top: 539.82px;" data-name="shape-6a99b7" data-block-id="cf2393441cff1a501ec51d4bdbe811cc"><div class="sl-block-style" style="z-index: 11; opacity: 0.8;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(204, 204, 204)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="10px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 800 180"><rect width="800" height="180.18" rx="10" ry="10" class="shape-element" fill="rgb(204, 204, 204)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 340px; top: 543.91px;" data-name="text-66571d" data-block-id="533bbe600e8bd63b9343ad8d66d867bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(68, 68, 68); font-size: 80%;">
+<p><strong>Development of the </strong></p>
+
+<p><strong>open-source tool base</strong></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 240px; top: 629.91px;" data-block-id="1dce0d9918e51964b224494a328f979a" data-name="text-1d47f6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(68, 68, 68); font-size: 65%; text-align: left; line-height: 1.82;" data-has-line-height=""><ul>
+	<li>implement requested new features</li>
+	<li>support academic research</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 640px; top: 629.91px;" data-block-id="3b2dd5580038d1c194e6bfc117ccdbdd" data-name="text-0d4efd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(68, 68, 68); font-size: 65%; text-align: center; line-height: 1.82;" data-has-line-height=""><ul>
+	<li>maintain interfaces within the<br>
+	open-source software ecosystem</li>
+</ul></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-d7d709" data-block-id="8867ae03712e8ad5f358c95402cdfbcf" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 902.855px 383.397px 0px; z-index: 16;" data-fragment-index="0">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 578.302px; top: 13.5468px;" data-block-id="cde1fc6c1424241a627da512a7529f1e" data-name="shape-53d9d3"><div class="sl-block-style" style="z-index: 17; opacity: 0.2; transform: rotate(45deg);"><div class="sl-block-content" data-shape-type="triangle-down" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 820.193px; top: 113px;" data-block-id="d1efb15445b1b33d60242cf994bf8a4f" data-name="text-361ebb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Hardware/Software Manufacturing</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 853.385px; top: 189.65px;" data-block-id="a5f2b318ab7a86a68078932268d5690a" data-name="text-1acd45"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(68, 68, 68); font-size: 65%; text-align: left; line-height: 1.82;" data-has-line-height=""><ul>
+	<li>provide compatibility for data formats</li>
+	<li>integrate into commercial products</li>
+	<li>enable cost-efficient interoperability and reuse of data and methods</li>
+	<li>support brain-computer interfaces and neurofeedback applications</li>
+</ul></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-19318b" data-block-id="41bf7834ffa55728e2c94d0e51a9c411" style="height: auto;"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 640px 278.15px 0px; z-index: 20;" data-fragment-index="1">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 315.447px; top: -91.7px;" data-block-id="fbdc6a0c75cce255a0c591c24f435311" data-name="shape-7b4ead"><div class="sl-block-style" style="z-index: 21; opacity: 0.2;"><div class="sl-block-content" data-shape-type="triangle-down" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(106, 168, 79)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 433.134px; top: 44.65px;" data-block-id="8d60976e4a77369ba007648dfc57790c" data-name="text-349ab4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Basic and Clinical Research </strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 452.839px; top: 83.3px;" data-block-id="6eafde88b800a309ae5e00deb839e8e8" data-name="text-d17265"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(68, 68, 68); font-size: 65%; text-align: left; line-height: 1.82;" data-has-line-height=""><ul>
+	<li>enable complex analyses to classify medical brain states</li>
+	<li>consult on workflow development</li>
+	<li>analyze of wave dynamics as a service</li>
+	<li>explore possibilities of diagnosis</li>
+</ul></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c85d27" data-block-id="24d7dc5659f7259c45eabc20b004455d" style="width: auto; height: auto;"><div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 377.368px 384.397px 0px; z-index: 24;" data-fragment-index="2">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 52.8153px; top: 14.5468px;" data-block-id="c20de62f47016e81ce48fea883e0310e" data-name="shape-97af99"><div class="sl-block-style" style="z-index: 25; opacity: 0.2; transform: rotate(-45deg);"><div class="sl-block-content fragment fade-up" data-shape-type="triangle-down" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 25;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(224, 102, 102)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 40px; top: 128.5px;" data-block-id="8227f33ff05d0656367828d66696c5b2" data-name="text-98723d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Teaching/Training</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 40px; top: 189.65px;" data-block-id="8ba15050065990aa1b0f47f0f9c4d358" data-name="text-abe533"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; color: rgb(68, 68, 68); font-size: 65%; text-align: left; line-height: 1.82;" data-has-line-height=""><ul>
+	<li>empower scientists building open reproducible analysis workflows</li>
+	<li>facilitate exchange and collaboration by interfacing tools and data</li>
+	<li>increase scope of available methods</li>
+</ul></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-bc39f6" data-block-id="5afc803a4f5e3dc21681ef39e8b871bf" style="height: auto;"><div class="sl-block-content sl-block-group-content" style="transform-origin: 296px 498px 0px; z-index: 28;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 96px; top: 482.332px;" data-block-id="8384519aa9de8f4cd5010892b16b52ae" data-name="text-e07ea5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Dual-Licensing/Consultancy</strong></p></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 357.569px; height: 55.4706px; left: 115.799px; top: 470.265px;" data-block-id="88603344aa5fbe9ec145a709af5caee4" data-name="shape-2194f1"><div class="sl-block-style" style="z-index: 30; opacity: 0.7;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 30;" data-shape-corner-radius="10px" data-shape-stroke-color="#e06666" data-shape-stroke-width="3px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 358 55"><defs><clippath id="shape-mask-6-1685393641872"><rect width="357.569" height="55.4706" rx="10" ry="10" fill="rgba(0, 0, 0, 0)" stroke="#e06666" stroke-width="6"></rect></clippath></defs><rect width="357.569" height="55.4706" rx="10" ry="10" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#e06666" stroke-width="6" clip-path="url(#shape-mask-6-1685393641872)"></rect></svg></div></div></div>
+</div></div>
+</div></div>
+
+
+</section><section data-auto-animate="" data-id="6476875ede4bc92fd58baed024b4ca21" data-auto-animate-easing="ease-in" data-auto-animate-unmatched="false" data-auto-animate-duration="0.5"><div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 23px;" data-name="text-3089c6" data-block-id="0222f28056ad6a525e18a70c17b40f86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(68, 68, 68); text-align: left;"><h3>The Services</h3></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-2a8447" style="height: auto;" data-block-id="31d65ce24b4333dd4af8d0b3cedae777"><div class="sl-block-content sl-block-group-content" style="transform-origin: 640px 629.91px 0px; z-index: 10;">
+<div class="sl-block" data-block-type="shape" style="width: 800px; height: 180.18px; left: 240px; top: 539.82px;" data-name="shape-6a99b7" data-block-id="dfdb1335246746dd4493b0e00699725d"><div class="sl-block-style" style="z-index: 11; opacity: 0.8;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(204, 204, 204)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="10px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 800 180"><rect width="800" height="180.18" rx="10" ry="10" class="shape-element" fill="rgb(204, 204, 204)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 340px; top: 543.91px;" data-name="text-66571d" data-block-id="9599805829a821bd4cf7e007a2cc9923"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(68, 68, 68); font-size: 80%;">
+<p><strong>Development of the </strong></p>
+
+<p><strong>open-source tool base</strong></p>
+</div></div>
+
+
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-d7d709" style="width: auto; height: auto;" data-block-id="faaae62525fc7122e926dafb0477abbb"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 902.855px 383.397px 0px; z-index: 14;" data-fragment-index="0">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 578.302px; top: 13.5468px;" data-name="shape-53d9d3" data-block-id="3a612cacd33be11078e90f92de664279"><div class="sl-block-style" style="z-index: 15; opacity: 0.2; transform: rotate(45deg);"><div class="sl-block-content" data-shape-type="triangle-down" data-shape-fill-color="rgb(74, 134, 232)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(74, 134, 232)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 820.193px; top: 113px;" data-name="text-361ebb" data-block-id="b7fa6cf62d5c59732acb2d265c9fac6d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Hardware/Software Manufacturing</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 820.193px; top: 189.65px;" data-name="text-1acd45" data-block-id="3fb553eac8141b2a9ffab980ac4ebc99">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(68, 68, 68); font-size: 80%; text-align: left; line-height: 1.82;" data-has-line-height="">
+<p style="text-align: center;"><span style="text-align:left">Provide a convenient set-up </span></p>
+
+<p style="text-align: center;"><span style="text-align:left">for vendors</span></p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 26;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 26;" class="dnXmp"></grammarly-extension>
+</div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-19318b" style="height: auto;" data-block-id="52f570f539c8b7224598289712b78138"><div class="sl-block-content sl-block-group-content fragment fade-up" style="transform-origin: 640px 278.15px 0px; z-index: 18;" data-fragment-index="1">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 315.447px; top: -91.7px;" data-name="shape-7b4ead" data-block-id="b2f8ddafdfe6aef8c1cbf9025946e0f0"><div class="sl-block-style" style="z-index: 19; opacity: 0.2;"><div class="sl-block-content" data-shape-type="triangle-down" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(106, 168, 79)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 433.134px; top: 44.65px;" data-name="text-349ab4" data-block-id="c098cf4c1698e532f235cac1e1bbaf91"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Basic and Clinical Research </strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 435.772px; top: 102.65px;" data-name="text-d17265" data-block-id="959d5bb42a4274690a6db0b1807d8596"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(68, 68, 68); font-size: 80%; text-align: left; line-height: 1.82;" data-has-line-height=""><p style="text-align:center"><span style="text-align:left">Offer a user-friendly service for applying scientific methods</span></p></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c85d27" style="width: auto; height: auto;" data-block-id="93f561dbf677ffb86955209131cda653"><div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 377.368px 384.397px 0px; z-index: 22;" data-fragment-index="2">
+<div class="sl-block" data-block-type="shape" style="width: 649.106px; height: 739.7px; left: 52.8153px; top: 14.5468px;" data-name="shape-97af99" data-block-id="4585c696f2eea0dadab243a87afd3440"><div class="sl-block-style" style="z-index: 23; opacity: 0.2; transform: rotate(-45deg);"><div class="sl-block-content fragment fade-up" data-shape-type="triangle-down" data-shape-fill-color="rgb(224, 102, 102)" data-shape-stretch="true" style="z-index: 23;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 649 740"><polygon points="0,0 649.106,0 324.553,739.7" class="shape-element" fill="rgb(224, 102, 102)"></polygon></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 40px; top: 128.5px;" data-name="text-98723d" data-block-id="f2312c1778e097e7d0345d763eed3b8b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(68, 68, 68); font-size: 80%;"><p><strong>Teaching/Training</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 391.543px; left: 44.2285px; top: 189.65px;" data-name="text-abe533" data-block-id="fbfe17630c9f6cac0516f8b4aa278458">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; color: rgb(68, 68, 68); font-size: 80%; text-align: left; line-height: 1.82;" data-has-line-height="">
+<p style="text-align: center;">Create a comfortable environment for students and academics</p>
+
+<p> </p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 43;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 43;" class="dnXmp"></grammarly-extension>
+</div>
+
+</div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 400px; left: 433.134px; top: 629.91px;" data-name="text-d5b396" data-block-id="9ab3b85a4c481aec27ca8d8e4d065a5a">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29; color: rgb(68, 68, 68); font-size: 80%; text-align: left; line-height: 1.82;" data-has-line-height=""><p style="text-align:center">Supporting cutting-edge research</p></div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 22;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 22;" class="dnXmp"></grammarly-extension>
+</div></section><section data-id="e3730ac8b8d1b505dafd5f36a591ae7e" data-visibility="hidden"><div class="sl-block" data-block-type="text" style="height: auto; width: 368px; left: 0px; top: 22px;" data-name="text-3089c6" data-block-id="0823912b8edc100be78f7f98340787e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(68, 68, 68); text-align: left;"><h3>The Business</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 450.55px; left: 0px; top: 144px;" data-name="text-d17265" data-block-id="593a73b6bd3b735083282cfdf8d652d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(68, 68, 68); font-size: 80%; text-align: left;">
+<p>Current estimated value: <strong>1Mio €</strong></p>
+
+<p><em>(based on public funding </em></p>
+
+<p><em> used over the past 5 years)</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 302.341px; left: 470.609px; top: 106.5px;" data-block-id="1bb49c91972903953cbee3e46ec9d267" data-name="text-060ceb">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(68, 68, 68); font-size: 80%; text-align: left;">
+<p>Ongoing public funding:</p>
+
+<p>2023: <strong>300k €</strong></p>
+
+<p>2024: <strong>200k €</strong></p>
+
+<p>2025: <strong>200k €</strong></p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="dnXmp"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 276.151px; left: 480px; top: 307px;" data-block-id="0028fc91b877116ba30fe1faa4264ba7" data-name="text-d7f8ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(68, 68, 68); font-size: 80%; text-align: left;">
+<p>Estimated costs:</p>
+
+<p><strong>300k €/year</strong></p>
+
+<p><em>(mainly personnel)</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 357.81px; left: 880px; top: 343.5px;" data-block-id="16257b37c9ea14e0a22c827c72ce5e26" data-name="text-7021b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(68, 68, 68); font-size: 80%; text-align: left;"><p>self-sustaining after <strong>~3 years</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 348.172px; left: 865.914px; top: 484.312px;" data-block-id="6aa74a686c95389cae409bccf583661c" data-name="text-f2aa60">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(68, 68, 68); font-size: 80%; text-align: left;">
+<p style="text-align:center">Revenue streams:</p>
+<ul>
+<li>Development on demand<br>
+</li>
+<li>Premium product versions</li>
+<li>Dual-Licensing/Consultancy<br>
+</li>
+<li>Trainings<br>
+</li>
+</ul>
+<p><br></p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16;" class="dnXmp"></grammarly-extension>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16;" class="dnXmp"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 16;" class="dnXmp"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 411.109px; top: 360px;" data-name="line-400917" data-block-id="7c7ca2f3867dbb6592b35d85a2f2de1c"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="39.44135523082891" data-line-y2="0" data-line-color="#a61c00" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="39.44135523082891" height="1" viewbox="0 0 39.44135523082891 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="0.5" x2="39.94135523082891" y2="0.5"></line><line class="line-element" stroke="#a61c00" stroke-width="9" x1="0.5" y1="0.5" x2="39.94135523082891" y2="0.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 411.109px; top: 178px;" data-block-id="b33717cdcbe8f5b5845469847bab9c15" data-name="line-1f33f1"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="39.44135523082891" data-line-y2="0" data-line-color="#274e13" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="39.44135523082891" height="1" viewbox="0 0 39.44135523082891 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5" y1="0.5" x2="39.94135523082891" y2="0.5"></line><line class="line-element" stroke="#274e13" stroke-width="9" x1="0.5" y1="0.5" x2="39.94135523082891" y2="0.5"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 430.109px; top: 157.5px;" data-block-id="dfbf9f8767afb9378b8ef1220abfc552" data-name="line-838668"><div class="sl-block-content" data-line-x1="0.00035523082889454827" data-line-y1="0" data-line-x2="0" data-line-y2="41.38109401267296" data-line-color="#274e13" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;" data-line-width="9px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="41.38109401267296" viewbox="0 0 1 41.38109401267296"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0.5003552308288945" y1="0.5" x2="0.5" y2="41.88109401267296"></line><line class="line-element" stroke="#274e13" stroke-width="9" x1="0.5003552308288945" y1="0.5" x2="0.5" y2="41.88109401267296"></line></svg></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-26cdff" style="width: auto; height: auto;" data-block-id="365068544d4f6d413c1dacb9a2e19018"><div class="sl-block-content sl-block-group-content" style="transform-origin: 377.747px 613.97px 0px; z-index: 24;">
+<div class="sl-block" data-block-type="image" style="width: 87.1668px; height: 40.8122px; left: 153.134px; top: 547px; min-width: 1px; min-height: 1px;" data-name="image-3c3674" data-origin-id="494f79453ba1b7714a7b9931a5430baf" data-block-id="fdc46b6189d64147ff44d1cd34aa80a2"><div class="sl-block-content" style="z-index: 35;"><img class="" data-natural-width="346" data-natural-height="162" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/eaec70ba740f2969020bb6153d774c7c.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 113.015px; height: 53.343px; left: 35.4931px; top: 582.932px; min-width: 1px; min-height: 1px;" data-name="image-88f834" data-origin-id="02693f4426d17fbd7249e8a12ea3a12a" data-block-id="e05b4e7d8401b477f39599e169992069"><div class="sl-block-content" style="z-index: 31;"><img class="" data-natural-width="250" data-natural-height="118" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/71d9a0f0e3f7941ad36b1d118c55d424.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 166.491px; height: 30.444px; left: 112.14px; top: 640.341px; min-width: 1px; min-height: 1px;" data-name="image-8ccde6" data-origin-id="edb7ea4daa75e3947dfc399a7861b9a6" data-block-id="16b08bcbe13f508ceab2ca536fcc3c39"><div class="sl-block-content" style="z-index: 25;"><img class="" data-natural-width="350" data-natural-height="64" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/5d1d80f245718f113f409401d84ca1bc.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 228.357px; height: 25.078px; left: 491.643px; top: 647.064px; min-width: 1px; min-height: 1px;" data-name="image-a2b8d6" data-origin-id="3ee97fd7b1c1f30d73a6c33c20f73eb2" data-block-id="83ef452c5891bd8474430d17e73a9cf1"><div class="sl-block-content" style="z-index: 26;"><img class="" data-natural-width="774" data-natural-height="85" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/3ec368bd4f7c6e1ae1d3715ac71dca19.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 128.989px; height: 29.21px; left: 409px; top: 591.998px; min-width: 1px; min-height: 1px;" data-name="image-e59a42" data-origin-id="62f4fb3a36dfe4cf7a87539e05ee2d30" data-block-id="834ab0693f4444bc533f6bd7d6a0c4af"><div class="sl-block-content" style="z-index: 27;"><img class="" data-natural-width="499" data-natural-height="113" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/fef046370ab1e7f26cfb31891eb52055.png"></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-bf80a1" style="width: auto; height: auto;" data-origin-id="e405db627c04a16987fa0256d896c456" data-block-id="89aa91f72e67a52176415883a7f63e53"><div class="sl-block-content sl-block-group-content" style="transform-origin: 361.5px 644.342px 0px; z-index: 28;">
+<div class="sl-block" data-block-type="image" style="width: 65.195px; height: 65.195px; left: 328.902px; top: 607.744px; min-width: 1px; min-height: 1px;" data-name="image-54dc0a" data-origin-id="c25c121721fb2d31b208d0c42f65a961" data-block-id="51c4707f77605f50b2b26b543c33e2e9"><div class="sl-block-content" style="z-index: 29;"><img class="" data-natural-width="645" data-natural-height="645" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/1fe73cc1edc9957299481023caecfb79.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 83px; left: 320px; top: 664.939px;" data-name="text-8547ac" data-origin-id="33fc65b4b5cba825801d1ef70825c4fa" data-block-id="50e290e3e8b3730f2c286d536897ea08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; color: rgb(236, 47, 0); font-size: 40%;"><p><strong>BrainFlow</strong></p></div></div>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-c0de2b" style="width: auto; height: auto;" data-origin-id="25cb1469ad49fb8e9b6eea97cb9fa570" data-block-id="a8264d7854e67e97cbdda76cc14a84de"><div class="sl-block-content sl-block-group-content" style="transform-origin: 279.001px 587.343px 0px; z-index: 32;">
+<div class="sl-block" data-block-type="image" style="width: 61.237px; height: 61.237px; left: 266.163px; top: 556.724px; min-width: 1px; min-height: 1px;" data-name="image-6deb52" data-origin-id="10a620977e1bac97d4c272ba733d80bc" data-block-id="3a3515f3d8620b93d8244a72039f8a9a"><div class="sl-block-content" style="z-index: 33;"><img class="" data-natural-width="200" data-natural-height="200" data-lazy-loaded="" data-src="collaborative-brain-wave-analysis-pipeline/8c03c32a28273246607b33c88a6cbe8a.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 122.385px; left: 217.808px; top: 597.214px;" data-name="text-428b11" data-origin-id="c2630e6a70c9aa9039884fcdb917ad69" data-block-id="1e495d642a3d8ab31a1cdcaad9753293"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 34; color: rgb(56, 110, 29); font-size: 50%;"><p><strong>NiPy</strong></p></div></div>
+</div></div>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1243.25px; height: 598.054px; left: -473.117px; top: 468.334px;" data-name="shape-8e085a" data-block-id="000d42f3b1085c7a6bba52ae0e43e385"><div class="sl-block-style" style="z-index: 10; opacity: 0.2; filter: blur(5px);"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(166, 77, 121)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1243 598"><ellipse rx="621.625" ry="299.027" cx="621.625" cy="299.027" class="shape-element" fill="rgb(166, 77, 121)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 316.077px; left: 59.7695px; top: 486.5px;" data-block-id="2b24d1d4206241763ee80557a8de07a3" data-name="text-9ce109"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(166, 77, 121); text-align: left; font-size: 70%;"><h3>Market Neighbours</h3></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 293.409px; left: 37.2955px; top: 343.5px;" data-block-id="1923df271f01319da2b4caa61825cd8d" data-name="text-351363"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(68, 68, 68); font-size: 80%; text-align: left;"><p>Investment aim: <strong>1Mio+ €</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 138.692px; left: 728.761px; top: 343.5px;" data-block-id="e2dbde320ce2351f9816cca52e04a6ab" data-name="text-0f1abe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(68, 68, 68); font-size: 80%; text-align: left;"><p><em>to become</em></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 138.692px; left: 981.308px; top: 413px;" data-block-id="9b31eb762fb62b0b5d9839f590ad1d70" data-name="text-2ba242"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; color: rgb(68, 68, 68); font-size: 80%; text-align: left;"><p><em>based on</em></p></div></div></section><section data-id="7d2f9926f2e62b079163d021ccfbbce9" data-visibility="hidden"><div class="sl-block" data-block-type="text" style="height: auto; width: 501px; left: 0px; top: 21px;" data-name="text-3089c6" data-block-id="ba90b780cf158b05e770f1d80b118334"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(68, 68, 68); text-align: left;"><h3>Business Model Canvas</h3></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 504px; left: 0px; top: 72px;" data-name="shape-0f1ddc" data-block-id="e5f10ae521a9491abe99b7edd5c861b6"><div class="sl-block-style" style="z-index: 17; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 504"><rect width="250.5" height="504" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 506.25px; height: 138px; left: 0px; top: 582px;" data-block-id="e1b64b536f34a4a1ec7ecce976c0e5a4" data-name="shape-eeefda"><div class="sl-block-style" style="z-index: 18; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 506 138"><rect width="506.25" height="138" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 510.75px; height: 138px; left: 769.25px; top: 582px;" data-block-id="31e8154eecf73e8395a6140d5eac528b" data-name="shape-7f38fc"><div class="sl-block-style" style="z-index: 19; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 511 138"><rect width="510.75" height="138" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 5px; top: 78px;" data-name="text-c048cb" data-block-id="e13f8e10b068d674cbd1ebde801ebd7c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Key partners</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 261.75px; top: 78px;" data-block-id="960c5e0b986a97838c9afee9be29a30b" data-name="text-0a6d5f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Key activities</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 261.75px; top: 336px;" data-block-id="e21e703b9baf64463487a09c1269e75f" data-name="text-2a0b36"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Key resources</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 521px; top: 78px;" data-block-id="156238def240148918adb5285b4521b9" data-name="text-04ed9c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Key propositions</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 204px; left: 778px; top: 78px;" data-block-id="ece2e0066b002895b79d5af9aa7a5433" data-name="text-68a249"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Customer relationships
+</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 777px; top: 268px;" data-block-id="4a9866185a00bcc7059db987d569e131" data-name="text-3e530c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Channels</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 1036px; top: 78px;" data-block-id="5b9885d7ef5f3cb61dbd551652bdd940" data-name="text-369606"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Customer segments</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 5px; top: 588px;" data-block-id="f59ab751b8673521972845d72250504d" data-name="text-f7a43b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Cost structure</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 777px; top: 588px;" data-block-id="20c152014aec201be85f9a3d08a8c944" data-name="text-4f917e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; font-size: 45%; color: rgb(68, 68, 68);"><pre><strong>Revenue streams</strong></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 3px; top: 102.25px;" data-name="text-132880" data-block-id="dcf29e5f5a8fd6b22f769a1a6ec7a14d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 29; color: rgb(39, 78, 19); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p><span style="color:#006400">Experimental customers:<br>
+IDIBAPS, LENS, Uni. Milano, Uni. Aix-Marseille Uni. Washington</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#006400">INCF: Connection to the neuroinformatics initiative</span></p>
+
+<p> </p>
+
+<p><span style="color:#006400">Andrew Davison: Development of core data models</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#006400">Open-source community (Elephant, Neo, Nix, Snakemake) for feedback, support of interfaces</span></p>
+
+<p> </p>
+
+<p><span style="color:#006400">iBehave Network for training support</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#006400">EBRAINS IT and Italian and German nodes</span></p>
+
+<p> </p>
+
+<p><span style="color:#006400">EBRAINS partners:<br>
+scientific and method. expertise</span></p>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 504px; left: 1027.5px; top: 72px;" data-block-id="30e47ca19e3f2dfd4131a604ebc4623b" data-name="shape-d1bda0"><div class="sl-block-style" style="z-index: 15; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 504"><rect width="250.5" height="504" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 648px; left: 512.75px; top: 72px;" data-block-id="4259dba8162a440d46b6e7069a3ffd20" data-name="shape-30d22a"><div class="sl-block-style" style="z-index: 12; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 648"><rect width="250.5" height="648" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 251.5px; left: 256.75px; top: 72.5px;" data-block-id="d6515fd2b5b0952f0e804074aa3dd6bd" data-name="shape-736b32"><div class="sl-block-style" style="z-index: 13; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 252"><rect width="250.5" height="251.5" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 245.5px; left: 255.75px; top: 330.5px;" data-block-id="8e9c43d7acd376a618de39a5d66378ba" data-name="shape-b36740"><div class="sl-block-style" style="z-index: 14; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 246"><rect width="250.5" height="245.5" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 178px; left: 769.25px; top: 72.5px;" data-block-id="bfad91a942befa1fa00060072255b1c4" data-name="shape-fe1972"><div class="sl-block-style" style="z-index: 11; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 178"><rect width="250.5" height="178" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 250.5px; height: 316.5px; left: 769.25px; top: 259.5px;" data-block-id="921160df3671bf3bc72ebedffb6307ab" data-name="shape-853d3c"><div class="sl-block-style" style="z-index: 10; opacity: 0.9;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(207, 226, 243)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 251 317"><rect width="250.5" height="316.5" rx="0" ry="0" class="shape-element" fill="rgb(207, 226, 243)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 1077.75px; top: 15px;" data-block-id="4f2f51be7e9e9259fab2f5af6ee2dbae" data-name="text-d636d4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; font-size: 45%; color: rgb(106, 168, 79);"><p style="text-align: right;"><span style="color:#006400"><strong>already existing</strong></span></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 1077.75px; top: 30px;" data-block-id="1e7643f4e2df438be0367b2a5a2956a8" data-name="text-4d002f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 31; font-size: 45%; color: rgb(210, 162, 20);"><p style="text-align: right;"><strong>in progress</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 150px; left: 1077.75px; top: 48px;" data-block-id="25ed9dd2a9d8c5f861c58fb87c6725f0" data-name="text-f8f7f2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 32; font-size: 45%; color: rgb(166, 28, 0);"><p style="text-align: right;"><strong>required</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 259.75px; top: 100.5px;" data-block-id="5fad3aa919bb48c88aa61604e78f221b" data-name="text-b72c98"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 33; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.04;" data-has-line-height="">
+<p><span style="color:#b22222">Cobrawap as a (EBRAINS) service</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Creating teaching materials</span></p>
+
+<p> </p>
+
+<p>Research of wave measures indicating specific brain states</p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Extending to MEG/EEG data (human data)</span></p>
+
+<p> </p>
+
+<p>Improve computation efficiency (online &amp; offline)</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 257.75px; top: 360px;" data-block-id="d414e7ceacad5946b8e23d32976588a8" data-name="text-44c1db"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 34; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p>People maintaining and extending the development of Cobrawap</p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#006400">Access to HPC computers</span></p>
+
+<p> </p>
+
+<p><span style="color:#006400">Access to suitable brain activity data of different measurement modalities</span></p>
+
+<p> </p>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 515.25px; top: 100.5px;" data-block-id="e48a805fd6231e810aebadcf1d2ecf1b" data-name="text-f2aef8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 35; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p><span style="color:#b22222">Enable the use of complex analysis of brain wave activity to classify medical brain states</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Facilitate the exchange and collaboration between scientists/clinicians/manufacturers by offering interfaces between tools and data formats, and reusable workflows</span></p>
+
+<p> </p>
+
+<p>Empower scientists to build open, reproducible analysis workflows to save time and increase rigor</p>
+
+<p> </p>
+
+<p style="text-align:right">Increase the scope of available methodologies in the individual neuroscience disciplines</p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Maximize return-on-investment for manufacturers and researchers by integrating reusable workflow solutions</span></p>
+
+<p> </p>
+
+<p style="text-align:right">Promote a common language across neuroscientific domains for sharing and confronting results</p>
+
+<p> </p>
+
+<p><span style="color:#006400">Reduce the time-to-market for research projects</span></p>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 771.5px; top: 96.25px;" data-block-id="52c488518fe1562dfaaa499445edd99b" data-name="text-0ab7c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 36; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p><span style="color:#b22222">Initial surveying and</span></p>
+
+<p><span style="color:#b22222">monthly during prototyping and evaluation</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Trainings: half-yearly</span></p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Help-desk/ on-demand support</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 772.75px; top: 290px;" data-block-id="e5f8a3131dea4500412599eec5c45f2b" data-name="text-e009e7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 37; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p>Personal contact of early adopters</p>
+
+<p> </p>
+
+<p style="text-align:right">Community Slack (or similar)</p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Mailing lists and newsletters</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Conference booth attendance</span></p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Website, webinars, online trainings </span></p>
+
+<p> </p>
+
+<p style="text-align:right">Scientific publications</p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Promotion through social media</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 245.5px; left: 1030.5px; top: 100.5px;" data-block-id="ecf5b1094b6b34b1354048a9ffecab0e" data-name="text-9b5ab0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 38; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p><span style="color:#b22222">Doctors involved in clinical research</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Scientists/students interested in the open-source analysis ecosystem</span></p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Manufacturers of recording hardware and software solutions</span></p>
+
+<p> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Companies interest in integrating our workflow solutions</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 251.875px; left: 772.75px; top: 612px;" data-block-id="9036b4ef29f63c139b114ab12b3471c9" data-name="text-ced9cc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 39; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p><span style="color:#b22222">Analysis as a service</span></p>
+
+<p> </p>
+
+<p><span style="color:#b22222">Development on demand </span></p>
+
+<p><span style="color:#b22222">(integrate data formats or methods)</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 251.875px; left: 1015.63px; top: 621px;" data-block-id="7384abdcf0724302d8880f709677c531" data-name="text-e7ef61"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 40; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p style="text-align:right"><span style="color:#b22222">Teaching and training</span></p>
+
+<p style="text-align:right"> </p>
+
+<p style="text-align:right"><span style="color:#b22222">Dual-Licensing and Consulting</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 251.875px; left: 5.875px; top: 621px;" data-block-id="385ae05d1728290ea11fd659c2cda409" data-name="text-92b82f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 41; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height="">
+<p>Personnel costs</p>
+
+<p> </p>
+
+<p><span style="color:#006400">Hardware and compute time</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 251.875px; left: 240px; top: 642px;" data-block-id="9bbd95eabd179c9ba1a8edd32a52421d" data-name="text-e812d9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 42; color: rgb(210, 162, 20); text-align: left; font-size: 50%; line-height: 1.17;" data-has-line-height=""><p style="text-align:right"><span style="color:#b22222">Travel and Marketing</span></p></div></div></section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2618295,"slug":"collaborative-brain-wave-analysis-pipeline","title":"Collaborative Brain Wave Analysis Pipeline","description":"","width":1280,"height":720,"margin":0.05,"visibility":"all","published_at":"2023-05-29T09:49:28.520Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/d6d8e3924fda4facd205746e65d68cc2/thumb.jpg?1685393362","view_count":7,"user":{"id":1338950,"username":"rgutzen","name":"","description":"","thumbnail_url":"https://www.gravatar.com/avatar/261d2030dd25ba02a7f62ec17c882187?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":5485828,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"sand-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":9,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":1,"data_updated_at":1686129461617,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"linear","upsizing_enabled":true,"notes":{"b58c313bc792f48189582b0039a532e6":"* Traveling wave activity is a very prevalent phenomenon in the brain.\n* Although brain waves have been studied for a long time, only with the advancement of new measurement technology it became feasible to see the complex spatial dynamics the wave activity can have.\n* Many recent studies suggest that cortical wave activity plays a crucial role in many cognitive processes.\n* Our goal is to build on and connect the individual research, making applications more accessible and efficient, and opening up new ways to interact and treat the brain.","0213f8802980402de2f8922b3b2744e1":"* Our team working towards this goal consists of researchers with expertise in the processing and analysis of neural data, the development of research software, and computational models.\n* Together with experimenters we have been working on the activity data from different measurement modalities and integrating them into a collaborative analysis framework\n* Further, we are also guided by other theoretical and methodological advances in the community, making sure to develop solutions not in isolation but in constant exchange with the potential users.","03892a321e98e8be40d5b327f441c3ac":"* The problem that we face when there are many different groups studying the same phenomenon with different measurements, different types of analysis, different statistics: the results are not comparable.\n* \"talking about big data, we emphasize that this often also means heterogeneous data\"\n* However, by using modular shared components that are flexibly adaptable to the data type we can converge the heterogeneous data to common description level and derive common metrics.\n* So, that in the end we can provide reusable analysis workflows that enable the relation of insights across neuroscience domains.\n* Think of it as a reverse Tower of Babel scenario, where these different measurements can't talk to each other. Then by speaking the same language they can efficiently build a tower of cumulative knowledge.\n* This is what we address with the Collaborative Brain Wave Analysis Pipeline, which we already demonstrate in a current publication performing a meta-study of the wave dynamics across multiple open-access datasets.\n","484402ae05eec88793ee4ea2371d4e01":"* And the development work on the pipeline tool is continuing in ongoing projects.\n* On top on the open-source tool base, we see a strong potential for commercial service applications.\n**Hardware/Software Manufacturers**\n* For manufacturers of neural data acquisition hardware and software, it would be very convenient to enable the interface to their data formats or a full or partial integration with their software.\n* Because, employing such a reusable pipeline framework enables a cost-efficient interoperability and connection to a larger research community.\n**Basic and Clinical Research**\n* Similarly, for basic and clinical research the easy access to complex analysis workflows is very valuable.\n* Experimental or medical experts with great data are not necessarily also experts in mathematical methods and computing.\n* Therefore, flexible analysis solutions that can be adapted to their use-case can drastically reduce the time-to-market of their research\n**Teaching/Training**\n* Since this approach is based on community efforts, we believe it is also crucial to provide teaching and training opportunities for students and academics to leverage such existing open-source solutions and not default to reinventing the wheel.\n* As the research environment (as well as the tech environment) is moving faster and faster, such reusable solutions accelerate research and increase the return-on-investment for the work put into a project.","6476875ede4bc92fd58baed024b4ca21":"* Therefore, we believe to be able to create a comfortable environment for students and academics, offer a user-friendly service for applying scientific methods, and provide a convenient set-up for vendors. All while supporting cutting-edge research.","e3730ac8b8d1b505dafd5f36a591ae7e":"* For the investment side, this means: there is a viable product, publicly funded and developed over the past years (estimated at 1Mio).\n* And there is already a continuation of funding secured for the next years\n* To establish the additional services we roughly estimate a cost of 300k a year (mainly for dedicated personnel)\n* with the aim to establish corresponding revenue streams to become self-sufficient in about 3 years","2dd0fe39162c140b02b917c2d2ef9417":" How collaborative open-source scientific projects can have an impact on society and create business"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "linear",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>

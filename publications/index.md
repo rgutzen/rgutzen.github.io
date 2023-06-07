@@ -50,7 +50,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Collaborative Brain Wave Analysis Pipeline**<br>
 (2023) HBP Foundraising Bootcamp<br>
-**[Slides](https://slides.com/rgutzen/collaborative-brain-wave-analysis-pipeline)**
+**[Slides](slides/2023-05-31_HBPFundraisingBootcamp/)**
 
 **Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
 (2022) EBRAINS BASSES workshop, Rome<br>
