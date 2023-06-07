@@ -44,6 +44,14 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+
+**Adaptable workflows for neural activity analysis in an open-source environment**<br
+(2023) International Forum on Neural Engineering & Brain Technologies, Berlin<br>
+
+**Collaborative Brain Wave Analysis Pipeline**<br>
+(2023) HBP Foundraising Bootcamp<br>
+**[Slides](https://slides.com/rgutzen/collaborative-brain-wave-analysis-pipeline)**
+
 **Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
 (2022) EBRAINS BASSES workshop, Rome<br>
 **[Slides](slides/2022-06-14_BASSES/BASSES_slides_Gutzen.pdf) | [Stream](https://www.youtube.com/watch?v=1Qf4zIzV9ow&list=PLvAS8zldX4Ci5uG9NsWv5Kl4Zx2UtWQPh&index=13)**
@@ -87,6 +95,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 **Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanc, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2023) HBP Summit, Marseille*<br>
+**[PDF](poster/2023_Gutzen_HBPSummit.pdf)**
 
 **Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
 Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker <br>
