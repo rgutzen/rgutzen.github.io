@@ -47,9 +47,10 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Adaptable workflows for neural activity analysis in an open-source environment**<br
 (2023) International Forum on Neural Engineering & Brain Technologies, Berlin<br>
+**[Slides](slides/2023-06-21_NBT/)**
 
 **Collaborative Brain Wave Analysis Pipeline**<br>
-(2023) HBP Foundraising Bootcamp<br>
+(2023) HBP Fundraising Bootcamp, Brussels<br>
 **[Slides](slides/2023-05-31_HBPFundraisingBootcamp/)**
 
 **Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
