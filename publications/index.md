@@ -93,13 +93,21 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 
+**Towards classification of spatio-temporal wave patterns based on principal component analysis**<br>
+Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Gruen<br>
+*(2023) CNS, Leibzig*<br>
+
+**Towards an EBRAINS service for brain wave analysis: Cobrawap**<br>
+Irene Bernava, Cosimo Lupo, Robin Guzen, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Gruen, Andrew Davison, Pier Stanislao Paolucci, Michael Denker, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Sofia Karvounari, Eleni Mathioulaki, Francesco Saverio Pavone<br>
+*(2023) CNS, Leibzig*<br>
+
 **Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanc, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2023) HBP Summit, Marseille*<br>
 **[PDF](poster/2023_Gutzen_HBPSummit.pdf)**
 
 **Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
-Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker <br>
+Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
 *(2023) Meeting of the German Neuroscience Society, Göttingen*<br>
 
 **Estimation of microscale connectivity from spiking activity of macaque visuomotor cortices**<br>
