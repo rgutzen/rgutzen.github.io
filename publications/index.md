@@ -10,11 +10,15 @@ show-avatar: false
 ## Paper
 **Activity-driven microconnectome estimation of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
-*(2023) in preparation*<br>
+*(2023) in preparation*
+
+**Modeled vs. real data: realistic spike train generation for benchmarking and education**<br>
+Alessandra Stella, Peter Bouss, Simon Essink, Robin Gutzen, Alexander Kleinjohann, Sonja Gruen<br>
+*(2023) in preparation*
 
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, Michael Denker<br>
-*(2023) in preparation*<br>
+*(2023) under review*<br>
 **[Preprint](https://doi.org/10.48550/arXiv.2211.08527)** 
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
@@ -209,3 +213,5 @@ Robin Gutzen, Michael von Papen, Michael Denker<br>
 **Elephant Tutorial: LFP analysis**<br>
 Robin Gutzen, Alexander Kleinjohann<br>
 **[Video](https://vimeo.com/507843717/4f40ff84c8) | [Notebook (limited access)](https://wiki.ebrains.eu/bin/view/Collabs/elephant-tutorials/)**
+
+**... Other Contributions on [Github](https://github.com/rgutzen)**<br>
