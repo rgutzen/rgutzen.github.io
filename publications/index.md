@@ -55,7 +55,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Collaborative Brain Wave Analysis Pipeline**<br>
 (2023) HBP Fundraising Bootcamp, Brussels<br>
-**[Slides](slides/2023-05-31_HBPFundraisingBootcamp/)**
+**[Slides](slides/2023-05-31_HBPFundraisingBootcamp/) | [Event](https://www.humanbrainproject.eu/en/collaborate-hbp/innovation-industry/hbp-funding-bootcamp/)**
 
 **Blocks instead of puzzles pieces - analyzing cortical wave activity across scales in an adaptable framework**<br>
 (2022) EBRAINS BASSES workshop, Rome<br>
@@ -75,11 +75,11 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 **Developing pipelines for ​multi- scale/species/method analysis​**<br>
 (2020) Human Brain Project Summit, Athens<br>
-**[Slides (short version)](slides/20_SummitAthens/short_version.html) | [Slides (long version)<img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/20_SummitAthens/long_version.html)**
+**[Slides (short version)](slides/20_SummitAthens/short_version.pdf) | [Slides (long version)](slides/20_SummitAthens/long_version.pdf)**
 
 **Building a workflow for the analysis of slow wave activity across heterogeneous measurements**<br>
 (2019) Human Brain Project SP3 annual meeting, Liège<br>
-**[Slides <img src="/assets/img/icons/lock-solid.svg" style="height:0.8em;">](slides/19_SP3Liege/index.html)**
+**[Slides](slides/19_SP3Liege/index.html)**
 
 **Evaluating neural network models within a formal validation framework**<br>
 (2019) INCF Neuroinformatics Conference, Warsaw<br>
