@@ -49,7 +49,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Talks
 
-**Adaptable workflows for neural activity analysis in an open-source environment**<br
+**Adaptable workflows for neural activity analysis in an open-source environment**<br>
 (2023) International Forum on Neural Engineering & Brain Technologies, Berlin<br>
 **[Slides](slides/2023-06-21_NBT/)**
 
@@ -98,7 +98,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 ## Poster
 
 **Towards classification of spatio-temporal wave patterns based on principal component analysis**<br>
-Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Gruen<br>
+Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Grün<br>
 *(2023) CNS, Leibzig*<br>
 
 **Towards an EBRAINS service for brain wave analysis: Cobrawap**<br>
@@ -106,7 +106,7 @@ Irene Bernava, Cosimo Lupo, Robin Guzen, Maria V. Sanchez-Vives, Maurizio Mattia
 *(2023) CNS, Leibzig*<br>
 
 **Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**
-Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanc, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
+Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2023) HBP Summit, Marseille*<br>
 **[PDF](poster/2023_Gutzen_HBPSummit.pdf)**
 
@@ -170,8 +170,7 @@ Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and 
 *(2019) Meeting of the German Neuroscience Society, Göttingen*<br>
 **[PDF](poster/2019_Gutzen_NWG.pdf)**
 
-**Reproducible neural network simulations: model
-validation on the level of network activity data**<br>
+**Reproducible neural network simulations: model validation on the level of network activity data**<br>
 Robin Gutzen, Michael von Papen, Guido Trensch, Pietro Quaglio, Sonja Grün and Michael Denker<br>
 *(2018) Bernstein Conference, Berlin*<br>
 **[PDF](poster/2018_Gutzen_Bernstein.pdf) | [Abstract](https://abstracts.g-node.org/conference/BC18/abstracts#/uuid/8ecf86ca-aa29-4d0a-9262-6576cc27953e)**
