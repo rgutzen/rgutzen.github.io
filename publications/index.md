@@ -105,7 +105,7 @@ Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Grün<br>
 Irene Bernava, Cosimo Lupo, Robin Guzen, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Gruen, Andrew Davison, Pier Stanislao Paolucci, Michael Denker, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Sofia Karvounari, Eleni Mathioulaki, Francesco Saverio Pavone<br>
 *(2023) CNS, Leibzig*<br>
 
-**Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**
+**Structuring cortical wave analysis with Cobrawap: a modular and adaptable pipeline for heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Elena Pastorelli, Cristiano Capone, Cosimo Lupo, Irene Bernava, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Andrew Davison, Pier Stanislao Paolucci, Michael Denker<br>
 *(2023) HBP Summit, Marseille*<br>
 **[PDF](poster/2023_Gutzen_HBPSummit.pdf)**
