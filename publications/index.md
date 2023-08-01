@@ -49,6 +49,9 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Talks
 
+**Exploring the diversity of cortical wave activity with a unifying workflow approach**<br>
+(2023) Human Brain Project concluding event, Jülich<br>
+
 **Adaptable workflows for neural activity analysis in an open-source environment**<br>
 (2023) International Forum on Neural Engineering & Brain Technologies, Berlin<br>
 **[Slides](slides/2023-06-21_NBT/)**
@@ -96,6 +99,10 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
+Moritz Kern*, Robin Gutzen*, Sonja Grün and Michael Denker<br>
+*(2023) Neuromorphic Computing Day, Jülich*<br>
 
 **Towards classification of spatio-temporal wave patterns based on principal component analysis**<br>
 Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Grün<br>
