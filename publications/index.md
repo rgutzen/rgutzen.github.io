@@ -48,9 +48,12 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="talks"></a>
 
 ## Talks
+**From simplified neuron models to complex behavior**<br>
+(2023) Collective Neurogenesis Art Workshop, Bonn<br>
 
 **Exploring the diversity of cortical wave activity with a unifying workflow approach**<br>
-(2023) Human Brain Project concluding event, Jülich<br>
+(2023) Human Brain Project Concluding Event, Jülich<br>
+**[Slides](slides/2023-09-12_HBPConcludingEvent/Gutzen_spotlight_talk.pdf)**
 
 **Adaptable workflows for neural activity analysis in an open-source environment**<br>
 (2023) International Forum on Neural Engineering & Brain Technologies, Berlin<br>
@@ -100,9 +103,21 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 
+**Towards an EBRAINS service for brain wave analysis: Cobrawap**<br>
+Cosimo Lupo, Irene Bernava, Robin Gutzen, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Sofia Karvounari, Eleni Mathioulaki, Francesco S. Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Gruen, Andrew Davison, Pier Stanislao Paolucci, Michael Denker, Giulia De Bonis<br>
+*(2023) 7th BigBrain Workshop: Challanges of big data integration, Gróska*<br>
+
+**Cortical wave dynamics across visual areas of the macaque monkey during an instructed, free-viewing, visuomotor task**<br>
+Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
+*(2023) Bernstein Conference, Berlin*<br>
+
 **Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
 Moritz Kern*, Robin Gutzen*, Sonja Grün and Michael Denker<br>
 *(2023) Neuromorphic Computing Day, Jülich*<br>
+
+**Task-related visual stimuli provoke distinvt LFP wave dynamics in the macaque visual cortex**<br>
+Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
+*(2023) System Vision Science Summer School, Tübingen*<br>
 
 **Towards classification of spatio-temporal wave patterns based on principal component analysis**<br>
 Junji Ito, Robin Gutzen, Sven Krauße, Michael Denker, Sonja Grün<br>
