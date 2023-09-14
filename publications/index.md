@@ -113,7 +113,7 @@ Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
 *(2023) Bernstein Conference, Berlin*<br>
 
 **Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
-Moritz Kern*, Robin Gutzen*, Sonja Grün and Michael Denker<br>
+Moritz Kern, Robin Gutzen, Sonja Grün and Michael Denker<br>
 *(2023) Neuromorphic Computing Day, Jülich*<br>
 **[PDF](poster/2023_Kern_NC-Day.pdf)**
 
