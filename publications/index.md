@@ -50,6 +50,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 ## Talks
 **From simplified neuron models to complex behavior**<br>
 (2023) Collective Neurogenesis Art Workshop, Bonn<br>
+**[Slides](slides/2023-09-14_CollectiveNeurogenesis/)**
 
 **Exploring the diversity of cortical wave activity with a unifying workflow approach**<br>
 (2023) Human Brain Project Concluding Event, Jülich<br>
@@ -114,6 +115,7 @@ Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
 **Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
 Moritz Kern*, Robin Gutzen*, Sonja Grün and Michael Denker<br>
 *(2023) Neuromorphic Computing Day, Jülich*<br>
+**[PDF](poster/2023_Kern_NC-Day.pdf)**
 
 **Task-related visual stimuli provoke distinvt LFP wave dynamics in the macaque visual cortex**<br>
 Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
