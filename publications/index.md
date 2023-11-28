@@ -16,6 +16,10 @@ Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandr
 Alessandra Stella, Peter Bouss, Simon Essink, Robin Gutzen, Alexander Kleinjohann, Sonja Gruen<br>
 *(2023) in preparation*
 
+**Singular Angles: Assessing the similarity of real matrices with identical shape**<br>
+Anno Kurth, Jasper Albers, Robin Gutzen<br>
+*(2023) in preparation*
+
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, Michael Denker<br>
 *(2023) under review*<br>
@@ -108,9 +112,15 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 Cosimo Lupo, Irene Bernava, Robin Gutzen, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Sofia Karvounari, Eleni Mathioulaki, Francesco S. Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Gruen, Andrew Davison, Pier Stanislao Paolucci, Michael Denker, Giulia De Bonis<br>
 *(2023) 7th BigBrain Workshop: Challanges of big data integration, Gróska*<br>
 
+**Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
+Sven Krauße, Robin Gutzen, Alessandra Stella, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
+*(2023) Bernstein Conference, Berlin*<br>
+**[Abstract](http://doi.org/10.12751/nncn.bc2023.275)**
+
 **Cortical wave dynamics across visual areas of the macaque monkey during an instructed, free-viewing, visuomotor task**<br>
 Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
 *(2023) Bernstein Conference, Berlin*<br>
+**[Abstract](http://doi.org/10.12751/nncn.bc2023.183)**
 
 **Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
 Moritz Kern, Robin Gutzen, Sonja Grün and Michael Denker<br>
@@ -225,8 +235,8 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 ## Software
 **Cobrawap**<br>
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Michael Denker<br>
-*RRID:SCR_022966*<br>
-**[GitHub](https://github.com/INM-6/cobrawap)**
+*RRID:SCR_022966, doi:10.5281/zenodo.10198748*<br>
+**[GitHub](https://github.com/NeuralEnsemble/cobrawap) | [Zenodo](https://doi.org/10.5281/zenodo.10198748)**
 
 **NetworkUnit**<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
@@ -236,5 +246,10 @@ Robin Gutzen, Michael von Papen, Michael Denker<br>
 **Elephant Tutorial: LFP analysis**<br>
 Robin Gutzen, Alexander Kleinjohann<br>
 **[Video](https://vimeo.com/507843717/4f40ff84c8) | [Notebook (limited access)](https://wiki.ebrains.eu/bin/view/Collabs/elephant-tutorials/)**
+
+**Cobrawap Showcase Application**<br>
+Robin Gutzen<br>
+*doi:10.5281/zenodo.10210141*<br>
+**[Repository](https://gin.g-node.org/INM-6/cobrawap_publication_code) | [Zenodo](10.5281/zenodo.10210141)**
 
 **... Other Contributions on [Github](https://github.com/rgutzen)**<br>
