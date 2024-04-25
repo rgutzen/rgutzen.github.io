@@ -10,20 +10,25 @@ show-avatar: false
 ## Paper
 **Activity-driven microconnectome estimation of macaque visuomotor cortices**<br>
 Aitor Morales-Gregorio, Robin Gutzen, Pauline Dąbrowska, Alper Yegenoglu, Sandra Diaz-Pier, Sarah Palmis, Sophie Paneri, Alexendre René, Panos Sapountzis, Markus Diesmann, Sonja Grün, Johanna Senk, Georgia Gregoriou, Bjørg Kilavik, Sacha van Albada<br>
-*(2023) in preparation*
+*(2024) in preparation*
 
 **Modeled vs. real data: realistic spike train generation for benchmarking and education**<br>
 Alessandra Stella, Peter Bouss, Simon Essink, Robin Gutzen, Alexander Kleinjohann, Sonja Gruen<br>
-*(2023) in preparation*
+*(2024) in preparation*
+
+**Relating the orientation of cortical traveling waves and co-occurring spike patterns**<br>
+Sven Krauße, Robin Gutzen, Alessandra Stella, Alexa Riehle, Thomas Brochier, Sonja Grün, Michael Denker<br>
+*(2024) in preparation*
 
 **Singular Angles: Assessing the similarity of real matrices with identical shape**<br>
-Anno Kurth, Jasper Albers, Robin Gutzen<br>
-*(2023) in preparation*
+Jasper Albers, Anno C. Kurth, Robin Gutzen, Aitor Morales-Gregorio, Michael Denker, Sonja Grün, Sacha J. van Albada, Markus Diesmann<br>
+*(2024) in preparation*<br>
+**[Preprint](https://doi.org/10.48550/arXiv.2403.17687)**
 
 **Comparing apples to apples - Using a modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets**<br>
 Robin Gutzen, Giulia De Bonis, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Francesco Saverio Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Grün, Pier Stanislao Paolucci, Michael Denker<br>
-*(2023) under review*<br>
-**[Preprint](https://doi.org/10.48550/arXiv.2211.08527)** 
+*(2024) Cell Reports Methods, 4(1), 100681. doi: 10.1016/j.crmeth.2023.100681*<br>
+**[Paper](https://doi.org/10.1016/j.crmeth.2023.100681) | [Repository](https://gin.g-node.org/INM-6/cobrawap_publication_code)**
 
 **Simulations Approaching Data: Cortical Slow Waves in Inferred Models of the Whole Hemisphere of Mouse**<br>
 Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, Elena Pastorelli, Francesco Simula, Cosimo Lupo, Leonardo Tonielli, Anna Letizia Allegra Mascaro, Francesco Resta, Francesco Pavone, Micheal Denker, Pier Stanislao Paolucci<br> 
@@ -31,8 +36,9 @@ Cristiano Capone, Chiara De Luca, Giulia De Bonis, Robin Gutzen, Irene Bernava, 
 **[Paper](https://doi.org/10.1038/s42003-023-04580-0)** 
 
 **Analysis and quantitative comparison of neural network dynamics on a neuron-wise and population level**<br>
-Robin Gutzen (Doctoral Thesis)<br>
-*(2022)*
+Robin Gutzen <br>
+*(2023) Doctoral Thesis at RWTH Aachen University*<br>
+**[Dissertation](https://doi.org/10.18154/RWTH-2024-03073)**
 
 **Evaluating the statistical similarity of neural network activity and connectivity via eigenvector angles**<br>
 Robin Gutzen, Sonja Grün, Michael Denker<br>
@@ -107,6 +113,23 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 <a name="poster"></a>
 
 ## Poster
+
+**Quantifying structural similarity between real matrices with arbitrary shape**<br>
+Jasper Albers, Anno C. Kurth, Robin Gutzen, Aitor Morales-Gregorio, Michael Denker, Sonja Grün, Sacha J. van Albada, Markus Diesmann<br>
+*(2024) CNS, Rio Grande do Norte*<br>
+
+**Hierarchical organization of multivariate spiking statistics across cortical areas**<br>
+Aitor Morales-Gregorio, Robin Gutzen, Sarah Palmis, Sofia Paneri, Panagiotis Sapountzis, Alexander Kleinjohann, Sonja Grün, Thomas Brochier, Georgia G. Gregoriou, Bjørg E. Kilavik, Sacha J. van Albada<br>
+*(2024) FENS, Vienna*<br>
+
+**Quantifying shared structure between real matrices of arbitrary shape**<br>
+Jasper Albers, Anno C. Kurth, Robin Gutzen, Aitor Morales-Gregorio, Michael Denker, Sonja Grün, Sacha J. van Albada, Markus Diesmann<br>
+*(2024) FENS, Vienna*<br>
+
+**Cobrawap as a tool for inspecting and explaining learning performance of bio-inspired artificial neural networks**<br>
+Giulia De Bonis, Cosimo Lupo, Federico Marmoreo, Alessandra Cardinale, Robin Gutzen, 
+Michael Denker, Pier Stanislao Paolucci<br>
+*(2024) 5th International Convention on the Mathematics Of Neuroscience and AI, Rome*<br>
 
 **Towards an EBRAINS service for brain wave analysis: Cobrawap**<br>
 Cosimo Lupo, Irene Bernava, Robin Gutzen, Elena Pastorelli, Cristiano Capone, Chiara De Luca, Anna Letizia Allegra Mascaro, Francesco Resta, Arnau Manasanch, Sofia Karvounari, Eleni Mathioulaki, Francesco S. Pavone, Maria V. Sanchez-Vives, Maurizio Mattia, Sonja Gruen, Andrew Davison, Pier Stanislao Paolucci, Michael Denker, Giulia De Bonis<br>
@@ -236,7 +259,7 @@ Robin Gutzen, Sonja Grün, Michael Denker<br>
 **Cobrawap**<br>
 Robin Gutzen, Giulia De Bonis, Chiara De Luca, Michael Denker<br>
 *RRID:SCR_022966, doi:10.5281/zenodo.10198748*<br>
-**[GitHub](https://github.com/NeuralEnsemble/cobrawap) | [Zenodo](https://doi.org/10.5281/zenodo.10198748)**
+**[GitHub](https://github.com/NeuralEnsemble/cobrawap) | [PyPi](https://pypi.org/project/cobrawap/) | [Zenodo](https://doi.org/10.5281/zenodo.10198748)**
 
 **NetworkUnit**<br>
 Robin Gutzen, Michael von Papen, Michael Denker<br>
