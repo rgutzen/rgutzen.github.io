@@ -114,6 +114,7 @@ Guido Trensch, Robin Gutzen, Inga Blundell, Michael Denker and Abigail Morrison<
 
 ## Poster
 
+
 **Quantifying structural similarity between real matrices with arbitrary shape**<br>
 Jasper Albers, Anno C. Kurth, Robin Gutzen, Aitor Morales-Gregorio, Michael Denker, Sonja Grün, Sacha J. van Albada, Markus Diesmann<br>
 *(2024) CNS, Rio Grande do Norte*<br>
@@ -127,8 +128,7 @@ Jasper Albers, Anno C. Kurth, Robin Gutzen, Aitor Morales-Gregorio, Michael Denk
 *(2024) FENS, Vienna*<br>
 
 **Cobrawap as a tool for inspecting and explaining learning performance of bio-inspired artificial neural networks**<br>
-Giulia De Bonis, Cosimo Lupo, Federico Marmoreo, Alessandra Cardinale, Robin Gutzen, 
-Michael Denker, Pier Stanislao Paolucci<br>
+Giulia De Bonis, Cosimo Lupo, Federico Marmoreo, Alessandra Cardinale, Gianluca Gaglioti, Thierry Nieus, Andrea Pigorini, Robin Gutzen, Marcello Massimini, Michael Denker, Pier Stanislao Paolucci<br>
 *(2024) 5th International Convention on the Mathematics Of Neuroscience and AI, Rome*<br>
 
 **Towards an EBRAINS service for brain wave analysis: Cobrawap**<br>
@@ -147,7 +147,7 @@ Robin Gutzen, Thomas Brochier, Alexa Riehle, Sonja Grün, Michael Denker<br>
 
 **Elephant and NetworkUnit: Frameworks for analysis and validation of neural network models in NEST and neuromophic systems**<br>
 Moritz Kern, Robin Gutzen, Sonja Grün and Michael Denker<br>
-*(2023) Neuromorphic Computing Day, Jülich*<br>
+*(2023) Neuromorphic Computing Day, Jülich*<br>#SBATCH --gres=gpu:1 -C "a100|rtx8000"
 **[PDF](poster/2023_Kern_NC-Day.pdf)**
 
 **Task-related visual stimuli provoke distinvt LFP wave dynamics in the macaque visual cortex**<br>
