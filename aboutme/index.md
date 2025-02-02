@@ -4,9 +4,13 @@ title: About me
 subtitle:
 ---
 
-Hello, I'm Robin. I've been raised a physicist, but now I try to figure out the brain as a PhD candidate at the [Research Center Jülich](https://www.fz-juelich.de/inm/inm-6/EN/Forschung/Gruen/artikel.html), Germany. Concretely, I try to understand and characterize neural network dynamics, including correlation structures and waves of propagating activity. And whenever I have the chance I dabble in data visualization. <br>
-Besides that, I live in the beautiful city of Cologne and spend a considerable time woodworking, cooking, fermenting, making or looking at art, collecting wild herbs and mushrooms, and organizing things in lists. <br>
-I use this space to blog about research related topics, but also potentially about anything I find interesting and amusing.
+Hi, I’m Robin. Raised as a physicist, I try to figure out how the brain does all the fun little things it does.
+I did my PhD in a [Computational Neuroscience lab at the Research Center Jülich](https://www.fz-juelich.de/en/ias/ias-6/news/phd-defenses/dr-robin-gutzen-defended-his-ph-d-thesis), Germany, where I worked on quantitative methods to characterize neural network dynamics, including correlation structures and waves of propagating activity. 
+Since, I've propagated to [NYU in New York City](https://cds.nyu.edu/team/robin-gutzen/) to further investigate in simulations how cortical wave activity may influence visual attention.
+And sometimes I dabble in data visualizations.
+<br>
+Besides that, I love to spend any time I find woodworking, cooking, fermenting, making or looking at art, collecting wild herbs and mushrooms, meditating, dancing, and organizing things in lists.
+I use this space to write about research related topics, but generally anything that I may currently obsess over.<br>
 
 You can also find me here,<br>
 <!-- <p> -->
